@@ -1,5 +1,5 @@
 baseURL = 'https://srflw.com/'
-theme = ["github.com/theNewDynamic/gohugo-theme-ananke"]
+theme = "ananke"
 
 DefaultContentLanguage = "en"
 enableRobotsTXT = true
