@@ -1,0 +1,46 @@
+baseURL = 'https://srflw.com/'
+theme = ["github.com/theNewDynamic/gohugo-theme-ananke"]
+
+DefaultContentLanguage = "en"
+enableRobotsTXT = true
+SectionPagesMenu = "main"
+Paginate = 3
+
+[languages]
+  [languages.en]
+    languageCode= 'en-UK'
+    languageName= 'English'
+    contentDir = 'content/en'
+    title= 'Simple Rules For Losing Weight'
+    weight= 1
+    [languages.en.params]
+      read_more_copy= 'Read more'
+  [languages.hu]
+    languageCode = 'hu-HU'
+    contentDir = 'content/hu'
+    languageName = 'Magyar'
+    title = 'Egyszerű szabályok a fogyáshoz'
+    weight = 2
+    [languages.hu.params]
+      read_more_copy = 'Olvass tovább'
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[params]
+#  text_color = ""
+  author = "Barna Szeghy"
+  favicon = "favicon.ico"
+#  site_logo = ""
+  recent_posts_number = 3
+  body_classes = "helvetica bg-near-white"
+
+[[params.ananke_socials]]
+name = "github"
+url = "https://github.com/szeghybarna/srflw"
+[[params.ananke_socials]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/szeghybarna"
+
