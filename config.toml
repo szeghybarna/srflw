@@ -43,4 +43,11 @@ url = "https://github.com/szeghybarna/srflw"
 [[params.ananke_socials]]
 name = "linkedin"
 url = "https://www.linkedin.com/in/szeghybarna"
-
+[[params.ananke_socials]]
+name = "Garmin"
+url = "https://connect.garmin.com/modern/profile/UnbrownGorger"
+color= '#12aded'
+[[params.ananke_socials]]
+name = "MyFitnessPal"
+url = "https://www.myfitnesspal.com/profile/EnvaultRoll"
+color= '#0066ee'
