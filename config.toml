@@ -1,5 +1,6 @@
 baseURL = 'https://simple-rules-for-losing-weight.com/'
-theme = "ananke"
+#theme = "ananke"
+theme = ["github.com/theNewDynamic/gohugo-theme-ananke"]
 
 DefaultContentLanguage = "en"
 enableRobotsTXT = true
