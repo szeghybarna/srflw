@@ -39,11 +39,8 @@ Paginate = 3
   body_classes = "helvetica bg-near-white"
 
 [[params.ananke_socials]]
-name = "github"
-url = "https://github.com/szeghybarna/srflw"
-[[params.ananke_socials]]
-name = "linkedin"
-url = "https://www.linkedin.com/in/szeghybarna"
+name = "facebook"
+url = "https://www.facebook.com/simple.rules.for.losing.weight"
 [[params.ananke_socials]]
 name = "Garmin"
 url = "https://connect.garmin.com/modern/profile/UnbrownGorger"
@@ -52,3 +49,6 @@ color= '#12aded'
 name = "MyFitnessPal"
 url = "https://www.myfitnesspal.com/profile/EnvaultRoll"
 color= '#0066ee'
+[[params.ananke_socials]]
+name = "github"
+url = "https://github.com/szeghybarna/srflw"
