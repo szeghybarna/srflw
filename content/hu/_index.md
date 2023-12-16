@@ -19,3 +19,20 @@ cascade:
 4. Adaptáld vagy vesd el
 5. Légy türelmes, várj 2 hetet
 6. Kezdd elölről!
+
+
+## Szabályok
+
+- Kontrollált kísérletezés
+    + Étkezés
+        * Glutén és laktóz
+        * Protein és szénhidrátok
+        * IF
+    + Mozgás
+        * Pulzuskontroll
+        * Séta és szobabicikli
+        * Gerinctorna vagy jóga
+    + Mentális egészség
+        * Stressz
+        * Relaxáció
+        * Alvás

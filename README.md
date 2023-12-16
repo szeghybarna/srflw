@@ -1,31 +1,8 @@
-# srflw
+# Simple Rules For Losing Weight
 
+[Hugo Framework](https://gohugo.io/) based repository of [https://simple-rules-for-losing-weight.com/](https://simple-rules-for-losing-weight.com/). Hosted on [AWS Amplify](https://aws.amazon.com/amplify/).
 
-
-# Process of the edition of the webpage
-
-## Initialize
-
-Register on github
-
-Create new public repo
-
-clone your repo
-
-git clone git@github.com:szeghybarna/srflw.git
-
-
-Download and extract contents to your epo's root
-
-https://codeload.github.com/szeghybarna/srflw/zip/refs/heads/main
-
-git add + git commit
-
-register on aws amplify
-
-connect with github
-
-build settings:
+Build settings on AWS Amplify:
 
 ```yaml
 version: 1
