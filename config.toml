@@ -7,6 +7,7 @@ enableRobotsTXT = true
 SectionPagesMenu = "main"
 Paginate = 3
 
+
 [languages]
   [languages.en]
     languageCode= 'en-UK'
@@ -16,6 +17,7 @@ Paginate = 3
     weight= 1
     [languages.en.params]
       read_more_copy= 'Read more'
+
   [languages.hu]
     languageCode = 'hu-HU'
     contentDir = 'content/hu'
@@ -34,9 +36,11 @@ Paginate = 3
 #  text_color = ""
   author = "Barna Szeghy"
   favicon = "favicon.ico"
-#  site_logo = ""
+  site_logo = "/images/simple-rules-for-losing-weight-logo.svg"
   recent_posts_number = 3
   body_classes = "helvetica bg-near-white"
+
+
 
 [[params.ananke_socials]]
 name = "facebook"
