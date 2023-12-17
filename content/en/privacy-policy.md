@@ -1,6 +1,8 @@
 +++
 title = 'Privacy Policy'
 menu = "footer"
+translationKey = "privacy-policy"
+language = "en"
 +++
 ## 1. Introduction
 

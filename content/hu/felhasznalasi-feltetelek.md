@@ -1,6 +1,8 @@
 +++
 title = 'Felhasználási Feltételek'
 menu = "footer"
+translationKey = "terms-and-conditions"
+language = "hu"
 +++
 
 ## 1. Bevezetés

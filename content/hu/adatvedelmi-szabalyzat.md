@@ -1,6 +1,8 @@
 +++
 title = 'Adatvédelmi Szabályzat'
 menu = "footer"
+translationKey= "privacy-policy"
+language = "hu"
 +++
 
 ## 1. Bevezetés

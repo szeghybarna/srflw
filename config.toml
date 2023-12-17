@@ -3,6 +3,7 @@ baseURL = 'https://simple-rules-for-losing-weight.com/'
 theme = ["github.com/theNewDynamic/gohugo-theme-ananke"]
 
 DefaultContentLanguage = "en"
+defaultContentLanguageInSubdir = "true"
 enableRobotsTXT = true
 SectionPagesMenu = "main"
 Paginate = 3
@@ -17,6 +18,7 @@ Paginate = 3
     weight= 1
     [languages.en.params]
       read_more_copy= 'Read more'
+      srflw_note = "Note: The writer is not a specialist or expert in the field, has no medical or sport-related qualifications and absolves himself of all responsibility and liability. Reader should use their own common sense and are solely responsible for trying out what they read on this website."
 
   [languages.hu]
     languageCode = 'hu-HU'
@@ -25,6 +27,7 @@ Paginate = 3
     title = 'Egyszerű szabályok a fogyáshoz'
     weight = 2
     [languages.hu.params]
+      srflw_note = "Megjegyzés: Az író nem szakember vagy szakértő a témában, nem rendelkezik orvosi vagy sporttal kapcsolatos képesítéssel, és minden felelősség és kötelezettség alól felmenti magát. Az olvasónak a saját józan ítélőképességét kell használnia, és egyedül az olvasó felelőssége, hogy kipróbálja amit ezen a weboldalon olvas."
       read_more_copy = 'Olvass tovább'
 
 [sitemap]

@@ -10,7 +10,8 @@ title: 'Simple Rules For Losing Weight'
 videos: []
 cascade:
   featured_image: '/images/cover-simple-rules-for-losing-weight.webp'
-  
+translationKey: home
+language: en
 ---
 # Simple Rules For Losing Weight
 

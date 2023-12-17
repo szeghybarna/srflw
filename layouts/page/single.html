@@ -1,0 +1,29 @@
+{{ define "header" }}{{ partial "page-header.html" . }}{{ end }}
+{{ define "main" }}
+  <div class="flex-l mt2 mw8 center">
+    <article class="center cf pv5 ph3 ph4-ns mw7">
+      <header>
+        <h1 class="f1">
+          {{ .Title }}
+        </h1>
+      </header>
+      <div class="nested-copy-line-height lh-copy f4 nested-links {{ $.Param "text_color" | default "mid-gray" }}">
+        {{ .Content }}
+{{ if .IsTranslated }}
+<hr>
+<h4>{{ i18n "translations" }}:</h4>
+<ul>
+  {{ range .Translations }}
+  <li>
+    <a href="{{ .RelPermalink }}">{{ .Lang }}: {{ .LinkTitle }}</a>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}
+      </div>
+    </article>
+  </div>
+
+
+
+{{ end }}

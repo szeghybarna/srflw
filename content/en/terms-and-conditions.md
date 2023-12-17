@@ -1,6 +1,8 @@
 +++
 title = 'Terms and Conditions'
 menu = "footer"
+translationKey= "terms-and-conditions"
+language = "en"
 +++
 ## 1. Introduction
 

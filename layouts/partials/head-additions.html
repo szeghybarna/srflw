@@ -15,3 +15,9 @@
   gtag('config', 'G-JLQRYSLEBT', { 'anonymize_ip': true });
 </script>
 
+{{ if .IsTranslated }}
+    {{ range .AllTranslations }}
+        <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
+    {{ end}}
+{{ end }}
+

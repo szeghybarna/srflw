@@ -1,4 +1,12 @@
 <footer class="{{ .Site.Params.background_color_class | default "bg-black" }} bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex items-center justify-center pa4 white-70">
+    <svg class="w1" data-icon="info" viewBox="0 0 32 32" style="fill:currentcolor">
+    <title>info icon</title>
+    <path d="M16 0 A16 16 0 0 1 16 32 A16 16 0 0 1 16 0 M19 15 L13 15 L13 26 L19 26 z M16 6 A3 3 0 0 0 16 12 A3 3 0 0 0 16 6"></path>
+    </svg>
+    <span class="f6 lh-copy ml3">{{ .Site.Params.srflw_note }}</span>
+  </div>
+
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="{{ .Site.Home.Permalink }}" >
     &copy; {{ with .Site.Copyright | default .Site.Title }} {{ . | safeHTML }} {{ now.Format "2006"}} {{ end }}
@@ -15,5 +23,6 @@
 
 
     <div>{{ partial "social-follow.html" . }}</div>
+
   </div>
 </footer>
