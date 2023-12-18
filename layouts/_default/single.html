@@ -1,0 +1,62 @@
+{{ define "header" }}{{ partial "page-header.html" . }}{{ end }}
+{{ define "main" }}
+{{ $featured_image := partial "func/GetFeaturedImage.html" . }}
+  <div class="flex-l mt2 mw8 center">
+    <article class="center cf pv5 ph3 ph4-ns mw7">
+      <header>
+        <h1 class="f1">
+          {{ .Title }}
+        </h1>
+      </header>
+      <div class="nested-copy-line-height lh-copy f4 nested-links {{ $.Param "text_color" | default "mid-gray" }}">
+
+{{ if $featured_image }}
+    <img src="{{$featured_image}}" alt="{{ .Title }}" class="fl w-third pr2 pb1" />
+{{ end }}
+
+
+
+        {{ .Content }}
+
+{{- $permalink := .Permalink }}
+{{- $siteSeries := .Site.Taxonomies.series }}
+{{- if $siteSeries }}
+<hr>
+<h4>{{ i18n "series" }}:</h4>
+<ul>
+{{ with .Params.series }}{{- range $name := . }}
+  {{- $series := index $siteSeries ($name | urlize) }}
+  {{- range $page := first 6 $series.Pages }}
+  <li>
+    {{- if ne $page.Permalink $permalink }}<a href="{{ $page.Permalink }}" >{{ $page.Title }}</a>
+    {{else}}{{ $page.Title }}{{ end }}
+      
+  </li>
+  {{- end }}
+</ul>
+{{ end }}{{ end }}
+{{- end }}
+
+
+{{ if .IsTranslated }}
+<hr>
+<h4>{{ i18n "translations" }}:</h4>
+<ul>
+  {{ range .Translations }}
+  <li>
+    <a href="{{ .RelPermalink }}">{{ .Lang }}: {{ .LinkTitle }}</a>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}
+
+
+
+
+      </div>
+    </article>
+  </div>
+
+
+
+{{ end }}

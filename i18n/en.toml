@@ -50,3 +50,6 @@ other = "{{ .Name }} page"
 
 [translations]
 other = "Translations"
+
+[series]
+other = "The series includes"

@@ -1,0 +1,23 @@
+---
+type: single
+audio: []
+date: '2023-12-16'
+description: 'Hogyan kezdd el a fogyásod'
+images: ['/images/feature-lets-begin.webp', '/images/cover-lets-begin.webp']
+series: ["tortenetem"]
+tags: ['fogyás', 'egészséges életmód', 'séta', 'futás', 'biciklizés' , 'alacsony-szénhidrát', 'időszakos böjtölés']
+title: 'Vágj bele!'
+videos: []
+featured_image: '/images/feature-lets-begin.webp'
+cover_image: '/images/cover-lets-begin.webp'
+translationKey: lets-begin
+language: hu
+---
+
+Végy egy pulzusmérős órát, egy konditerem bérletet vagy futópadot vagy szobabiciklit, és kezdj el a zsírégető tartományodban lassan mozogni. Először arra koncentrálj, hogy a tested bírja a terhelést, érd el, hogy egy órát tudj lassan mozogni: sétálni vagy tekerni. Ha izomlázad van, akkor túltoltad. Vegyél vissza. Légy türelmes magaddal, ahogyan a kilók sem egy éjszaka alatt jöttek fel, nem is egy éjszaka alatt fognak lemenni. Iktass be gerinctornát a napirendedbe. Nem is gondolnád, mennyire fontos. Itt megnézheted, hogy én mit mozgok: ez a [Garmin publikus profilom](https://connect.garmin.com/modern/profile/UnbrownGorger).
+
+Végy egy testsúly és egy konyhai mérleget. Mérd a súlyod minden nap és jegyzed fel a megevett kalóriákat. Ne csalj vele, mert csak magad csapod be. Próbáld meg elhagyni a reggelit vagy a vagcsorát. Kísérletezz a szénhidrátok elhagyásával, de figyelj oda, hogy eleinte csak vizet veszítesz, és amint visszaállsz a szénhidrátra, visszanyered az elveszett súlyod egy részét, mert majd újból megköti benned a vizet. Itt megnézheted, hogy mit eszem, ez a [MyFitnessPal publikus profilom](https://www.myfitnesspal.com/profile/EnvaultRoll).
+
+Figyelj oda az alvásra. Teremtsd meg a lehetőségét a 8 óra alvásnak. Ha reggel hatkor kell kelned, akkor este tízkor legkésőbb kerülj ágyba, és bármekkora is a kísértés, ne nyisd ki a szemed az ébresztőig. Ne nézegesd az órát, csak feküdj csukott szemmel. Untasd az agyad álomba. Nekem bevált.
+
+

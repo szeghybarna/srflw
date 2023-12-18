@@ -7,6 +7,12 @@ defaultContentLanguageInSubdir = "true"
 enableRobotsTXT = true
 SectionPagesMenu = "main"
 Paginate = 3
+pluralizelisttitles = false
+
+[taxonomies]
+  category = 'categories'
+  series = 'series'
+  tag = 'tags'
 
 
 [languages]
@@ -39,9 +45,10 @@ Paginate = 3
 #  text_color = ""
   author = "Barna Szeghy"
   favicon = "favicon.ico"
-  site_logo = "/images/simple-rules-for-losing-weight-logo.svg"
+  site_logo = "/simple-rules-for-losing-weight-logo.svg"
   recent_posts_number = 3
   body_classes = "helvetica bg-near-white"
+  env = "production"
 
 
 

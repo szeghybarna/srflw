@@ -39,3 +39,6 @@ other = "{{ .Name }} oldal"
 
 [translations]
 other = "Fordítások"
+
+[series]
+other = "A sorozat részei"
