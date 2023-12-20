@@ -1,0 +1,152 @@
+<script type="text/javascript">
+    function bmiCalculator() {
+        var age=parseInt(document.getElementById("bmiFormAge").value);
+        var height=parseFloat(document.getElementById("bmiFormHeight").value);
+        var weight=parseFloat(document.getElementById("bmiFormWeight").value);
+        var optimalBmi=parseFloat(document.getElementById("bmiFormOptimalBmi").value);
+        var calorieDeficit=parseInt(document.getElementById("bmiFormCalorieDeficit").value);
+        var weeklyActiveCalories=parseInt(document.getElementById("bmiFormWeeklyActiveCalories").value);
+        var weeklyWeightLoss=parseFloat(document.getElementById("bmiFormWeeklyWeightLoss").value);
+        var actualBmi=(weight/((height/100)*(height/100))).toFixed(2);
+        var targetWeight=(optimalBmi*(height/100)*(height/100)).toFixed(2);
+        var rmrFemale=parseInt(((7.38*targetWeight)+(607*(height/100))-(2.31*age)+43).toFixed(0));
+        var rmrMale=parseInt(((9.65*targetWeight)+(573*(height/100))-(5.08*age)+260).toFixed(0));
+        var dailyActiveCalories=parseInt((weeklyActiveCalories/7).toFixed(0));
+        var dailyCaloriesWeightLoss=parseInt((-1*(weeklyWeightLoss*7700)/7).toFixed(0));
+        var dailyCaloriesDeductionFemale=parseInt((-1*rmrFemale*calorieDeficit/100).toFixed(0));
+        var dailyCaloriesDeductionMale=parseInt((-1*rmrMale*calorieDeficit/100).toFixed(0));
+        var dailyTotalCaloriesFemale=rmrFemale+dailyActiveCalories+dailyCaloriesWeightLoss+dailyCaloriesDeductionFemale;
+        var dailyTotalCaloriesMale=rmrMale+dailyActiveCalories+dailyCaloriesWeightLoss+dailyCaloriesDeductionMale;
+        document.getElementById("bmiFormActualBmi").value=actualBmi;
+        document.getElementById("bmiFormTargetWeight").value=targetWeight;
+        document.getElementById("bmiFormDailyRmrFemale").value=rmrFemale;
+        document.getElementById("bmiFormDailyRmrMale").value=rmrMale;
+        document.getElementById("bmiFormDailyActiveCaloriesFemale").value=dailyActiveCalories;
+        document.getElementById("bmiFormDailyActiveCaloriesMale").value=dailyActiveCalories;
+        document.getElementById("bmiFormDailyCaloriesWeightLossFemale").value=dailyCaloriesWeightLoss;
+        document.getElementById("bmiFormDailyCaloriesWeightLossMale").value=dailyCaloriesWeightLoss;
+        document.getElementById("bmiFormDailyCaloriesDeductionFemale").value=dailyCaloriesDeductionFemale;
+        document.getElementById("bmiFormDailyCaloriesDeductionMale").value=dailyCaloriesDeductionMale;
+        document.getElementById("bmiFormDailyTotalCaloriesFemale").value=dailyTotalCaloriesFemale;
+        document.getElementById("bmiFormDailyTotalCaloriesMale").value=dailyTotalCaloriesMale;
+    }
+    /*
+    RMR females: (7.38 * weight in kg) + (607 * height in m) - (2.31 * age in years) + 43
+    RMR males: (9.65 * weight in kg) + (573 * height in m) - (5.08 * age in years) + 260;
+    */
+    window.addEventListener('load', function () {
+        bmiCalculator();
+    });
+</script>
+
+<strong>{{ i18n "bmiCalculator" }}</strong>
+
+<form class="pa4 black-80 f6" accept-charset="UTF-8" action="#" method="POST">
+  <div class="measure cf">
+    <label for="bmiFormAge" class="f6 b db mb2 fl w-70">{{ i18n "age" }}</label>
+    <small id="bmiFormAgeHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "ageHelp" }}</small>
+    <input id="bmiFormAge" class="input-reset ba b--black-20 pa2 mb2 db fl w-30" type="number" aria-describedby="bmiFormAgeHelp" min="1" max="120" step="1" value="48" autocomplete =“off” onchange="bmiCalculator();">
+  </div>
+  <div class="measure cf">
+    <label for="bmiFormHeight" class="f6 b db mb2 fl w-70">{{ i18n "height" }}</label>
+    <small id="bmiFormHeightHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "heightHelp" }}</small>
+    <input id="bmiFormHeight" class="input-reset ba b--black-20 pa2 mb2 db fl w-30" type="number" aria-describedby="bmiFormHeightHelp" min="90" max="250" step=".1" value="170" autocomplete =“off” onchange="bmiCalculator();">
+  </div>
+  <div class="measure cf">
+    <label for="bmiFormWeight" class="f6 b db mb2 fl w-70">{{ i18n "weight" }}</label>
+    <small id="bmiFormWeightHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "weightHelp" }}</small>
+    <input id="bmiFormWeight" class="input-reset ba b--black-20 pa2 mb2 db fl w-30" type="number" aria-describedby="bmiFormWeightHelp" min="30.0" max="500.0" step=".1" value="67" autocomplete =“off” onchange="bmiCalculator();">
+  </div>
+  <div class="measure cf">
+    <label for="bmiFormOptimalBmi" class="f6 b db mb2 fl w-70">{{ i18n "optimalBmi" }}</label>
+    <small id="bmiFormOptimalBmiHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "optimalBmiHelp" }}</small>
+    <input id="bmiFormOptimalBmi" class="input-reset ba b--black-20 pa2 mb2 db fl w-30" type="number" aria-describedby="bmiFormOptimalBmi" min="10.0" max="100.0" step=".1" value="21" autocomplete =“off” onchange="bmiCalculator();">
+  </div>
+  <div class="measure cf">
+    <label for="bmiFormCalorieDeficit" class="f6 b db mb2 fl w-70">{{ i18n "calorieDeficit" }}</label>
+    <small id="bmiFormCalorieDeficitHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "calorieDeficitHelp" }}</small>
+    <input id="bmiFormCalorieDeficit" class="input-reset ba b--black-20 pa2 mb2 db fl w-30" type="number" aria-describedby="bmiFormCalorieDeficit" min="0" max="100" step="1" value="0" autocomplete =“off” onchange="bmiCalculator();">
+  </div>
+  <div class="measure cf">
+    <label for="bmiFormWeeklyActiveCalories" class="f6 b db mb2 fl w-70">{{ i18n "weeklyActiveCalories" }}</label>
+    <small id="bmiFormWeeklyActiveCaloriesHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "weeklyActiveCaloriesHelp" }}</small>
+    <input id="bmiFormWeeklyActiveCalories" class="input-reset ba b--black-20 pa2 mb2 db fl w-30" type="number" aria-describedby="bmiFormWeeklyActiveCalories" min="0" max="100000" step="1" value="3800" autocomplete =“off” onchange="bmiCalculator();">
+  </div>
+  <div class="measure cf">
+    <label for="bmiFormWeeklyWeightLoss" class="f6 b db mb2 fl w-70">{{ i18n "weeklyWeightLoss" }}</label>
+    <small id="bmiFormWeeklyWeightLossHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "weeklyWeightLossHelp" }}</small>
+    <input id="bmiFormWeeklyWeightLoss" class="input-reset ba b--black-20 pa2 mb2 db fl w-30" type="number" aria-describedby="bmiFormWeeklyWeightLoss" min="0" max="1" step=".1" value="0.5" autocomplete =“off” onchange="bmiCalculator();">
+  </div>
+
+  <div class="measure">
+    <a class="link dim br1 ph3 pv2 mb2 dib white bg-gold w-100" onclick="bmiCalculator();">{{ i18n "calculate" }}</a>
+  </div>
+  
+  <div class="measure cf">
+    <label for="bmiFormActualBmi" class="f6 b db mb2 fl w-60">{{ i18n "actualBmi" }}</label>
+    <small id="bmiFormActualBmiHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "actualBmiHelp" }}</small>
+    <input id="bmiFormActualBmi" class="input-reset ba db br1 ph3 pv2 mb2 white bg-navy fl w-30" type="number" aria-describedby="bmiFormActualBmiHelp" readonly="readonly" autocomplete =“off”>
+  </div>
+  <div class="measure cf">
+    <label for="bmiFormTargetWeight" class="f6 b db mb2 fl w-60">{{ i18n "targetWeight" }}</label>
+    <small id="bmiFormTargetWeightHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "targetWeightHelp" }}</small>
+    <input id="bmiFormTargetWeight" class="input-reset ba db br1 ph3 pv2 mb2 white bg-navy fl w-30" type="number" aria-describedby="bmiFormTargetWeightHelp" readonly="readonly" autocomplete =“off”>
+  </div>
+      
+  <div class="measure cf">
+    <strong class="fl w-100">{{ i18n "dailyRmrFemale" }}</strong>
+    <!--label for="bmiFormDailyRmrFemale" class="f6 b db mb2">{{ i18n "dailyRmrFemale" }}</label-->
+    <small id="bmiFormDailyRmrFemaleHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "dailyRmrFemaleHelp" }}</small>
+    <input id="bmiFormDailyRmrFemale" class="input-reset ba db br1 ph3 pv2 mb2 white bg-hot-pink fl w-30" type="number" aria-describedby="bmiFormDailyRmrFemaleHelp" readonly="readonly" autocomplete =“off”>
+  </div>
+  
+  <div class="measure cf">
+    <small id="bmiFormDailyActiveCaloriesFemaleHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "dailyActiveCaloriesFemaleHelp" }}</small>
+    <input id="bmiFormDailyActiveCaloriesFemale" class="input-reset ba db br1 ph3 pv2 mb2 white bg-hot-pink fl w-30" type="number" aria-describedby="bmiFormDailyActiveCaloriesFemaleHelp" readonly="readonly" autocomplete =“off”>
+  </div>
+  
+  <div class="measure cf">
+    <small id="bmiFormDailyCaloriesWeightLossFemaleHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "dailyCaloriesWeightLossFemaleHelp" }}</small>
+    <input id="bmiFormDailyCaloriesWeightLossFemale" class="input-reset ba db br1 ph3 pv2 mb2 white bg-hot-pink fl w-30" type="number" aria-describedby="bmiFormDailyCaloriesWeightLossFemaleHelp" readonly="readonly" autocomplete =“off”>
+  </div>
+  
+  <div class="measure cf">
+    <small id="bmiFormDailyCaloriesDeductionFemaleHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "dailyCaloriesDeductionFemaleHelp" }}</small>
+    <input id="bmiFormDailyCaloriesDeductionFemale" class="input-reset ba db br1 ph3 pv2 mb2 white bg-hot-pink fl w-30" type="number" aria-describedby="bmiFormDailyCaloriesDeductionFemaleHelp" readonly="readonly" autocomplete =“off”>
+  </div>
+  
+  <div class="measure cf">
+    <small id="bmiFormDailyTotalCaloriesFemaleHelp" class="f6 black-60 db mb2 ph2 b fl w-60">{{ i18n "dailyTotalCaloriesFemaleHelp" }}</small>
+    <input id="bmiFormDailyTotalCaloriesFemale" class="input-reset ba db br1 ph3 pv2 mb2 white bg-dark-pink b fl w-30" type="number" aria-describedby="bmiFormDailyTotalCaloriesFemale" readonly="readonly" autocomplete =“off”>
+  </div>
+
+
+
+  <div class="measure cf">
+    <strong class="fl w-100">{{ i18n "dailyRmrMale" }}</strong>
+    <!--label for="bmiFormDailyRmrMale" class="f6 b db mb2">{{ i18n "dailyRmrMale" }}</label-->
+    <small id="bmiFormDailyRmrMaleHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "dailyRmrMaleHelp" }}</small>
+    <input id="bmiFormDailyRmrMale" class="input-reset ba db br1 ph3 pv2 mb2 white bg-blue fl w-30" type="number" aria-describedby="bmiFormDailyRmrMaleHelp" readonly="readonly" autocomplete =“off”>
+  </div>
+  <div class="measure cf">
+    <small id="bmiFormDailyActiveCaloriesMaleHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "dailyActiveCaloriesMaleHelp" }}</small>
+    <input id="bmiFormDailyActiveCaloriesMale" class="input-reset ba db br1 ph3 pv2 mb2 white bg-blue fl w-30" type="number" aria-describedby="bmiFormDailyActiveCaloriesMaleHelp" readonly="readonly" autocomplete =“off”>
+  </div>
+  <div class="measure cf">
+    <small id="bmiFormDailyCaloriesWeightLossMaleHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "dailyCaloriesWeightLossMaleHelp" }}</small>
+    <input id="bmiFormDailyCaloriesWeightLossMale" class="input-reset ba db br1 ph3 pv2 mb2 white bg-blue fl w-30" type="number" aria-describedby="bmiFormDailyCaloriesWeightLossMaleHelp" readonly="readonly" autocomplete =“off”>
+  </div>
+  <div class="measure cf">
+    <small id="bmiFormDailyCaloriesDeductionMaleHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "dailyCaloriesDeductionMaleHelp" }}</small>
+    <input id="bmiFormDailyCaloriesDeductionMale" class="input-reset ba db br1 ph3 pv2 mb2 white bg-blue fl w-30" type="number" aria-describedby="bmiFormDailyCaloriesDeductionMaleHelp" readonly="readonly" autocomplete =“off”>
+  </div>
+  <div class="measure cf">
+    <small id="bmiFormDailyTotalCaloriesMaleHelp" class="f6 black-60 db mb2 ph2 b fl w-60">{{ i18n "dailyTotalCaloriesMaleHelp" }}</small>
+    <input id="bmiFormDailyTotalCaloriesMale" class="input-reset ba db br1 ph3 pv2 mb2 white bg-dark-blue b fl w-30" type="number" aria-describedby="bmiFormDailyTotalCaloriesMale" readonly="readonly" autocomplete =“off”>
+  </div>
+</form>
+
+
+
+
+

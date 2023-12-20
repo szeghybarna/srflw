@@ -1,6 +1,6 @@
 # Simple Rules For Losing Weight
 
-[Hugo Framework](https://gohugo.io/) based repository of [https://simple-rules-for-losing-weight.com/](https://simple-rules-for-losing-weight.com/). Hosted on [AWS Amplify](https://aws.amazon.com/amplify/).
+[Hugo Framework](https://gohugo.io/) based repository of [https://simple-rules-for-losing-weight.com/](https://simple-rules-for-losing-weight.com/). Hosted on [AWS Amplify](https://aws.amazon.com/amplify/). Daily deployments are made using [Lambda](https://aws.amazon.com/pm/lambda/) and [Amazon EventBridge](https://aws.amazon.com/eventbridge/).
 
 Build settings on AWS Amplify:
 
@@ -33,4 +33,23 @@ frontend:
   cache:
     paths: []
 
+```
+
+Python AWS Lambda function:
+
+```python
+import json
+import urllib.request
+
+def lambda_handler(event, context):
+    r = urllib.request.Request(
+        'https://webhooks.amplify.eu-central-1.amazonaws.com/prod/webhooks?id=8a74af49-923d-4fa5-8159-f9cfba32c60c&token=6LeBZwuFTi0HbFhcs3yhfXLKJqtDw6UrbdgrIXzFes',
+        data=json.dumps({}).encode('utf8'),
+        headers={
+            'Content-Type': 'application/json'
+        },
+        method='POST'
+    )
+    urllib.request.urlopen(r)
+    return
 ```

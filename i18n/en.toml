@@ -53,3 +53,102 @@ other = "Translations"
 
 [series]
 other = "The series includes"
+
+[bmiCalculator]
+other = "BMI and Daily Calorie Consumption"
+
+[calculate]
+other = "Calculate!"
+
+[age]
+other = "Your Age"
+
+[ageHelp]
+other = "Your age in integer form."
+
+[height]
+other = "Your Height"
+
+[heightHelp]
+other = "Your height in centimeters."
+
+[weight]
+other = "Your Weight"
+
+[weightHelp]
+other = "Your weight in kilograms."
+
+[actualBmi]
+other = "Your Real BMI"
+
+[actualBmiHelp]
+other = "This is your real BMI."
+
+[optimalBmi]
+other = "Your Optimal BMI"
+
+[optimalBmiHelp]
+other = "This is your optimal BMI, this is your target."
+
+[targetWeight]
+other = "Your Target Weight"
+
+[targetWeightHelp]
+other = "This is your target weight in kilogram."
+
+[dailyRmrFemale]
+other = "Calories for Females"
+
+[dailyRmrFemaleHelp]
+other = "This is your daily RMR in kcal if you are a female."
+
+[dailyRmrMale]
+other = "Calories for Males"
+
+[dailyRmrMaleHelp]
+other = "This is your daily RMR in kcal if you are a male."
+
+[weeklyActiveCalories]
+other = "Weekly active calories"
+
+[weeklyActiveCaloriesHelp]
+other = "How many active calories your app counts in a week."
+
+[weeklyWeightLoss]
+other = "Weekly weight loss"
+
+[weeklyWeightLossHelp]
+other = "How many kilograms you want to lose in a week."
+
+[calorieDeficit]
+other = "Calorie deficit"
+
+[calorieDeficitHelp]
+other = "What percentage of your calories are you giving up?"
+
+[dailyActiveCaloriesFemaleHelp]
+other = "Extra calories from activity in kcal for females."
+
+[dailyCaloriesWeightLossFemaleHelp]
+other = "Calories deducted for weekly weight loss goal in kcal for females."
+
+[dailyCaloriesDeductionFemaleHelp]
+other = "Calorie deduction for calorie deficit in kcal for females."
+
+[dailyTotalCaloriesFemaleHelp]
+other = "Daily total calories in kcal for females."
+
+[dailyActiveCaloriesMaleHelp]
+other = "Extra calories from activity in kcal for males."
+
+[dailyCaloriesWeightLossMaleHelp]
+other = "Calories deducted for weekly weight loss goal in kcal for males."
+
+[dailyCaloriesDeductionMaleHelp]
+other = "Calorie deduction for calorie deficit in kcal for males."
+
+[dailyTotalCaloriesMaleHelp]
+other = "Daily total calories in kcal for males."
+
+
+

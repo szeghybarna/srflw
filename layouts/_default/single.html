@@ -8,7 +8,7 @@
           {{ .Title }}
         </h1>
       </header>
-      <div class="nested-copy-line-height lh-copy f4 nested-links {{ $.Param "text_color" | default "mid-gray" }}">
+      <div class="nested-copy-line-height lh-copy f4 {{ $.Param "text_color" | default "mid-gray" }}">
 
 {{ if $featured_image }}
     <img src="{{$featured_image}}" alt="{{ .Title }}" class="fl w-third pr2 pb1" />
@@ -21,11 +21,11 @@
 {{- $permalink := .Permalink }}
 {{- $siteSeries := .Site.Taxonomies.series }}
 {{- if $siteSeries }}
-<hr>
-<h4>{{ i18n "series" }}:</h4>
-<ul>
 {{ with .Params.series }}{{- range $name := . }}
   {{- $series := index $siteSeries ($name | urlize) }}
+<hr>
+<h4>{{ i18n "series" }}:</h4>
+<ul class="nested-links">
   {{- range $page := first 6 $series.Pages }}
   <li>
     {{- if ne $page.Permalink $permalink }}<a href="{{ $page.Permalink }}" >{{ $page.Title }}</a>
@@ -41,7 +41,7 @@
 {{ if .IsTranslated }}
 <hr>
 <h4>{{ i18n "translations" }}:</h4>
-<ul>
+<ul class="nested-links">
   {{ range .Translations }}
   <li>
     <a href="{{ .RelPermalink }}">{{ .Lang }}: {{ .LinkTitle }}</a>

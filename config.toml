@@ -6,7 +6,7 @@ DefaultContentLanguage = "en"
 defaultContentLanguageInSubdir = "true"
 enableRobotsTXT = true
 SectionPagesMenu = "main"
-Paginate = 3
+Paginate = 9
 pluralizelisttitles = false
 
 [taxonomies]
@@ -46,7 +46,7 @@ pluralizelisttitles = false
   author = "Barna Szeghy"
   favicon = "favicon.ico"
   site_logo = "/simple-rules-for-losing-weight-logo.svg"
-  recent_posts_number = 3
+  recent_posts_number = 6
   body_classes = "helvetica bg-near-white"
   env = "production"
 

@@ -5,11 +5,10 @@ date: '2023-12-10'
 description: 'Szeghy Barna vagyok. Ez a fogyásom és a súlyom megtartásának a története.'
 images: ['/cover-simple-rules-for-losing-weight.webp']
 series: []
-tags: ['fogyás', 'egészséges életstílus', 'fitness', 'időszakos böjtölés']
+tags: []
 title: 'Egyszerű szabályok a fogyáshoz'
 videos: []
 cover_image: '/cover-simple-rules-for-losing-weight.webp'
-featured_image: '/cover-simple-rules-for-losing-weight.webp'
 translationKey: home
 language: hu  
 ---

@@ -42,3 +42,106 @@ other = "Fordítások"
 
 [series]
 other = "A sorozat részei"
+
+[bmiCalculator]
+other = "BMI és napi kalória fogyasztás"
+
+[calculate]
+other = "Számolj!"
+
+[age]
+other = "Életkorod"
+
+[ageHelp]
+other = "Életkorod egész számmal megadva."
+
+[height]
+other = "Magasságod"
+
+[heightHelp]
+other = "Magasságod centiméterben megadva."
+
+[weight]
+other = "Súlyod"
+
+[weightHelp]
+other = "Súlyod kilogrammban megadva."
+
+[actualBmi]
+other = "Valós BMI-d"
+
+[actualBmiHelp]
+other = "A valós BMI-d."
+
+[optimalBmi]
+other = "Optimális BMI-d"
+
+[optimalBmiHelp]
+other = "Az optimális BMI-d, ez lenne a cél."
+
+[targetWeight]
+other = "Cél súlyod"
+
+[targetWeightHelp]
+other = "Ez lenne az a súly kilogrammban, amit el kellene érned."
+
+[dailyRmrFemale]
+other = "Kalória nőknek"
+
+[dailyRmrFemaleHelp]
+other = "Ez a napi a napi RMR-ed kcal-ban, ha nő vagy."
+
+[dailyRmrMale]
+other = "Kalória fériaknak"
+
+[dailyRmrMaleHelp]
+other = "Ez a napi a napi RMR-ed kcal-ban, ha férfi vagy."
+
+[weeklyActiveCalories]
+other = "Heti aktív kalória"
+
+[weeklyActiveCaloriesHelp]
+other = "Egy hét alatt mennyi aktív kalóriát számol az alkalmazásod."
+
+[weeklyWeightLoss]
+other = "Heti fogyás"
+
+[weeklyWeightLossHelp]
+other = "Egy hét alatt hány kilót szeretnél fogyni kilogrammban."
+
+[calorieDeficit]
+other = "Kalória deficit"
+
+[calorieDeficitHelp]
+other = "A kalóriáid hány százalékáról mondasz le?"
+
+[dailyActiveCaloriesFemaleHelp]
+other = "Plusz kalória az aktivitás miatt kcalban nőknek."
+
+[dailyCaloriesWeightLossFemaleHelp]
+other = "Kalória levonás a heti fogyási cél miatt kcalban nőknek."
+
+[dailyCaloriesDeductionFemaleHelp]
+other = "Kalória levonás a kalória deficit miatt kcalban nőknek."
+
+[dailyTotalCaloriesFemaleHelp]
+other = "Napi összes kalória kcal-ban nőknek."
+
+[dailyActiveCaloriesMaleHelp]
+other = "Plusz kalória az aktivitás miatt kcalban férfiaknak."
+
+[dailyCaloriesWeightLossMaleHelp]
+other = "Kalória levonás a heti fogyási cél miatt kcalban férfiaknak."
+
+[dailyCaloriesDeductionMaleHelp]
+other = "Kalória levonás a kalória deficit miatt kcalban férfiaknak."
+
+[dailyTotalCaloriesMaleHelp]
+other = "Napi összes kalória kcal-ban férfiaknak."
+
+
+
+
+
+
+

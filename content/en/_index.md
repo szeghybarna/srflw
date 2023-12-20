@@ -5,11 +5,10 @@ date: '2023-12-10'
 description: 'I am Barna Szeghy, and this is the story of my weight loss and weight maintenance.'
 images: ['/cover-simple-rules-for-losing-weight.webp']
 series: []
-tags: ['weight loss', 'healthy lifestyle', 'fitness', 'intermittent fasting']
+tags: []
 title: 'Simple Rules For Losing Weight'
 videos: []
 cover_image: '/cover-simple-rules-for-losing-weight.webp'
-featured_image: '/cover-simple-rules-for-losing-weight.webp'
 translationKey: home
 language: en
 ---
