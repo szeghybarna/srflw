@@ -14,19 +14,25 @@ translationKey: calorie-calculation
 language: en
 mainsection: blog
 ---
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+> | BMI        | Nutritional status |
+> | ---------- | ------------------ |
+> | Below 18.5 | Underweight        |
+> | 18.5–24.9  | Normal weight      |
+> | 25.0–29.9  | Pre-obesity        |
+> | 30.0–34.9  | Obesity class I    |
+> | 35.0–39.9  | Obesity class II   |
+> | Above 40   | Obesity class III  |
+
+>
+>RMR females:
+>   
+>   (7.38 * weight in kg) + (607 * height in m) - (2.31 * age in years) + 43
+> 
+>RMR males:
+>
+>   (9.65 * weight in kg) + (573 * height in m) - (5.08 * age in years) + 260;
+>   
 
 {{< bmi_calculator >}}
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 

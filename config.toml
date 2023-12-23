@@ -9,6 +9,7 @@ SectionPagesMenu = "main"
 Paginate = 9
 pluralizelisttitles = false
 
+
 [taxonomies]
   category = 'categories'
   series = 'series'
@@ -42,6 +43,16 @@ pluralizelisttitles = false
   filename = "sitemap.xml"
 
 [params]
+  myOldAge = 44
+  myNewAge = 48
+  myHeight = 170
+  myOldWeight = 118
+  myNewWeight = 67
+  myOldOptimalBmi = 23
+  myNewOptimalBmi = 21
+  myOldCalorieDeficit = 0
+  myOldActiveCalories = 2000
+  myOldWeeklyWeightLoss = 0.5
 #  text_color = ""
   author = "Barna Szeghy"
   favicon = "favicon.ico"
