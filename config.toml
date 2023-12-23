@@ -44,12 +44,12 @@ pluralizelisttitles = false
 
 [params]
   myOldAge = 44
-  myNewAge = 48
+  myActualAge = 48
   myHeight = 170
   myOldWeight = 118
-  myNewWeight = 67
+  myActualWeight = 67
   myOldOptimalBmi = 23
-  myNewOptimalBmi = 21
+  myActualOptimalBmi = 21
   myOldCalorieDeficit = 0
   myOldActiveCalories = 2000
   myOldWeeklyWeightLoss = 0.5
