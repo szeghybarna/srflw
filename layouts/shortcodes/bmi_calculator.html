@@ -1,12 +1,46 @@
 <script type="text/javascript">
     function bmiInit() {
-        document.getElementById("bmiFormAge").value= {{ .Site.Params.myOldAge}};
-        document.getElementById("bmiFormHeight").value= {{ .Site.Params.myHeight}};
-        document.getElementById("bmiFormWeight").value= {{ .Site.Params.myOldWeight}};
-        document.getElementById("bmiFormOptimalBmi").value= {{ .Site.Params.myOldOptimalBmi}};
-        document.getElementById("bmiFormCalorieDeficit").value= {{ .Site.Params.myOldCalorieDeficit}};
-        document.getElementById("bmiFormWeeklyActiveCalories").value= {{ .Site.Params.myOldActiveCalories}};
-        document.getElementById("bmiFormWeeklyWeightLoss").value= {{ .Site.Params.myOldWeeklyWeightLoss}};
+        {{ if (.Get 0) }}
+            {{ if (eq (.Get 0) "year2019") }}
+                {{ range .Site.Params.year2019 }}
+                document.getElementById("bmiFormAge").value= {{ .myAge }};
+                document.getElementById("bmiFormHeight").value= {{ .myHeight}};
+                document.getElementById("bmiFormWeight").value= {{ .myWeight}};
+                document.getElementById("bmiFormOptimalBmi").value= {{ .myOptimalBmi}};
+                document.getElementById("bmiFormCalorieDeficit").value= {{ .myCalorieDeficit}};
+                document.getElementById("bmiFormWeeklyActiveCalories").value= {{ .myActiveCalories}};
+                document.getElementById("bmiFormWeeklyWeightLoss").value= {{ .myWeeklyWeightLoss}};
+                {{ end }}    
+            {{ else }}
+                {{ if (eq (.Get 0) "year2024") }}
+                    {{ range .Site.Params.year2024 }}
+                    document.getElementById("bmiFormAge").value= {{ .myAge }};
+                    document.getElementById("bmiFormHeight").value= {{ .myHeight}};
+                    document.getElementById("bmiFormWeight").value= {{ .myWeight}};
+                    document.getElementById("bmiFormOptimalBmi").value= {{ .myOptimalBmi}};
+                    document.getElementById("bmiFormCalorieDeficit").value= {{ .myCalorieDeficit}};
+                    document.getElementById("bmiFormWeeklyActiveCalories").value= {{ .myActiveCalories}};
+                    document.getElementById("bmiFormWeeklyWeightLoss").value= {{ .myWeeklyWeightLoss}};
+                    {{ end }}    
+                {{ else }}
+                    document.getElementById("bmiFormHeight").value= 0;
+                    document.getElementById("bmiFormAge").value= 0;
+                    document.getElementById("bmiFormWeight").value= 0;
+                    document.getElementById("bmiFormOptimalBmi").value= 0;
+                    document.getElementById("bmiFormCalorieDeficit").value= 0;
+                    document.getElementById("bmiFormWeeklyActiveCalories").value= 0;
+                    document.getElementById("bmiFormWeeklyWeightLoss").value= 0;
+                {{ end }}
+            {{ end }}
+        {{ else }}
+            document.getElementById("bmiFormHeight").value= 0;
+            document.getElementById("bmiFormAge").value= 0;
+            document.getElementById("bmiFormWeight").value= 0;
+            document.getElementById("bmiFormOptimalBmi").value= 0;
+            document.getElementById("bmiFormCalorieDeficit").value= 0;
+            document.getElementById("bmiFormWeeklyActiveCalories").value= 0;
+            document.getElementById("bmiFormWeeklyWeightLoss").value= 0;
+        {{ end }}
     }
     function bmiCalculator() {
         var age=parseInt(document.getElementById("bmiFormAge").value);

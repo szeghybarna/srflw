@@ -1,7 +1,7 @@
 ---
 type: single
 audio: []
-date: '2023-12-18'
+date: '2023-12-17'
 description: 'Hogyan tartom meg a súlyom'
 images: ['/images/feature-maintaining-my-weight.webp', '/images/cover-maintaining-my-weight.webp']
 series: ["tortenetem"]

@@ -3,7 +3,7 @@ baseURL = 'https://simple-rules-for-losing-weight.com/'
 theme = ["github.com/theNewDynamic/gohugo-theme-ananke"]
 
 DefaultContentLanguage = "en"
-defaultContentLanguageInSubdir = "true"
+#defaultContentLanguageInSubdir = "true"
 enableRobotsTXT = true
 SectionPagesMenu = "main"
 Paginate = 9
@@ -38,21 +38,35 @@ pluralizelisttitles = false
       read_more_copy = 'Olvass tovább'
 
 [sitemap]
-  changefreq = "monthly"
+  changefreq = "weekly"
   priority = 0.5
   filename = "sitemap.xml"
 
 [params]
-  myOldAge = 44
-  myActualAge = 48
-  myHeight = 170
-  myOldWeight = 118
-  myActualWeight = 67
-  myOldOptimalBmi = 23
-  myActualOptimalBmi = 21
-  myOldCalorieDeficit = 0
-  myOldActiveCalories = 2000
-  myOldWeeklyWeightLoss = 0.5
+    [[params.year2019]]
+      myAge = 44
+      myHeight = 170
+      myWeight = 118
+      myOptimalBmi = 23
+      myCalorieDeficit = 0
+      myActiveCalories = 2000
+      myWeeklyWeightLoss = 0.5
+    [[params.year2024]]
+      myAge = 48
+      myHeight = 170
+      myWeight = 67
+      myOptimalBmi = 21
+      myCalorieDeficit = 0
+      myActiveCalories = 4000
+      myWeeklyWeightLoss = 0.5
+    [[params.actual]]
+      myAge = 48
+      myHeight = 170
+      myWeight = 67
+      myOptimalBmi = 21
+      myCalorieDeficit = 0
+      myActiveCalories = 4000
+      myWeeklyWeightLoss = 0.5
 #  text_color = ""
   author = "Barna Szeghy"
   favicon = "favicon.ico"
