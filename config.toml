@@ -8,7 +8,8 @@ enableRobotsTXT = true
 SectionPagesMenu = "main"
 Paginate = 9
 pluralizelisttitles = false
-
+private = false
+production = true
 
 [taxonomies]
   category = 'categories'
@@ -43,6 +44,12 @@ pluralizelisttitles = false
   filename = "sitemap.xml"
 
 [params]
+  author = "Barna Szeghy"
+  favicon = "favicon.ico"
+  site_logo = "/simple-rules-for-losing-weight-logo.svg"
+  recent_posts_number = 6
+  body_classes = "helvetica bg-near-white"
+  env= "production"
     [[params.year2019]]
       myAge = 44
       myHeight = 170
@@ -68,12 +75,6 @@ pluralizelisttitles = false
       myActiveCalories = 4000
       myWeeklyWeightLoss = 0.5
 #  text_color = ""
-  author = "Barna Szeghy"
-  favicon = "favicon.ico"
-  site_logo = "/simple-rules-for-losing-weight-logo.svg"
-  recent_posts_number = 6
-  body_classes = "helvetica bg-near-white"
-  env = "production"
 
 
 

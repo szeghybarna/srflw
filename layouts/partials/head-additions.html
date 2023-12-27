@@ -6,6 +6,16 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 
+
+{{ if .IsTranslated }}
+    {{ range .AllTranslations }}
+        <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
+    {{ end}}
+{{ end }}
+
+<pre>
+{{ if eq (printf "%v" $.Site.BaseURL) "http://localhost:1313/" }}
+{{ else }}
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JLQRYSLEBT"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -14,10 +24,5 @@
 
   gtag('config', 'G-JLQRYSLEBT', { 'anonymize_ip': true });
 </script>
-
-{{ if .IsTranslated }}
-    {{ range .AllTranslations }}
-        <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
-    {{ end}}
 {{ end }}
-
+</pre>
