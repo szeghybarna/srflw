@@ -13,7 +13,6 @@
     {{ end}}
 {{ end }}
 
-<pre>
 {{ if eq (printf "%v" $.Site.BaseURL) "http://localhost:1313/" }}
 {{ else }}
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JLQRYSLEBT"></script>
@@ -25,4 +24,3 @@
   gtag('config', 'G-JLQRYSLEBT', { 'anonymize_ip': true });
 </script>
 {{ end }}
-</pre>
