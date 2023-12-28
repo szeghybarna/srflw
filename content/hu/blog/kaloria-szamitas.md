@@ -4,7 +4,7 @@ audio: []
 date: '2023-12-29'
 description: 'Mennyi kalóriát fogyassz naponta'
 images: ['/images/feature-calorie-calculation.webp', '/images/covercalorie-calculation.webp']
-series: []
+series: ['calculations']
 tags: ['kalória számítás']
 title: Kalória számítás
 videos: []
@@ -69,6 +69,6 @@ Az eredményt az egyenlet alapján külön számolom férfiakra és nőkre. Bele
 
 Ez a kalória mennyiség nincs kőbe vésve. Nagyon sok tényezőtől függ, hogy mennyi élelmet és hogyan dolgoz fel a gyomrod, vedd ezeket a számokat kísérletezési alapnak! Sok sikert!
 
-
+Az étkezési naplóm publikus, itt megnézheted: ez a [MyFitnessPal publikus profilom](https://www.myfitnesspal.com/profile/EnvaultRoll "MyFitnessPal publikus profilom").
 
 

@@ -4,7 +4,7 @@ audio: []
 date: '2023-12-29'
 description: 'How many calories have you consume per day'
 images: ['/images/feature-calorie-calculation.webp', '/images/cover-calorie-calculation.webp']
-series: []
+series: ['calculations']
 tags: ['calorie calculation']
 title: Calorie Calculation
 videos: []
@@ -68,3 +68,4 @@ The result is calculated separately for men and women based on the equation. I i
 
 This calorie amount is not set in stone. It depends on many factors, such as how much food and how your gut processes it, so take these numbers as a basis for experimentation! Good luck!
 
+My food diary is available online: you can check [MyFitnessPal public profile](https://www.myfitnesspal.com/profile/EnvaultRoll "MyFitnessPal public profile").
