@@ -1,7 +1,7 @@
 ---
 type: single
 audio: []
-date: '2024-01-01'
+date: '2023-12-29'
 description: 'Mennyi kalóriát fogyassz naponta'
 images: ['/images/feature-calorie-calculation.webp', '/images/covercalorie-calculation.webp']
 series: []
