@@ -1,0 +1,98 @@
+<script type="text/javascript">
+    function maf180ZoneInit() {
+        {{ if (.Get 0) }}
+            {{ if (eq (.Get 0) "year2019") }}
+                {{ range .Site.Params.year2019 }}
+                document.getElementById("maf180ZoneFormAge").value= {{ .myAge }};
+                document.getElementById("maf180ZoneFormOptions{{ .myMaf180Option }}").checked=true;
+                {{ end }}    
+            {{ else }}
+                {{ if (eq (.Get 0) "year2024") }}
+                    {{ range .Site.Params.year2024 }}
+                    document.getElementById("maf180ZoneFormAge").value= {{ .myAge }};
+                    document.getElementById("maf180ZoneFormOptions{{ .myMaf180Option }}").checked=true;
+                    {{ end }}    
+                {{ else }}
+                    document.getElementById("maf180ZoneFormHeight").value= 0;
+                    document.getElementById("maf180ZoneFormOptions{{ .myMaf180Option }}").checked=true;
+                {{ end }}
+            {{ end }}
+        {{ else }}
+            document.getElementById("maf180ZoneFormHeight").value= 0;
+            document.getElementById("maf180ZoneFormOptions{{ .myMaf180Option }}").checked=true;
+        {{ end }}
+    }
+    function maf180ZoneCalculator() {
+        var age=parseInt(document.getElementById("maf180ZoneFormAge").value);
+        var option=document.querySelector("input[type='radio'][name=maf180ZoneFormOptions]:checked").value;
+        var initMAF = 180;
+        if (option == 'A') {
+            initMAF = initMAF - 10;
+        } else {
+            if (option == 'B') {
+                initMAF = initMAF - 5;
+            } else {
+                if (option == 'D') {
+                    initMAF = initMAF + 5;
+                }
+            }
+        }
+        var zoneLow=parseInt(((initMAF - age)).toFixed(0));
+        var zoneMax=parseInt(((initMAF - age - 10)).toFixed(0));
+        document.getElementById("maf180ZoneFormZoneMin").value=zoneLow;
+        document.getElementById("maf180ZoneFormZoneMax").value=zoneMax;
+    }
+    window.addEventListener('load', function () {
+        maf180ZoneInit();
+        maf180ZoneCalculator();
+    });
+</script>
+
+<strong>{{ i18n "maf180ZoneCalculator" }}</strong>
+
+<form class="pa4 black-80 f6" accept-charset="UTF-8" action="#" method="POST">
+  <div class="measure cf">
+    <label for="maf180ZoneFormAge" class="f6 b db mb2 fl w-70">{{ i18n "age" }}</label>
+    <small id="maf180ZoneFormAgeHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "ageHelp" }}</small>
+    <input id="maf180ZoneFormAge" class="input-reset ba b--black-20 pa2 mb2 db fl w-30 tr" type="number" aria-describedby="maf180ZoneFormAgeHelp" min="1" max="120" step="1" autocomplete =“off” onchange="maf180ZoneCalculator();">
+  </div>
+  <fieldset class="bn">
+    <legend class="fw7 mb2">{{ i18n "maf180Options" }}</legend>
+  <div class="flex items-center mb2">
+    <input name="maf180ZoneFormOptions" id="maf180ZoneFormOptionsA" class="mr2" type="radio" onchange="maf180ZoneCalculator();" value="A">
+    <label for="maf180ZoneFormOptionA" class="lh-copy">{{ i18n "maf180OptionA" }}</label>
+  </div>
+  <div class="flex items-center mb2">
+    <input name="maf180ZoneFormOptions" id="maf180ZoneFormOptionsB" class="mr2" type="radio" onchange="maf180ZoneCalculator();" value="B">
+    <label for="maf180ZoneFormOptionB" class="lh-copy">{{ i18n "maf180OptionB" }}</label>
+  </div>
+  <div class="flex items-center mb2">
+    <input name="maf180ZoneFormOptions" id="maf180ZoneFormOptionsC" class="mr2" type="radio" onchange="maf180ZoneCalculator();" value="C">
+    <label for="maf180ZoneFormOptionC" class="lh-copy">{{ i18n "maf180OptionC" }}</label>
+  </div>
+  <div class="flex items-center mb2">
+    <input name="maf180ZoneFormOptions" id="maf180ZoneFormOptionsD" class="mr2" type="radio" onchange="maf180ZoneCalculator();" value="D">
+    <label for="maf180ZoneFormOptionD" class="lh-copy">{{ i18n "maf180OptionD" }}</label>
+  </div>
+  </fieldset>
+  <div class="measure">
+    <a class="link dim br1 ph3 pv2 mb2 dib white bg-gold w-100" onclick="maf180ZoneCalculator();">{{ i18n "calculate" }}</a>
+  </div>
+  
+  <div class="measure cf">
+    <label for="maf180ZoneFormZoneMin" class="f6 b db mb2 fl w-60">{{ i18n "zoneMafMin" }}</label>
+    <small id="maf180ZoneFormZoneMinHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "zoneMafMinHelp" }}</small>
+    <input id="maf180ZoneFormZoneMin" class="input-reset ba db br1 ph3 pv2 mb2 white bg-purple fl w-20 tr" aria-describedby="maf180ZoneFormZoneMinHelp" readonly="readonly" autocomplete =“off”>
+  </div>
+  <div class="measure cf">
+    <label for="maf180ZoneFormZoneMax" class="f6 b db mb2 fl w-60">{{ i18n "zoneMafMax" }}</label>
+    <small id="maf180ZoneFormZoneMaxHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "zoneMafMaxHelp" }}</small>
+    <input id="maf180ZoneFormZoneMax" class="input-reset ba db br1 ph3 pv2 mb2 white bg-purple fl w-20 tr" aria-describedby="maf180ZoneFormZoneMaxHelp" readonly="readonly" autocomplete =“off”>
+  </div>
+      
+</form>
+
+
+
+
+

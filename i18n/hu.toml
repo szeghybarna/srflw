@@ -139,6 +139,51 @@ other = "Kalória levonás a kalória deficit miatt kcalban férfiaknak."
 [dailyTotalCaloriesMaleHelp]
 other = "Napi összes kalória kcal-ban férfiaknak."
 
+[fatBurningZoneCalculator]
+other = "Zsírégető zóna kalkulátor"
+
+[zoneMin]
+other = "Minimum"
+
+[zoneMinHelp]
+other = "Minimum pulzus a zsírégető tartományban."
+
+[zoneMax]
+other = "Maximum"
+
+[zoneMaxHelp]
+other = "Maximum pulzus a zsírégető tartományban."
+
+[maf180ZoneCalculator]
+other = "MAF 180 kalkulátor"
+
+[zoneMafMin]
+other = "Minimum"
+
+[zoneMafMinHelp]
+other = "Minimum pulzus a MAF 180 tartományban."
+
+[zoneMafMax]
+other = "Maximum"
+
+[zoneMafMaxHelp]
+other = "Maximum pulzus a MAF 180 tartományban."
+
+[maf180Options]
+other = "Opciók"
+
+[maf180OptionA]
+other = "Nagy betegségből gyógyulsz (-10)"
+
+[maf180OptionB]
+other = "Megsérültél, sokat betegeskedsz, fogyni szeretnél, kezdő/újrakezdő vagy (-5)"
+
+[maf180OptionC]
+other = "Egészséges vagy, hetente legalább négyszer edzel"
+
+[maf180OptionD]
+other = "Már két éve rendszeresen edzel (+5)"
+
 
 
 

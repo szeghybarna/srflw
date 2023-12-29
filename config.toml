@@ -58,6 +58,7 @@ production = true
       myCalorieDeficit = 0
       myActiveCalories = 2000
       myWeeklyWeightLoss = 0.5
+      myMaf180Option = "B"
     [[params.year2024]]
       myAge = 48
       myHeight = 170
@@ -66,6 +67,7 @@ production = true
       myCalorieDeficit = 0
       myActiveCalories = 4000
       myWeeklyWeightLoss = 0.5
+      myMaf180Option = "C"
     [[params.actual]]
       myAge = 48
       myHeight = 170
@@ -74,6 +76,7 @@ production = true
       myCalorieDeficit = 0
       myActiveCalories = 4000
       myWeeklyWeightLoss = 0.5
+      myMaf180Option = "C"
 #  text_color = ""
 
 

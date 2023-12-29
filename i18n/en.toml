@@ -150,5 +150,50 @@ other = "Calorie deduction for calorie deficit in kcal for males."
 [dailyTotalCaloriesMaleHelp]
 other = "Daily total calories in kcal for males."
 
+[fatBurningZoneCalculator]
+other = "Fat Burning Zone Calculator"
+
+[zoneMin]
+other = "Minimum"
+
+[zoneMinHelp]
+other = "Minimum heart rate in fat burning zone."
+
+[zoneMax]
+other = "Maximum"
+
+[zoneMaxHelp]
+other = "Maximum heart rate in fat burning zone."
+
+[maf180ZoneCalculator]
+other = "MAF 180 Calculator"
+
+[zoneMafMin]
+other = "Minimum"
+
+[zoneMafMinHelp]
+other = "Minimum heart rate in MAF 180 zone."
+
+[zoneMafMax]
+other = "Maximum"
+
+[zoneMafMaxHelp]
+other = "Maximum heart rate in fat MAF 180 zone."
+
+[maf180Options]
+other = "Options"
+
+[maf180OptionA]
+other = "Recovering from a major illness (-10)"
+
+[maf180OptionB]
+other = "Injured, sick a lot, want to lose weight, you are a beginner/re-starter (-5)"
+
+[maf180OptionC]
+other = "You are healthy, training at least four times weekly"
+
+[maf180OptionD]
+other = "Training for more than two years (+5)"
+
 
 

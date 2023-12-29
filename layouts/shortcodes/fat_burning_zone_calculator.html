@@ -1,0 +1,62 @@
+<script type="text/javascript">
+    function fatBurningZoneInit() {
+        {{ if (.Get 0) }}
+            {{ if (eq (.Get 0) "year2019") }}
+                {{ range .Site.Params.year2019 }}
+                document.getElementById("fatBurningZoneFormAge").value= {{ .myAge }};
+                {{ end }}    
+            {{ else }}
+                {{ if (eq (.Get 0) "year2024") }}
+                    {{ range .Site.Params.year2024 }}
+                    document.getElementById("fatBurningZoneFormAge").value= {{ .myAge }};
+                    {{ end }}    
+                {{ else }}
+                    document.getElementById("fatBurningZoneFormHeight").value= 0;
+                {{ end }}
+            {{ end }}
+        {{ else }}
+            document.getElementById("fatBurningZoneFormHeight").value= 0;
+        {{ end }}
+    }
+    function fatBurningZoneCalculator() {
+        var age=parseInt(document.getElementById("fatBurningZoneFormAge").value);
+        var zone65=parseInt(((220 - age)*0.65).toFixed(0));
+        var zone75=parseInt(((220 - age)*0.75).toFixed(0));
+        document.getElementById("fatBurningZoneFormZoneMin").value=zone65;
+        document.getElementById("fatBurningZoneFormZoneMax").value=zone75;
+    }
+    window.addEventListener('load', function () {
+        fatBurningZoneInit();
+        fatBurningZoneCalculator();
+    });
+</script>
+
+<strong>{{ i18n "fatBurningZoneCalculator" }}</strong>
+
+<form class="pa4 black-80 f6" accept-charset="UTF-8" action="#" method="POST">
+  <div class="measure cf">
+    <label for="fatBurningZoneFormAge" class="f6 b db mb2 fl w-70">{{ i18n "age" }}</label>
+    <small id="fatBurningZoneFormAgeHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "ageHelp" }}</small>
+    <input id="fatBurningZoneFormAge" class="input-reset ba b--black-20 pa2 mb2 db fl w-30 tr" type="number" aria-describedby="fatBurningZoneFormAgeHelp" min="1" max="120" step="1" autocomplete =“off” onchange="fatBurningZoneCalculator();">
+  </div>
+  <div class="measure">
+    <a class="link dim br1 ph3 pv2 mb2 dib white bg-gold w-100" onclick="fatBurningZoneCalculator();">{{ i18n "calculate" }}</a>
+  </div>
+  
+  <div class="measure cf">
+    <label for="fatBurningZoneFormZoneMin" class="f6 b db mb2 fl w-60">{{ i18n "zoneMin" }}</label>
+    <small id="fatBurningZoneFormZoneMinHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "zoneMinHelp" }}</small>
+    <input id="fatBurningZoneFormZoneMin" class="input-reset ba db br1 ph3 pv2 mb2 white bg-purple fl w-20 tr" aria-describedby="fatBurningZoneFormZoneMinHelp" readonly="readonly" autocomplete =“off”>
+  </div>
+  <div class="measure cf">
+    <label for="fatBurningZoneFormZoneMax" class="f6 b db mb2 fl w-60">{{ i18n "zoneMax" }}</label>
+    <small id="fatBurningZoneFormZoneMaxHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "zoneMaxHelp" }}</small>
+    <input id="fatBurningZoneFormZoneMax" class="input-reset ba db br1 ph3 pv2 mb2 white bg-purple fl w-20 tr" aria-describedby="fatBurningZoneFormZoneMaxHelp" readonly="readonly" autocomplete =“off”>
+  </div>
+      
+</form>
+
+
+
+
+
