@@ -25,7 +25,7 @@ frontend:
       commands:
         - export PATH=$PATH:/usr/local/go/bin
         - go version
-        - hugo
+        - hugo --minify
   artifacts:
     baseDirectory: public
     files:
