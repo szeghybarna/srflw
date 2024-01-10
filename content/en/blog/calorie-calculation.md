@@ -60,7 +60,7 @@ You can also enter your weekly weight loss target; I recommend half a kilo at mo
 
 Enter the "calorie deficit" percentage or "weekly weight loss" in kilograms with a minus sign to gain weight.
 
-{{< bmi_calculator >}}
+{{< bmi_calculator year2019>}}
 
 If you have filled in the values, the calculator will update the result independently, but if not, there is a "Calculate!" button to set your calorie goal. In the cell with the purple background, you will find your actual BMI and target weight; these are indicative values.
 

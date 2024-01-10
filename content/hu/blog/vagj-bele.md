@@ -2,7 +2,7 @@
 type: single
 audio: []
 date: '2023-12-16'
-description: 'Hogyan kezdd el a fogyásod'
+description: 'Hogyan kezdjed el a fogyásod'
 images: ['/images/feature-lets-begin.webp', '/images/cover-lets-begin.webp']
 series: ["tortenetem"]
 tags: ['fogyás', 'egészséges életmód', 'séta', 'futás', 'biciklizés' , 'alacsony-szénhidrát', 'időszakos böjtölés']

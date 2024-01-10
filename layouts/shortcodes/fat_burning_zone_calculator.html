@@ -6,8 +6,8 @@
                 document.getElementById("fatBurningZoneFormAge").value= {{ .myAge }};
                 {{ end }}    
             {{ else }}
-                {{ if (eq (.Get 0) "year2024") }}
-                    {{ range .Site.Params.year2024 }}
+                {{ if (eq (.Get 0) "jan2024") }}
+                    {{ range .Site.Params.jan2024 }}
                     document.getElementById("fatBurningZoneFormAge").value= {{ .myAge }};
                     {{ end }}    
                 {{ else }}

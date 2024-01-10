@@ -18,6 +18,9 @@
 
         {{ .Content }}
 
+        {{- partial "tags.html" . -}}
+        
+
 {{- $permalink := .Permalink }}
 {{- $siteSeries := .Site.Taxonomies.series }}
 {{- if $siteSeries }}

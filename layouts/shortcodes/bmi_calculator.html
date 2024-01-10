@@ -12,8 +12,8 @@
                 document.getElementById("bmiFormWeeklyWeightLoss").value= {{ .myWeeklyWeightLoss}};
                 {{ end }}    
             {{ else }}
-                {{ if (eq (.Get 0) "year2024") }}
-                    {{ range .Site.Params.year2024 }}
+                {{ if (eq (.Get 0) "jan2024") }}
+                    {{ range .Site.Params.jan2024 }}
                     document.getElementById("bmiFormAge").value= {{ .myAge }};
                     document.getElementById("bmiFormHeight").value= {{ .myHeight}};
                     document.getElementById("bmiFormWeight").value= {{ .myWeight}};
