@@ -23,7 +23,7 @@
         {{ end }}
     }
     function maf180ZoneCalculator() {
-        var age=parseInt(document.getElementById("maf180ZoneFormAge").value);
+        var age=parseInt(document.getElementById("maf180ZoneFormAge").value) || 0;
         var option=document.querySelector("input[type='radio'][name=maf180ZoneFormOptions]:checked").value;
         var initMAF = 180;
         if (option == 'A') {
@@ -37,8 +37,8 @@
                 }
             }
         }
-        var zoneLow=parseInt(((initMAF - age)).toFixed(0));
-        var zoneMax=parseInt(((initMAF - age - 10)).toFixed(0));
+        var zoneMax=parseInt(((initMAF - age)).toFixed(0));
+        var zoneLow=parseInt(((initMAF - age - 10)).toFixed(0));
         document.getElementById("maf180ZoneFormZoneMin").value=zoneLow;
         document.getElementById("maf180ZoneFormZoneMax").value=zoneMax;
     }

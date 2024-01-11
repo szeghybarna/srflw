@@ -150,6 +150,9 @@ other = "Calorie deduction for calorie deficit in kcal for males."
 [dailyTotalCaloriesMaleHelp]
 other = "Daily total calories in kcal for males."
 
+[dailyTotalCaloriesAlert]
+other = "I do not recommend cutting calories below 1000 kcal. If you think you need to eat less than this, you should talk to a qualified health professional first."
+
 [fatBurningZoneCalculator]
 other = "Fat Burning Zone Calculator"
 

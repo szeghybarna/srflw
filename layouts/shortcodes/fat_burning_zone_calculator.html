@@ -19,7 +19,7 @@
         {{ end }}
     }
     function fatBurningZoneCalculator() {
-        var age=parseInt(document.getElementById("fatBurningZoneFormAge").value);
+        var age=parseInt(document.getElementById("fatBurningZoneFormAge").value) || 0;
         var zone65=parseInt(((220 - age)*0.65).toFixed(0));
         var zone75=parseInt(((220 - age)*0.75).toFixed(0));
         document.getElementById("fatBurningZoneFormZoneMin").value=zone65;

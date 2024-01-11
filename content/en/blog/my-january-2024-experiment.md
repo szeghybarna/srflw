@@ -49,4 +49,6 @@ I'll post the calculators here, too. Got a question? Ask in the [Facebook group]
 
 {{< bmi_calculator jan2024>}}
 
+{{< fat_burning_zone_calculator jan2024 >}}
+
 {{< maf_180_calculator jan2024 >}}

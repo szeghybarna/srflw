@@ -35,7 +35,7 @@ A gerinctorna fontosságát nagyon szeretném kiemelni. Szinte egész életemben
 
 Pár perc gerinctornát legalább minden második napra célszerű betenni, ez az a mozgásforma, amit már jóval az életmódváltásom előtt próbáltam beilleszteni a napjaimba, de mindig csak akkor, ha éppen fájt valamim. Ismerős? Rájöttem, ha rendszeresen csinálom, akkor nem is jön elő a fájdalom.
 
-Étkezésem így alakul most:
+Étkezésem így alakulnak most:
 
 - Zöldségek: paradicsom, hagyma, fokhagyma, zöld levelű zöldségek, brokkoli, karfiol, sárgarépa stb.
 - Gyümölcsök: aszalt és friss gyümölcsök, mint füge, datolya, alma, narancs stb.
@@ -48,6 +48,8 @@ Pár perc gerinctornát legalább minden második napra célszerű betenni, ez a
 A kalkulátorokat ide is beteszem. Kérdésed van? Kérdezz a [Facebook csoportban](https://www.facebook.com/groups/1098348161611343 "Facebook csoport").
 
 {{< bmi_calculator jan2024>}}
+
+{{< fat_burning_zone_calculator jan2024 >}}
 
 {{< maf_180_calculator jan2024 >}}
 

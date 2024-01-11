@@ -139,6 +139,9 @@ other = "Kalória levonás a kalória deficit miatt kcalban férfiaknak."
 [dailyTotalCaloriesMaleHelp]
 other = "Napi összes kalória kcal-ban férfiaknak."
 
+[dailyTotalCaloriesAlert]
+other = "Nem javaslom a kalóriák 1000 kcal alá csökkentését. Ha úgy gondolod, hogy ennél kevesebbet kell enned, először inkább beszélj egy képzett egészségügyi szakemberrel."
+
 [fatBurningZoneCalculator]
 other = "Zsírégető zóna kalkulátor"
 

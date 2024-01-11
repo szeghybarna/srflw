@@ -43,23 +43,43 @@
         {{ end }}
     }
     function bmiCalculator() {
-        var age=parseInt(document.getElementById("bmiFormAge").value);
-        var height=parseFloat(document.getElementById("bmiFormHeight").value);
-        var weight=parseFloat(document.getElementById("bmiFormWeight").value);
-        var optimalBmi=parseFloat(document.getElementById("bmiFormOptimalBmi").value);
-        var calorieDeficit=parseInt(document.getElementById("bmiFormCalorieDeficit").value);
-        var weeklyActiveCalories=parseInt(document.getElementById("bmiFormWeeklyActiveCalories").value);
-        var weeklyWeightLoss=parseFloat(document.getElementById("bmiFormWeeklyWeightLoss").value);
-        var actualBmi=(weight/((height/100)*(height/100))).toFixed(2);
-        var targetWeight=(optimalBmi*(height/100)*(height/100)).toFixed(2);
-        var rmrFemale=parseInt(((7.38*targetWeight)+(607*(height/100))-(2.31*age)+43).toFixed(0));
-        var rmrMale=parseInt(((9.65*targetWeight)+(573*(height/100))-(5.08*age)+260).toFixed(0));
-        var dailyActiveCalories=parseInt((weeklyActiveCalories/7).toFixed(0));
-        var dailyCaloriesWeightLoss=parseInt((-1*(weeklyWeightLoss*7700)/7).toFixed(0));
-        var dailyCaloriesDeductionFemale=parseInt((-1*rmrFemale*calorieDeficit/100).toFixed(0));
-        var dailyCaloriesDeductionMale=parseInt((-1*rmrMale*calorieDeficit/100).toFixed(0));
+        var age=parseInt(document.getElementById("bmiFormAge").value) || 0;
+        var height=parseFloat(document.getElementById("bmiFormHeight").value) || 0;
+        var weight=parseFloat(document.getElementById("bmiFormWeight").value) || 0;
+        var optimalBmi=parseFloat(document.getElementById("bmiFormOptimalBmi").value) || 0;
+        var calorieDeficit=parseInt(document.getElementById("bmiFormCalorieDeficit").value) || 0;
+        var weeklyActiveCalories=parseInt(document.getElementById("bmiFormWeeklyActiveCalories").value) || 0;
+        var weeklyWeightLoss=parseFloat(document.getElementById("bmiFormWeeklyWeightLoss").value) || 0;
+        if (height > 0) {
+            var actualBmi=(weight/((height/100)*(height/100))).toFixed(2) || 0;
+        } else {
+            var actualBmi=0;
+        }
+        var targetWeight=(optimalBmi*(height/100)*(height/100)).toFixed(2) || 0;
+        var rmrFemale=parseInt(((7.38*targetWeight)+(607*(height/100))-(2.31*age)+43).toFixed(0)) || 0;
+        var rmrMale=parseInt(((9.65*targetWeight)+(573*(height/100))-(5.08*age)+260).toFixed(0)) || 0;
+        var dailyActiveCalories=parseInt((weeklyActiveCalories/7).toFixed(0)) || 0;
+        var dailyCaloriesWeightLoss=parseInt((-1*(weeklyWeightLoss*7700)/7).toFixed(0)) || 0;
+        var dailyCaloriesDeductionFemale=parseInt((-1*rmrFemale*calorieDeficit/100).toFixed(0)) || 0;
+        var dailyCaloriesDeductionMale=parseInt((-1*rmrMale*calorieDeficit/100).toFixed(0)) || 0;
         var dailyTotalCaloriesFemale=rmrFemale+dailyActiveCalories+dailyCaloriesWeightLoss+dailyCaloriesDeductionFemale;
+        if (dailyTotalCaloriesFemale<1000) {
+            dailyTotalCaloriesFemale=1000;
+            document.getElementById("femaleAlertDiv").style.display = 'block';
+            document.getElementById("femaleAlert").textContent="{{ i18n "dailyTotalCaloriesAlert" }}";
+        } else {
+            document.getElementById("femaleAlertDiv").style.display = 'none';
+            document.getElementById("femaleAlert").textContent="{{ i18n "dailyTotalCaloriesAlert" }}";
+        }
         var dailyTotalCaloriesMale=rmrMale+dailyActiveCalories+dailyCaloriesWeightLoss+dailyCaloriesDeductionMale;
+        if (dailyTotalCaloriesMale<1000) {
+            dailyTotalCaloriesMale=1000;
+            document.getElementById("maleAlertDiv").style.display = 'block';
+            document.getElementById("maleAlert").textContent="{{ i18n "dailyTotalCaloriesAlert" }}";
+        } else {
+            document.getElementById("maleAlertDiv").style.display = 'none';
+            document.getElementById("maleAlert").textContent="{{ i18n "dailyTotalCaloriesAlert" }}";
+        }
         document.getElementById("bmiFormActualBmi").value=actualBmi;
         document.getElementById("bmiFormTargetWeight").value=targetWeight;
         document.getElementById("bmiFormDailyRmrFemale").value=rmrFemale;
@@ -163,6 +183,13 @@
     <small id="bmiFormDailyTotalCaloriesFemaleHelp" class="f6 black-60 db mb2 ph2 b fl w-60">{{ i18n "dailyTotalCaloriesFemaleHelp" }}</small>
     <input id="bmiFormDailyTotalCaloriesFemale" class="input-reset ba db br1 ph3 pv2 mb2 white bg-dark-pink b fl w-20 tr" aria-describedby="bmiFormDailyTotalCaloriesFemale" readonly="readonly" autocomplete =“off”>
   </div>
+  <div class="flex items-center justify-center pa4 dark-red dn" id="femaleAlertDiv">
+    <svg class="w1" data-icon="info" viewBox="0 0 32 32" style="fill:currentcolor">
+      <title>info icon</title>
+      <path d="M16 0 A16 16 0 0 1 16 32 A16 16 0 0 1 16 0 M19 15 L13 15 L13 26 L19 26 z M16 6 A3 3 0 0 0 16 12 A3 3 0 0 0 16 6"></path>
+    </svg>
+    <span class="lh-title ml3" id="femaleAlert"></span>
+  </div> 
 
 
 
@@ -188,6 +215,13 @@
     <small id="bmiFormDailyTotalCaloriesMaleHelp" class="f6 black-60 db mb2 ph2 b fl w-60">{{ i18n "dailyTotalCaloriesMaleHelp" }}</small>
     <input id="bmiFormDailyTotalCaloriesMale" class="input-reset ba db br1 ph3 pv2 mb2 white bg-dark-blue b fl w-20 tr" aria-describedby="bmiFormDailyTotalCaloriesMale" readonly="readonly" autocomplete =“off”>
   </div>
+  <div class="flex items-center justify-center pa4 dark-red dn" id="maleAlertDiv">
+    <svg class="w1" data-icon="info" viewBox="0 0 32 32" style="fill:currentcolor">
+      <title>info icon</title>
+      <path d="M16 0 A16 16 0 0 1 16 32 A16 16 0 0 1 16 0 M19 15 L13 15 L13 26 L19 26 z M16 6 A3 3 0 0 0 16 12 A3 3 0 0 0 16 6"></path>
+    </svg>
+    <span class="lh-title ml3" id="maleAlert"></span>
+  </div> 
 </form>
 
 
