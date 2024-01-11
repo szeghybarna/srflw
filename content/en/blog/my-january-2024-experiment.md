@@ -35,6 +35,16 @@ I'd really like to stress the importance of back exercises. I've been fat almost
 
 A couple of minutes of back exercises, at least every other day, is something I tried to incorporate into my days long before I changed my lifestyle, but only when I was in pain. Sound familiar? I found that if I do it regularly, the pain doesn't even bother me.
 
+My diet is like this now:
+
+- Vegetables: tomatoes, onions, garlic, green leafy vegetables, broccoli, cauliflower, carrots, etc.
+- Fruits: dried and fresh fruits such as figs, dates, apples, oranges, etc.
+- Seeds: almonds, walnuts, hazelnuts
+- Food of animal origin: all kinds of meat, fish and eggs
+- Fats: olive oil, coconut oil and milk, pork and duck fat
+- Beverages: coffee, tea, zero-calorie drinks
+
+
 I'll post the calculators here, too. Got a question? Ask in the [Facebook group](https://www.facebook.com/groups/1098348161611343 "Facebook group").
 
 {{< bmi_calculator jan2024>}}
