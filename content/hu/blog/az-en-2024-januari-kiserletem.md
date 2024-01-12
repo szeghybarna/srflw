@@ -35,7 +35,7 @@ A gerinctorna fontosságát nagyon szeretném kiemelni. Szinte egész életemben
 
 Pár perc gerinctornát legalább minden második napra célszerű betenni, ez az a mozgásforma, amit már jóval az életmódváltásom előtt próbáltam beilleszteni a napjaimba, de mindig csak akkor, ha éppen fájt valamim. Ismerős? Rájöttem, ha rendszeresen csinálom, akkor nem is jön elő a fájdalom.
 
-Étkezésem így alakulnak most:
+Étkezéseim így alakulnak most:
 
 - Zöldségek: paradicsom, hagyma, fokhagyma, zöld levelű zöldségek, brokkoli, karfiol, sárgarépa stb.
 - Gyümölcsök: aszalt és friss gyümölcsök, mint füge, datolya, alma, narancs stb.
