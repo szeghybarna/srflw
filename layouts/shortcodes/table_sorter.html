@@ -1,0 +1,11 @@
+<script type="text/javascript" src="/JSTable/dist/jstable.min.js"></script>
+
+<script type="text/javascript">
+let myTable = new JSTable("#{{ .Get 0 }}", {
+    sortable: true,
+    searchable: true,
+    perPage: 500,
+    perPageSelect: [500, 1000, 1500, 2000, 2500]
+});
+
+</script>

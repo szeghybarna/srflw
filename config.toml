@@ -11,6 +11,9 @@ pluralizelisttitles = false
 private = false
 production = true
 
+[markup.goldmark.parser.attribute]
+block = true
+
 [taxonomies]
   category = 'categories'
   series = 'series'

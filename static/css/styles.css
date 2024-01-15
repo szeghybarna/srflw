@@ -1,0 +1,23 @@
+#spotify, #spotify_render table, #spotify th, #spotify_render th, #spotify td, #spotify_render td {
+    border-style: solid;
+    border-width: 1px;
+    font-family: monospace;
+    font-size: .6rem;
+}
+
+#spotify, #spotify_render table {
+  border-collapse: collapse;
+}
+
+#spotify td, #spotify_render td {
+  padding: 0.125rem;
+}
+#spotify td:nth-child(3). #spotify_render td:nth-child(3) {
+  white-space: nowrap;
+}
+
+.dt-wrapper, .search-results {
+    font-family: monospace;
+    font-size: .6rem;
+    
+}
