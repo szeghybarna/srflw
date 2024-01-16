@@ -36,6 +36,7 @@ I've exported the playlist here, too; you can search it. I update it every week 
 
 By the way, the MIX lists are there because, with a bit of attention, you can move to 60 BPM and 120 BPM in the same way; you just have to halve or double the beat - our brain does it for us, and we won't run at a different beat.
 
+Have a question? Would you recommend music? Head to [Facebook group](https://www.facebook.com/groups/1098348161611343 "Facebook group").
 
 Last updated: {{ date }}, {{table|length}} tracks
 

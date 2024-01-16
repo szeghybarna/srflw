@@ -34,6 +34,8 @@ Ide is kiexportáltam a lejátszási listát, keresgélhetsz benne. Körülbelü
 
 Egyébként azért vannak a MIX listák, mert kis odafigyeléssel a 60-as BPM-re és 120-as BPM-re is ugyanúgy lehet lépni, csak felezni vagy duplázni kell az ütemet – ezt az agyunk meg is teszi helyettünk, nem fogunk más ütemben futni.
 
+Kérdésed van? Zenét ajánlanál? Irány a [Facebook csoport](https://www.facebook.com/groups/1098348161611343 "Facebook csoport")!
+
 Utoljára módosítva: 2024-01-15, 1051 szám
 
 |BPM|Added|Playlists|Track|
