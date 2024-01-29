@@ -12,9 +12,35 @@
 #spotify td, #spotify_render td {
   padding: 0.125rem;
 }
-#spotify td:nth-child(3). #spotify_render td:nth-child(3) {
+
+#spotify td:nth-child(3), #spotify_render td:nth-child(3) {
   white-space: nowrap;
 }
+
+
+.calorietable, .calorietable_render table, .calorietable th, .calorietable_render th, .calorietable td, .calorietable_render td {
+    border-style: solid;
+    border-width: 1px;
+    font-family: monospace;
+    font-size: .6rem;
+}
+
+.calorietable, .calorietable_render table {
+  border-collapse: collapse;
+}
+
+.calorietable td, .calorietable_render td {
+  padding: 0.125rem;
+}
+
+.calorietable td:nth-child(1), .calorietable_render td:nth-child(1) {
+  white-space: nowrap;
+}
+
+.calorietable td:nth-child(2), .calorietable_render td:nth-child(2), .calorietable td:nth-child(3), .calorietable_render td:nth-child(3), .calorietable td:nth-child(4), .calorietable_render td:nth-child(4) {
+  text-align: right;
+}
+
 
 .dt-wrapper, .search-results {
     font-family: monospace;

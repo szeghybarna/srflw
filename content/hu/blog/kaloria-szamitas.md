@@ -3,7 +3,7 @@ type: single
 audio: []
 date: '2023-12-29'
 description: 'Mennyi kalóriát fogyassz naponta'
-images: ['/images/feature-calorie-calculation.webp', '/images/covercalorie-calculation.webp']
+images: ['/images/feature-calorie-calculation.webp', '/images/cover-calorie-calculation.webp']
 series: ['calculations']
 tags: ['kalória számítás']
 title: Kalória számítás
