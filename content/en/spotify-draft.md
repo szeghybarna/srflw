@@ -18,6 +18,8 @@ translationKey: spotify
 language: en
 ---
 
+Last updated: {{ date }}, {{table|length}} tracks
+
 Lately, I've been spending a lot of time doing fast-paced things like running and cycling. I'm pretty good at picking up the beat of music while I'm doing it. Hence, as I am a programmer, I started experimenting with the [Spotify API](https://developer.spotify.com/documentation/web-api "Spotify API"). I found an interesting piece of data for music, the `tempo` field in the [audio-features](https://developer.spotify.com/documentation/web-api/reference/get-audio-features "audio-features"):
 
 > The overall estimated tempo of a track in beats per minute (BPM). In musical terminology, tempo is the speed or pace of a given piece and derives directly from the average beat duration.
@@ -38,7 +40,14 @@ By the way, the MIX lists are there because, with a bit of attention, you can mo
 
 Have a question? Would you recommend music? Head to [Facebook group](https://www.facebook.com/groups/1098348161611343 "Facebook group").
 
-Last updated: {{ date }}, {{table|length}} tracks
+**Playlists:**
+
+|Playlist|Tracks|
+|--------|-----:|
+{% for item in playlists %}| [{{item.name}}]({{item.href}} "{{item.name}}") | {{item.tracks}} |
+{% endfor %}{ .w-50 .mw8 .center id="pltable"}
+
+**Tracks:**
 
 |BPM|Added|Playlists|Track|
 |--:|-----|---------|:----|

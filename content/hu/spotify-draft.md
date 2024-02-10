@@ -18,6 +18,8 @@ translationKey: spotify
 language: hu
 ---
 
+Utoljára módosítva: {{ date }}, {{table|length}} szám
+
 Az elmúlt időszakban sok időt töltöttem ütemes dolgokkal, mint a futás és a biciklizés. Egész jól át tudom közben venni a zene ütemét, így elkezdtem programozóként gondolkodva a [Spotify API](https://developer.spotify.com/documentation/web-api "Spotify API")-jával kísérletezni (minden kísérlet, mondanom sem kell). Találtam egy érdekes adatot a zenékhez, az [audio-features](https://developer.spotify.com/documentation/web-api/reference/get-audio-features "audio-features") keretében a `tempo` mezőt, ami lefordítva:
 
 > A zeneszám teljes becsült tempója percenkénti ütemben (BPM). A zenei terminológiában a tempó egy adott darab sebessége vagy tempója, és közvetlenül az átlagos ütemtartamból származik.
@@ -38,7 +40,14 @@ Egyébként azért vannak a MIX listák, mert kis odafigyeléssel a 60-as BPM-re
 
 Kérdésed van? Zenét ajánlanál? Irány a [Facebook csoport](https://www.facebook.com/groups/1098348161611343 "Facebook csoport")!
 
-Utoljára módosítva: {{ date }}, {{table|length}} szám
+**Lejátszási listák:**
+
+|Playlist|Tracks|
+|--------|-----:|
+{% for item in playlists %}| [{{item.name}}]({{item.href}} "{{item.name}}") | {{item.tracks}} |
+{% endfor %}{ .w-50 .mw8 .center id="pltable"}
+
+**Zenék:**
 
 |BPM|Added|Playlists|Track|
 |--:|-----|---------|:----|
