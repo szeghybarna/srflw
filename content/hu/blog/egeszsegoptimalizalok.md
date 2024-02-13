@@ -2,10 +2,10 @@
 type: single
 audio: []
 date: '2024-02-13'
-description: 'A rendszeresen fogyasztott étrend kiegészítőim'
+description: 'A rendszeresen fogyasztott étrend-kiegészítőim'
 images: ['/images/feature-health-optimizers.webp', '/images/cover-health-optimizers.webp']
 series: []
-tags: ['egészség', 'vitamin', 'étrend kiegészítő', "hosszabb élet"]
+tags: ['egészség', 'vitamin', 'étrend-kiegészítő', "hosszabb élet"]
 title: Egészségoptimalizálók
 videos: []
 featured_image: '/images/feature-health-optimizers.webp'
@@ -67,6 +67,6 @@ Nézzük, hogy milyen kiegészítőket szedek naponta:
 
 > Segíti az idegrendszer működését, antioxidáns és gyulladáscsökkentő is. Javítja a teljesítményt, csökkenti az oxidatív stresszt, azaz lassítja az öregedést. Por formájában szedem.
 
-Általában alaposan utánanézek az adagolásnak és a lehetséges mellékhatásoknak. Igyekszem a nekem leginkább szükséges és megfelelő étrend kiegészítőket szedni, kétszer meggondolom, hogy változtatok-e. Mindenkit arra bíztatok, hogy olvasson utána vagy kérdezze meg kezelőorvosát és gyógyszerészét, mielőtt bármilyen bogyó vagy por rendszeres szedésébe kezd.
+Általában alaposan utánanézek az adagolásnak és a lehetséges mellékhatásoknak. Igyekszem a nekem leginkább szükséges és megfelelő étrend-kiegészítőket szedni, kétszer meggondolom, hogy változtatok-e. Mindenkit arra bíztatok, hogy olvasson utána vagy kérdezze meg kezelőorvosát és gyógyszerészét, mielőtt bármilyen bogyó vagy por rendszeres szedésébe kezd.
 
 Kérdésed van? Kérdezz a [Facebook csoportban](https://www.facebook.com/groups/1098348161611343 "Facebook csoport").
