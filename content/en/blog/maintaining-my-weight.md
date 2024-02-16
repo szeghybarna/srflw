@@ -5,7 +5,7 @@ date: '2023-12-17'
 description: 'How can I maintain my weight'
 images: ['/images/feature-maintaining-my-weight.webp', '/images/cover-maintaining-my-weight.webp']
 series: ['my-history']
-tags: ['weight loss', 'healthy lifestyle', 'walking', 'cycling', 'low-carb', 'intermittent fasting']
+tags: ['weight loss', 'healthy lifestyle', 'walking', 'cycling', 'low-carb', 'intermittent fasting', 'MAF 180']
 title: Maintaining My Weight
 videos: []
 featured_image: '/images/feature-maintaining-my-weight.webp'

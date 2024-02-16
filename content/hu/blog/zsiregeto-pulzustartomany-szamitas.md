@@ -5,7 +5,7 @@ date: '2023-12-30'
 description: 'Mekkora legyen a pulzusod mozgás közben'
 images: ['/images/feature-fat-burning-heart-rate-calculation.webp', '/images/cover-fat-burning-heart-rate-calculation.webp']
 series: ['calculations']
-tags: ['pulzus számítás']
+tags: ['pulzus számítás', 'MAF 180']
 title: Pulzus számítás
 videos: []
 featured_image: '/images/feature-fat-burning-heart-rate-calculation.webp'

@@ -5,7 +5,7 @@ date: '2023-12-17'
 description: 'Hogyan tartom meg a súlyom'
 images: ['/images/feature-maintaining-my-weight.webp', '/images/cover-maintaining-my-weight.webp']
 series: ["tortenetem"]
-tags: ['fogyás', 'egészséges életmód', 'séta', 'futás', 'biciklizés' , 'alacsony-szénhidrát', 'időszakos böjtölés']
+tags: ['fogyás', 'egészséges életmód', 'séta', 'futás', 'biciklizés' , 'alacsony-szénhidrát', 'időszakos böjtölés', 'MAF 180']
 title: A testsúlyom megtartása
 videos: []
 featured_image: '/images/feature-maintaining-my-weight.webp'

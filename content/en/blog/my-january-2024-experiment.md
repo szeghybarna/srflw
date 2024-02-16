@@ -5,7 +5,7 @@ date: '2024-01-11'
 description: 'MAF 180, losing weight and preparing for spring long distance running'
 images: ['/images/feature-my-january-2024-experiment.webp', '/images/cover-my-january-2024-experiment.webp']
 series: []
-tags: ['experiment']
+tags: ['experiment', 'MAF 180']
 title: My January 2024 Experiment
 videos: []
 featured_image: '/images/feature-my-january-2024-experiment.webp'

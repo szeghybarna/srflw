@@ -5,7 +5,7 @@ date: '2024-01-11'
 description: 'MAF 180, fogyás és felkészülés a tavaszi hosszú távokra'
 images: ['/images/feature-my-january-2024-experiment.webp', '/images/cover-my-january-2024-experiment.webp']
 series: []
-tags: ['kísérlet']
+tags: ['kísérlet', 'MAF 180']
 title: Az én 2024. januári kísérletem
 videos: []
 featured_image: '/images/feature-my-january-2024-experiment.webp'
