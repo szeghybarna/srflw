@@ -16,3 +16,4 @@ menu:
     name: Blog
     weight: 10
 ---
+Read my blog. If you like, comment on my [Facebook page](https://www.facebook.com/simple.rules.for.losing.weight "Facebook page") or [Facebook group](https://www.facebook.com/groups/1098348161611343 "Facebook group").
