@@ -11,6 +11,10 @@ videos: []
 cover_image: '/cover-simple-rules-for-losing-weight.webp'
 translationKey: home
 language: en
+menu: 
+  main:
+    name: Home
+    weight: 1
 ---
 # Simple Rules For Losing Weight
 

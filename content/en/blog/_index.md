@@ -10,5 +10,9 @@ title: 'Blog'
 videos: []
 cover_image: '/cover-simple-rules-for-losing-weight.webp'
 translationKey: blog
-language: en  
+language: en
+menu: 
+  main:
+    name: Blog
+    weight: 10
 ---

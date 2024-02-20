@@ -20,7 +20,7 @@ What makes it different now?
 
 Start with tiny changes. For example, use these steps and find a reason for yourself why you are doing it. Build them into your daily routine, find space and time in your day for them:
 
-1. "I have 5 minutes every day to enter my calories into an app. I want to find out the reason for my continued weight gain." 
+1. "I have 5 minutes every day to enter my eaten calories and my weight into an app. I want to find out the reason for my continued weight gain." 
 
 2. "I have 8 minutes in the morning to do a short workout. It's nice to start the day with my body already prepared for the day. At least I can exercise my limbs that have been lying down at night."
 

@@ -10,7 +10,11 @@ title: 'Egyszerű szabályok a fogyáshoz'
 videos: []
 cover_image: '/cover-simple-rules-for-losing-weight.webp'
 translationKey: home
-language: hu  
+language: hu
+menu: 
+  main:
+    name: Nyitó
+    weight: 1
 ---
 
 # Egyszerű szabályok a fogyáshoz

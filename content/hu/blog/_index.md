@@ -11,4 +11,8 @@ videos: []
 cover_image: '/cover-simple-rules-for-losing-weight.webp'
 translationKey: blog
 language: hu  
+menu: 
+  main:
+    name: Napló
+    weight: 10
 ---

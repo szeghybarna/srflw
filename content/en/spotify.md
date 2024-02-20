@@ -1,7 +1,10 @@
 ---
 type: single
 #
-menu: main
+menu: 
+  main:
+    name: Spotify
+    weight: 20
 audio: []
 date: '2024-01-15'
 description: 'Tempo/BPM based playlist for walking, running, cycling, weight loss.'

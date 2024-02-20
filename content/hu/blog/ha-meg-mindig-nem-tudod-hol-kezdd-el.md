@@ -20,7 +20,7 @@ Mitől lehet ez most másként?
 
 Nagyon kicsi változtatással kezdj. Például használd ezeket a fokozatokat és találj magadnak indokot, hogy miért csinálod. Építsd be a napi rutinodba, találj nekik helyet és időt:
 
-1. "Van minden nap 5 percem arra, hogy beírjam egy appba a kalóriáimat. Meg akarom tudni, hogy mi lehet az oka a súlyom folyamatos növekedésének." 
+1. "Van minden nap 5 percem arra, hogy beírjam egy appba az elfogyasztott kalóriáimat és a testsúlyom. Meg akarom tudni, hogy mi lehet az oka a súlyom folyamatos növekedésének." 
 
 2. "Van reggel 8 percem, hogy egy rövidet tornázzak. Jó úgy nekivágni a napnak, hogy a testem már felkészült a napra. Legalább átmozgatom az éjjel elfeküdt tagjaimat."
 
