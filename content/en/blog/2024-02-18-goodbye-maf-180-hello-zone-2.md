@@ -11,6 +11,7 @@ videos: []
 featured_image: '/images/feature-goodbye-maf-180-hello-zone-2.webp'
 cover_image: '/images/cover-goodbye-maf-180-hello-zone-2.webp'
 translationKey: goodbye-maf-180-hello-zone-2
+slug: goodbye-maf-180-hello-zone-2
 language: en
 mainsection: blog
 ---

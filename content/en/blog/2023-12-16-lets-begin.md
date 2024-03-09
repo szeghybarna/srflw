@@ -11,6 +11,7 @@ videos: []
 featured_image: '/images/feature-lets-begin.webp'
 cover_image: '/images/cover-lets-begin.webp'
 translationKey: lets-begin
+slug: lets-begin
 language: en
 mainsection: blog
 ---

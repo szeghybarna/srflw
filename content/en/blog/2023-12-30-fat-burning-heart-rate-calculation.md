@@ -6,11 +6,12 @@ description: 'How high should your heart rate be while exercising'
 images: ['/images/feature-fat-burning-heart-rate-calculation.webp', '/images/cover-fat-burning-heart-rate-calculation.webp']
 series: ['calculations']
 tags: ['heart rate calculation', 'MAF 180']
-title: Heart Rate Calculation
+title: Fat Burning Heart Rate Calculation
 videos: []
 featured_image: '/images/feature-fat-burning-heart-rate-calculation.webp'
 cover_image: '/images/cover-fat-burning-heart-rate-calculation.webp'
-translationKey: zone-calculation
+translationKey: fat-burning-heart-rate-calculation
+slug: fat-burning-heart-rate-calculation
 language: en
 mainsection: blog
 ---

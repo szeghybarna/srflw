@@ -10,7 +10,8 @@ title: 2024. januári kihívás
 videos: []
 featured_image: '/images/feature-january-2024-challenge.webp'
 cover_image: '/images/cover-january-2024-challenge.webp'
-translationKey: 2024-january
+translationKey: 2024-january-challenge
+slug: 2024-januari-kihivas
 language: hu
 mainsection: blog
 ---
@@ -18,7 +19,7 @@ Vágj bele az életmódváltásba!
 
 Itt az idő, ha eddig tologattad; már sokszor megpróbáltad, de nem sikerült – adj egy esélyt magadnak egy jobb életre.
 
-Már leírtam, hogyan [számolj kalóriát]({{< ref "kaloria-szamitas" >}} "számolj kalóriát") és hogyan határozd meg a [zsírégető pulzus zónát]({{< ref "zsiregeto-pulzustartomany-szamitas" >}} "zsírégető pulzus zóna"). Lássuk, hogyan használd ezeket az adatokat.
+Már leírtam, hogyan [számolj kalóriát]({{< ref "2023-12-29-kaloria-szamitas" >}} "számolj kalóriát") és hogyan határozd meg a [zsírégető pulzus zónát]({{< ref "2023-12-30-zsiregeto-pulzustartomany-szamitas" >}} "zsírégető pulzus zóna"). Lássuk, hogyan használd ezeket az adatokat.
 
 Először is, vegyük az egyszerű szabályokat, amire én is építettem (és még most is építem) az életmódváltásomat: kipróbálom; elemzem; ha bevált, adoptálom; kezdem elölről.
 

@@ -11,6 +11,7 @@ videos: []
 featured_image: '/images/feature-maintaining-my-weight.webp'
 cover_image: '/images/cover-maintaining-my-weight.webp'
 translationKey: maintaining-my-weight
+slug: maintaining-my-weight
 language: en
 mainsection: blog
 ---

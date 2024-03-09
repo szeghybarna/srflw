@@ -10,7 +10,8 @@ title: Pulzus számítás
 videos: []
 featured_image: '/images/feature-fat-burning-heart-rate-calculation.webp'
 cover_image: '/images/cover-fat-burning-heart-rate-calculation.webp'
-translationKey: zone-calculation
+translationKey: fat-burning-heart-rate-calculation
+slug: zsiregeto-pulzustartomany-szamitas
 language: hu
 mainsection: blog
 ---

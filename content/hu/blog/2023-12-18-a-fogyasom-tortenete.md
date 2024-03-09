@@ -11,6 +11,7 @@ videos: []
 featured_image: '/images/feature-my-weight-loss-story.webp'
 cover_image: '/images/cover-my-weight-loss-story.webp'
 translationKey: my-weight-loss-story
+slug: a-fogyasom-tortenete
 language: hu
 mainsection: blog
 ---

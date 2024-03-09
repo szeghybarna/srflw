@@ -6,11 +6,12 @@ description: 'In short: yes'
 images: ['/images/feature-can-you-lose-weight-with-chocolate.webp', '/images/cover-can-you-lose-weight-with-chocolate.webp']
 series: []
 tags: ['chocolate', 'weight loss']
-title: Can you lose weight with chocolate?
+title: Can You Lose Weight With Chocolate?
 videos: []
 featured_image: '/images/feature-can-you-lose-weight-with-chocolate.webp'
 cover_image: '/images/cover-can-you-lose-weight-with-chocolate.webp'
-translationKey: lose-weight-with-chocolate
+translationKey: can-you-lose-weight-with-chocolate
+slug: can-you-lose-weight-with-chocolate
 language: en
 mainsection: blog
 ---
@@ -53,11 +54,11 @@ I noticed that my weight has decreased by 2.5 kg. However, I am still not certai
 
 *How do you try it?*
 
-To start off, let me clarify that I don't want to encourage you. In fact, I would like to discourage you. The key to weight loss is a calorie deficit, irrespective of what you eat. Simply consume fewer calories than your body requires. You can use this [calorie calculator]({{< ref "calorie-calculation" >}} "calorie calculator") to determine how many calories you need and create a deficit that you can maintain. If you have a craving for chocolate, you can factor it into your daily calorie limit and still lose weight while indulging in chocolate.
+To start off, let me clarify that I don't want to encourage you. In fact, I would like to discourage you. The key to weight loss is a calorie deficit, irrespective of what you eat. Simply consume fewer calories than your body requires. You can use this [calorie calculator]({{< ref "2023-12-29-calorie-calculation" >}} "calorie calculator") to determine how many calories you need and create a deficit that you can maintain. If you have a craving for chocolate, you can factor it into your daily calorie limit and still lose weight while indulging in chocolate.
 
 *But if you do want to try it:*
 
-* Plan ahead for your [calorie deficit]({{< ref "calorie-calculation" >}} "calorie deficit").
+* Plan ahead for your [calorie deficit]({{< ref "2023-12-29-calorie-calculation" >}} "calorie deficit").
 * Buy a variety of chocolates.
 * Prepare your body with probiotics.
 * Weigh and record everything.

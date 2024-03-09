@@ -11,6 +11,7 @@ videos: []
 featured_image: '/images/feature-health-optimizers.webp'
 cover_image: '/images/cover-health-optimizers.webp'
 translationKey: health-optimizers
+slug: egeszsegoptimalizalok
 language: hu
 mainsection: blog
 ---

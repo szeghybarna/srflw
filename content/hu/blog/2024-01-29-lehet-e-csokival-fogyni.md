@@ -10,7 +10,8 @@ title: Lehet-e csokival fogyni?
 videos: []
 featured_image: '/images/feature-can-you-lose-weight-with-chocolate.webp'
 cover_image: '/images/cover-can-you-lose-weight-with-chocolate.webp'
-translationKey: lose-weight-with-chocolate
+translationKey: can-you-lose-weight-with-chocolate
+slug: lehet-e-csokival-fogyni
 language: hu
 mainsection: blog
 ---
@@ -53,11 +54,11 @@ A teljes táblázatot itt nézheted meg: [https://docs.google.com/spreadsheets/d
 
 *Hogyan próbáld ki Te is?*
 
-Először is, egyáltalán nem biztatlak, sőt, szeretnélek lebeszélni. A fogyás a kalóriadeficittől indul be, mindegy mit eszel, csak kevesebbet egyél, mint amennyi a szervezetednek szükséges. Itt egy [kalória kalkulátor]({{< ref "kaloria-szamitas" >}} "kalória kalkulátor"), számold ki mennyi kalóriára van szükséged, és képezz deficitet, amit be tudsz tartani. Ha kívánod a csokit, kalkuláld bele a napi limitedbe, és máris tudsz fogyni a csokival is.
+Először is, egyáltalán nem biztatlak, sőt, szeretnélek lebeszélni. A fogyás a kalóriadeficittől indul be, mindegy mit eszel, csak kevesebbet egyél, mint amennyi a szervezetednek szükséges. Itt egy [kalória kalkulátor]({{< ref "2023-12-29-kaloria-szamitas" >}} "kalória kalkulátor"), számold ki mennyi kalóriára van szükséged, és képezz deficitet, amit be tudsz tartani. Ha kívánod a csokit, kalkuláld bele a napi limitedbe, és máris tudsz fogyni a csokival is.
 
 *De ha mégis ki akarod próbálni:*
 
-* Tervezd meg előre a [kalória deficited]({{< ref "kaloria-szamitas" >}} "kalória deficit").
+* Tervezd meg előre a [kalória deficited]({{< ref "2023-12-29-kaloria-szamitas" >}} "kalória deficit").
 * Vegyél változatos csokikat.
 * Készítsd fel a szervezeted probiotikummal.
 * Mérj és jegyzetelj mindent.

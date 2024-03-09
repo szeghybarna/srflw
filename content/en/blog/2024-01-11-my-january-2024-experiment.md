@@ -10,7 +10,8 @@ title: My January 2024 Experiment
 videos: []
 featured_image: '/images/feature-my-january-2024-experiment.webp'
 cover_image: '/images/cover-my-january-2024-experiment.webp'
-translationKey: my-2024-january-experiment
+translationKey: my-january-2024-january-experiment
+slug: my-january-2024-january-experiment
 language: en
 mainsection: blog
 ---
@@ -21,7 +22,7 @@ I've also adjusted my daily calorie limit accordingly, with my intake between 16
 Speaking of exercise, I'm doing these now:
 
  - short warm-up
- - 1 hour of [MAF 180]({{< ref "fat-burning-heart-rate-calculation" >}} "MAF 180") exercise per day:
+ - 1 hour of [MAF 180]({{< ref "2023-12-30-fat-burning-heart-rate-calculation" >}} "MAF 180") exercise per day:
      - 40 minutes on an indoor exercise bike
      - 20 minutes on the treadmill
  - 4000 steps a day (because of the 20 minutes of running, this is only theoretical)

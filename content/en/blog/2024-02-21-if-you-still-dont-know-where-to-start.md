@@ -6,11 +6,12 @@ description: 'February is slowly coming to an end...'
 images: ['/images/feature-if-you-still-dont-know-where-to-start.webp', '/images/cover-if-you-still-dont-know-where-to-start.webp']
 series: []
 tags: ['weight loss', 'healthy lifestyle', 'calorie calculation']
-title: If you still don't know where to start
+title: If You Still Don't Know Where To Start
 videos: []
 featured_image: '/images/feature-if-you-still-dont-know-where-to-start.webp'
 cover_image: '/images/cover-if-you-still-dont-know-where-to-start.webp'
 translationKey: if-you-still-dont-know-where-to-start
+slug: if-you-still-dont-know-where-to-start
 language: en
 mainsection: blog
 ---

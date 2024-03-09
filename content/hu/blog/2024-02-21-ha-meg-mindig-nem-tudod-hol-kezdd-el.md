@@ -11,6 +11,7 @@ videos: []
 featured_image: '/images/feature-if-you-still-dont-know-where-to-start.webp'
 cover_image: '/images/cover-if-you-still-dont-know-where-to-start.webp'
 translationKey: if-you-still-dont-know-where-to-start
+slug: ha-meg-mindig-nem-tudod-hol-kezdd-el
 language: hu
 mainsection: blog
 ---

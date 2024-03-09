@@ -11,6 +11,7 @@ videos: []
 featured_image: '/images/feature-calorie-calculation.webp'
 cover_image: '/images/cover-calorie-calculation.webp'
 translationKey: calorie-calculation
+slug: kaloria-szamitas
 language: hu
 mainsection: blog
 ---

@@ -10,7 +10,8 @@ title: January 2024 Challenge
 videos: []
 featured_image: '/images/feature-january-2024-challenge.webp'
 cover_image: '/images/cover-january-2024-challenge.webp'
-translationKey: 2024-january
+translationKey: 2024-january-challenge
+slug: 2024-january-challenge
 language: en
 mainsection: blog
 ---
@@ -18,7 +19,7 @@ Make the change!
 
 It's time if you've been putting it off; if you've tried and failed many times - give yourself a chance at a better life.
 
-I've already described how to [count calories]({{< ref "calorie-calculation" >}} "count calories") and how to determine your [fat-burning heart rate zone]({{< ref "fat-burning-heart-rate-calculation" >}} "fat-burning heart rate zone"). Let's see how you can use this information.
+I've already described how to [count calories]({{< ref "2023-12-29-calorie-calculation" >}} "count calories") and how to determine your [fat-burning heart rate zone]({{< ref "2023-12-30-fat-burning-heart-rate-calculation" >}} "fat-burning heart rate zone"). Let's see how you can use this information.
 
 First, let's take the simple rules I built (and still build) my lifestyle change on: try it; analyze it; if it works, adopt it; and start over.
 

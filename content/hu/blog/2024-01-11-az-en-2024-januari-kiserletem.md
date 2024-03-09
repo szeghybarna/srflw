@@ -10,7 +10,8 @@ title: Az én 2024. januári kísérletem
 videos: []
 featured_image: '/images/feature-my-january-2024-experiment.webp'
 cover_image: '/images/cover-my-january-2024-experiment.webp'
-translationKey: my-2024-january-experiment
+translationKey: my-january-2024-january-experiment
+slug: az-en-2024-januari-kiserletem
 language: hu
 mainsection: blog
 ---
@@ -21,7 +22,7 @@ A napi kalória limitet is ehhez igazítottam, most 1600-1700 közötti a bevite
 Ha már mozgás, akkor ezeket csinálom most:
 
 - rövid bemelegítés
-- napi 1 óra [MAF 180]({{< ref "zsiregeto-pulzustartomany-szamitas" >}} "MAF 180") edzés:
+- napi 1 óra [MAF 180]({{< ref "2023-12-30-zsiregeto-pulzustartomany-szamitas" >}} "MAF 180") edzés:
     - 40 perc szobabiciklin
     - 20 perc futópadon
 - napi 4000 lépés (a 20 perc futás miatt ez csak elméleti szükséglet)

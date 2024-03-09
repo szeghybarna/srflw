@@ -33,7 +33,7 @@ I believe in controlled experimentation because life itself is an experiment.
 
 In the spring of 2023, this question was asked at our 30th reunion, and I started thinking about it then. The most straightforward answer is that I do it **because I can**. And the more I do it, the more I can do it. It was a liberating feeling the first time I could put my knee on my chest or do my first single-leg squat. Obese Barna was not and would never have been able to do that. And if I could do it, you can do it.
 
-I experiment with everything and write about it a lot, but if you're bored of the blah blah blah and just want to know how to start losing weight, you can skip straight to the [Let's begin!]({{< ref "lets-begin" >}} "Let's begin!") page.
+I experiment with everything and write about it a lot, but if you're bored of the blah blah blah and just want to know how to start losing weight, you can skip straight to the [Let's begin!]({{< ref "2023-12-16-lets-begin" >}} "Let's begin!") page.
 
 And what should the above rules apply to?
 

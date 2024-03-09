@@ -34,7 +34,7 @@ Ne is húzzuk tovább az időt, ezek a szabályok:
 
 2023-ban tavasszal hangzott el ez a kérdés a 30 éves osztálytalálkozónkon, és igazából akkor kezdtem el ezen gondolkodni. A legegyszerűbb válasz, hogy azért csinálom, **mert képes vagyok rá**. És minél többet csinálom, annál inkább képes leszek csinálni. Felszabadító érzés volt, amikor először tudtam a térdemet ráhúzni a mellkasomra, vagy első egylábas guggolást megcsinálni. Az elhízott Barna erre nem volt és nem lett volna soha képes. És ha én meg tudtam csinálni, akkor Te is meg tudod csinálni.
 
-Mindennel kísérletezem és sokat is írok róla, de ha untat a blabla, és csak arra vagy kíváncsi, hogy hogyan kezdheted el a fogyást, akkor egyből ugorhatsz a [Vágj bele!]({{< ref "vagj-bele" >}} "Vágj bele!") oldalra.
+Mindennel kísérletezem és sokat is írok róla, de ha untat a blabla, és csak arra vagy kíváncsi, hogy hogyan kezdheted el a fogyást, akkor egyből ugorhatsz a [Vágj bele!]({{< ref "2023-12-16-vagj-bele" >}} "Vágj bele!") oldalra.
 
 És miben is kellene alkalmazni a fenti szabályokat?
 
