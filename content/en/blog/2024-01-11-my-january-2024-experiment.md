@@ -10,8 +10,8 @@ title: My January 2024 Experiment
 videos: []
 featured_image: '/images/feature-my-january-2024-experiment.webp'
 cover_image: '/images/cover-my-january-2024-experiment.webp'
-translationKey: my-january-2024-january-experiment
-slug: my-january-2024-january-experiment
+translationKey: my-january-2024-experiment
+slug: my-january-2024-experiment
 language: en
 mainsection: blog
 ---

@@ -10,7 +10,7 @@ title: Az én 2024. januári kísérletem
 videos: []
 featured_image: '/images/feature-my-january-2024-experiment.webp'
 cover_image: '/images/cover-my-january-2024-experiment.webp'
-translationKey: my-january-2024-january-experiment
+translationKey: my-january-2024-experiment
 slug: az-en-2024-januari-kiserletem
 language: hu
 mainsection: blog
