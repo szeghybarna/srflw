@@ -92,6 +92,10 @@ name = "Garmin"
 url = "https://connect.garmin.com/modern/profile/UnbrownGorger"
 color= '#12aded'
 [[params.ananke_socials]]
+name = "Strava"
+url = "https://strava.com/athletes/133790953"
+color= '#fc4c01'
+[[params.ananke_socials]]
 name = "MyFitnessPal"
 url = "https://www.myfitnesspal.com/profile/EnvaultRoll"
 color= '#0066ee'
