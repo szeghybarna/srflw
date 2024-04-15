@@ -11,7 +11,13 @@
                     document.getElementById("fatBurningZoneFormAge").value= {{ .myAge }};
                     {{ end }}    
                 {{ else }}
-                    document.getElementById("fatBurningZoneFormHeight").value= 0;
+                    {{ if (eq (.Get 0) "actual") }}
+                        {{ range .Site.Params.actual }}
+                        document.getElementById("fatBurningZoneFormAge").value= {{ .myAge }};
+                        {{ end }}    
+                    {{ else }}
+                        document.getElementById("fatBurningZoneFormHeight").value= 0;
+                    {{ end }}
                 {{ end }}
             {{ end }}
         {{ else }}

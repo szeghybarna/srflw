@@ -23,13 +23,25 @@
                     document.getElementById("bmiFormWeeklyWeightLoss").value= {{ .myWeeklyWeightLoss}};
                     {{ end }}    
                 {{ else }}
-                    document.getElementById("bmiFormHeight").value= 0;
-                    document.getElementById("bmiFormAge").value= 0;
-                    document.getElementById("bmiFormWeight").value= 0;
-                    document.getElementById("bmiFormOptimalBmi").value= 0;
-                    document.getElementById("bmiFormCalorieDeficit").value= 0;
-                    document.getElementById("bmiFormWeeklyActiveCalories").value= 0;
-                    document.getElementById("bmiFormWeeklyWeightLoss").value= 0;
+                    {{ if (eq (.Get 0) "actual") }}
+                        {{ range .Site.Params.actual }}
+                        document.getElementById("bmiFormAge").value= {{ .myAge }};
+                        document.getElementById("bmiFormHeight").value= {{ .myHeight}};
+                        document.getElementById("bmiFormWeight").value= {{ .myWeight}};
+                        document.getElementById("bmiFormOptimalBmi").value= {{ .myOptimalBmi}};
+                        document.getElementById("bmiFormCalorieDeficit").value= {{ .myCalorieDeficit}};
+                        document.getElementById("bmiFormWeeklyActiveCalories").value= {{ .myActiveCalories}};
+                        document.getElementById("bmiFormWeeklyWeightLoss").value= {{ .myWeeklyWeightLoss}};
+                        {{ end }}    
+                    {{ else }}
+                        document.getElementById("bmiFormHeight").value= 0;
+                        document.getElementById("bmiFormAge").value= 0;
+                        document.getElementById("bmiFormWeight").value= 0;
+                        document.getElementById("bmiFormOptimalBmi").value= 0;
+                        document.getElementById("bmiFormCalorieDeficit").value= 0;
+                        document.getElementById("bmiFormWeeklyActiveCalories").value= 0;
+                        document.getElementById("bmiFormWeeklyWeightLoss").value= 0;
+                    {{ end }}
                 {{ end }}
             {{ end }}
         {{ else }}

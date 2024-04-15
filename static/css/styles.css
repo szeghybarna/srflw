@@ -13,7 +13,7 @@
   padding: 0.125rem;
 }
 
-#spotify td:nth-child(3), #spotify_render td:nth-child(3) {
+#spotify td:nth-child(2), #spotify_render td:nth-child(2), #spotify td:nth-child(3), #spotify_render td:nth-child(3) {
   white-space: nowrap;
 }
 

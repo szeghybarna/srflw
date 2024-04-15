@@ -72,14 +72,14 @@ block = true
       myWeeklyWeightLoss = 0.5
       myMaf180Option = "C"
     [[params.actual]]
-      myAge = 48
+      myAge = 49
       myHeight = 170
-      myWeight = 65.8
+      myWeight = 70
       myOptimalBmi = 20.5
-      myCalorieDeficit = 0
-      myActiveCalories = 2100
-      myWeeklyWeightLoss = 0.5
-      myMaf180Option = "C"
+      myCalorieDeficit = 20
+      myActiveCalories = 3200
+      myWeeklyWeightLoss = 0
+      myMaf180Option = "B"
 #  text_color = ""
 
 

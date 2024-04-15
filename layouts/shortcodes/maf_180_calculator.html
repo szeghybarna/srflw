@@ -13,13 +13,20 @@
                     document.getElementById("maf180ZoneFormOptions{{ .myMaf180Option }}").checked=true;
                     {{ end }}    
                 {{ else }}
-                    document.getElementById("maf180ZoneFormHeight").value= 0;
-                    document.getElementById("maf180ZoneFormOptions{{ .myMaf180Option }}").checked=true;
+                    {{ if (eq (.Get 0) "actual") }}
+                        {{ range .Site.Params.actual }}
+                        document.getElementById("maf180ZoneFormAge").value= {{ .myAge }};
+                        document.getElementById("maf180ZoneFormOptions{{ .myMaf180Option }}").checked=true;
+                        {{ end }}    
+                    {{ else }}
+                        document.getElementById("maf180ZoneFormAge").value=0;
+                        document.getElementById("maf180ZoneFormOptionsB").checked=true;
+                    {{ end }}
                 {{ end }}
             {{ end }}
         {{ else }}
-            document.getElementById("maf180ZoneFormHeight").value= 0;
-            document.getElementById("maf180ZoneFormOptions{{ .myMaf180Option }}").checked=true;
+            document.getElementById("maf180ZoneFormAge").value=0;
+            document.getElementById("maf180ZoneFormOptionsB").checked=true;
         {{ end }}
     }
     function maf180ZoneCalculator() {

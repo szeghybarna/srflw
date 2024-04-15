@@ -18,7 +18,7 @@ translationKey: spotify
 language: hu
 ---
 
-Utoljára módosítva: {{ date }}, {{table|length}} szám
+Utoljára módosítva: {{ date }}, {{tablelen}} szám
 
 Az elmúlt időszakban sok időt töltöttem ütemes dolgokkal, mint a futás és a biciklizés. Egész jól át tudom közben venni a zene ütemét, így elkezdtem programozóként gondolkodva a [Spotify API](https://developer.spotify.com/documentation/web-api "Spotify API")-jával kísérletezni (minden kísérlet, mondanom sem kell). Találtam egy érdekes adatot a zenékhez, az [audio-features](https://developer.spotify.com/documentation/web-api/reference/get-audio-features "audio-features") keretében a `tempo` mezőt, ami lefordítva:
 
@@ -47,15 +47,12 @@ Kérdésed van? Zenét ajánlanál? Irány a [Facebook csoport](https://www.face
 {% for item in playlists %}| [{{item.name}}]({{item.href}} "{{item.name}}") | {{item.tracks}} |
 {% endfor %}{ .w-50 .mw8 .center id="pltable"}
 
-**Zenék:**
+**Zenék (utolsó 100):**
 
 |BPM|Added|Playlists|Track|
 |--:|-----|---------|:----|
 {% for item in table %}| {{item.tempo}} | {{item.added_at[:10]}} | {{item.playlists}}| {{item.artists}}: [{{item.name}}]({{item.href}} "{{item.name}}") |
 {% endfor %}{ .w-100 .mw8 .center id="spotify" data-toggle="table" data-search="true" }
 
-{% raw %}
-{{< table_sorter spotify >}}
-{% endraw %}
 
 Használjátok bátran!

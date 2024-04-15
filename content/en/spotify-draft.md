@@ -18,7 +18,7 @@ translationKey: spotify
 language: en
 ---
 
-Last updated: {{ date }}, {{table|length}} tracks
+Last updated: {{ date }}, {{tablelen}} tracks
 
 Lately, I've been spending a lot of time doing fast-paced things like running and cycling. I'm pretty good at picking up the beat of music while I'm doing it. Hence, as I am a programmer, I started experimenting with the [Spotify API](https://developer.spotify.com/documentation/web-api "Spotify API"). I found an interesting piece of data for music, the `tempo` field in the [audio-features](https://developer.spotify.com/documentation/web-api/reference/get-audio-features "audio-features"):
 
@@ -47,15 +47,11 @@ Have a question? Would you recommend music? Head to [Facebook group](https://www
 {% for item in playlists %}| [{{item.name}}]({{item.href}} "{{item.name}}") | {{item.tracks}} |
 {% endfor %}{ .w-50 .mw8 .center id="pltable"}
 
-**Tracks:**
+**Tracks (last 100):**
 
 |BPM|Added|Playlists|Track|
 |--:|-----|---------|:----|
 {% for item in table %}| {{item.tempo}} | {{item.added_at[:10]}} | {{item.playlists}}| {{item.artists}}: [{{item.name}}]({{item.href}} "{{item.name}}") |
 {% endfor %}{ .w-100 .mw8 .center id="spotify" data-toggle="table" data-search="true" }
-
-{% raw %}
-{{< table_sorter spotify >}}
-{% endraw %}
 
 Feel free to use it!
