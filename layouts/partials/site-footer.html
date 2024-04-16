@@ -7,15 +7,19 @@
     <span class="f6 lh-copy ml3">{{ .Site.Params.srflw_note }}</span>
   </div>
 
-  <div class="flex justify-between">
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="{{ .Site.Home.Permalink }}" >
+  <div class="flex justify-between f6">
+  <a class="fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="{{ .Site.Home.Permalink }}" >
     &copy; {{ with .Site.Copyright | default .Site.Title }} {{ . | safeHTML }} {{ now.Format "2006"}} {{ end }}
+  </a>
+
+  <a class="fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://inspirea.hu" target="_blank">
+    {{ .Site.Params.inspirea }}
   </a>
 
 
       {{ if .Site.Menus.footer }}
           {{ range .Site.Menus.footer }}
-            <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="{{ .URL }}" title="{{ i18n "pageTitle" . }}">
+            <a class="fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="{{ .URL }}" title="{{ i18n "pageTitle" . }}">
               {{ .Name }}
             </a>
           {{ end }}

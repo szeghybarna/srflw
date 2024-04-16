@@ -12,7 +12,7 @@ featured_image: '/images/feature-how-to-lose-weight.webp'
 cover_image: '/images/cover-how-to-lose-weight.webp'
 translationKey: how-to-lose-weight
 slug: hogyan-kell-fogyni
-language: en
+language: hu
 mainsection: blog
 ---
 A tudomány jelenlegi állása szerint a kulcs a fogyáshoz a **kalóriadeficit**. Pont. Nincsenek mágikus kiskapuk, csodaszerek. Kevesebbet kell enni, mint amennyi energiára a szervezetnek szüksége van.

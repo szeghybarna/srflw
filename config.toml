@@ -30,6 +30,7 @@ block = true
     [languages.en.params]
       read_more_copy= 'Read more'
       srflw_note = "Note: The writer is not a specialist or expert in the field, has no medical or sport-related qualifications and absolves himself of all responsibility and liability. Reader should use their own common sense and are solely responsible for trying out what they read on this website."
+      inspirea = "Inspirea design | website development"
 
   [languages.hu]
     languageCode = 'hu-HU'
@@ -40,6 +41,7 @@ block = true
     [languages.hu.params]
       srflw_note = "Megjegyzés: Az író nem szakember vagy szakértő a témában, nem rendelkezik orvosi vagy sporttal kapcsolatos képesítéssel, és minden felelősség és kötelezettség alól felmenti magát. Az olvasónak a saját józan ítélőképességét kell használnia, és egyedül az olvasó felelőssége, hogy kipróbálja amit ezen a weboldalon olvas."
       read_more_copy = 'Olvass tovább'
+      inspirea = "Készítette Inspirea | Weboldal készítés"
 
 [sitemap]
   changefreq = "weekly"
