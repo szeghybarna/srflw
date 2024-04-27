@@ -48,7 +48,7 @@ Pár perc gerinctornát legalább minden második napra célszerű betenni, ez a
 
 A kalkulátorokat ide is beteszem. Kérdésed van? Kérdezz a [Facebook csoportban](https://www.facebook.com/groups/1098348161611343 "Facebook csoport").
 
-{{< bmi_calculator jan2024>}}
+{{< updated_bmi_calculator jan2024>}}
 
 {{< fat_burning_zone_calculator jan2024 >}}
 

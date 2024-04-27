@@ -62,7 +62,7 @@ A heti fogyás célod is megadhatod, én fél kilogrammnál többet nem javasolo
 
 Ha hízni szeretnél, akkor mínusz előjellel írd be "kalória deficit" százalékot vagy a "heti fogyást" kilogrammban.
 
-{{< bmi_calculator year2019>}}
+{{< updated_bmi_calculator year2019>}}
 
 Ha kitöltötted az értékeket, elméletileg a kalkulátor magától frissíti az eredményt, de ha mégsem, ott a "Számolj!" gomb, hogy meghatározd kalória célod. A bíbor hátterű cellában találod a valós BMI-d és a cél súlyod, ezek tájékoztató jellegű adatok.
 

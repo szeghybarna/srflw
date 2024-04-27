@@ -46,6 +46,9 @@ other = "A sorozat részei"
 [bmiCalculator]
 other = "BMI és napi kalória fogyasztás kalkulátor"
 
+[updatedBmiCalculator]
+other = "FRISSÍTETT BMI és napi kalória fogyasztás kalkulátor"
+
 [calculate]
 other = "Számolj!"
 
@@ -77,7 +80,7 @@ other = "A valós BMI-d."
 other = "Optimális BMI-d"
 
 [optimalBmiHelp]
-other = "Az optimális BMI-d, ez lenne a cél."
+other = "Az optimális BMI-d, állítsd 21-22 körülire, ahogyan szeretnéd."
 
 [targetWeight]
 other = "Cél súlyod"
@@ -127,6 +130,18 @@ other = "Kalória levonás a kalória deficit miatt kcalban nőknek."
 [dailyTotalCaloriesFemaleHelp]
 other = "Napi összes kalória kcal-ban nőknek."
 
+[dailyMaxTotalCaloriesFemaleHelp]
+other = "Napi összes MAXIMUM kalória kcal-ban nőknek."
+
+[dailyPropTotalCaloriesFemaleHelp]
+other = "Napi összes JAVASOLT kalória kcal-ban nőknek."
+
+[dailyMinTotalCaloriesFemaleHelp]
+other = "Napi összes MINIMUM kalória kcal-ban nőknek."
+
+[dailyPropFemale]
+other = "Nőként ezt vidd magaddal: ne egyél naponta többet, mint XXMAXXX kcal; ne egyél naponta kevesebbet, mint XXMINXX kcal. Ideális a napi XXPROPXX kcal körüli étkezés a fogyáshoz."
+
 [dailyActiveCaloriesMaleHelp]
 other = "Plusz kalória az aktivitás miatt kcalban férfiaknak."
 
@@ -138,6 +153,18 @@ other = "Kalória levonás a kalória deficit miatt kcalban férfiaknak."
 
 [dailyTotalCaloriesMaleHelp]
 other = "Napi összes kalória kcal-ban férfiaknak."
+
+[dailyMaxTotalCaloriesMaleHelp]
+other = "Napi MAXIMUM összes kalória kcal-ban férfiaknak."
+
+[dailyPropTotalCaloriesMaleHelp]
+other = "Napi JAVASOLT összes kalória kcal-ban férfiaknak."
+
+[dailyMinTotalCaloriesMaleHelp]
+other = "Napi MINIMUM összes kalória kcal-ban férfiaknak."
+
+[dailyPropMale]
+other = "Férfiként ezt vidd magaddal: ne egyél naponta többet, mint XXMAXXX kcal; ne egyél naponta kevesebbet, mint XXMINXX kcal. Ideális a napi XXPROPXX kcal körüli étkezés a fogyáshoz."
 
 [dailyTotalCaloriesAlert]
 other = "Nem javaslom a kalóriák 1000 kcal alá csökkentését. Ha úgy gondolod, hogy ennél kevesebbet kell enned, először inkább beszélj egy képzett egészségügyi szakemberrel."

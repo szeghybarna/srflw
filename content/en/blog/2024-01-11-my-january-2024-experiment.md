@@ -48,7 +48,7 @@ My diet is like this now:
 
 I'll post the calculators here, too. Got a question? Ask in the [Facebook group](https://www.facebook.com/groups/1098348161611343 "Facebook group").
 
-{{< bmi_calculator jan2024>}}
+{{< updated_bmi_calculator jan2024>}}
 
 {{< fat_burning_zone_calculator jan2024 >}}
 

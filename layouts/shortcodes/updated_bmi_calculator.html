@@ -1,0 +1,255 @@
+<script type="text/javascript">
+    function updatedBmiInit() {
+        {{ if (.Get 0) }}
+            {{ if (eq (.Get 0) "year2019") }}
+                {{ range .Site.Params.year2019 }}
+                document.getElementById("updatedBmiFormAge").value= {{ .myAge }};
+                document.getElementById("updatedBmiFormHeight").value= {{ .myHeight}};
+                document.getElementById("updatedBmiFormWeight").value= {{ .myWeight}};
+                document.getElementById("updatedBmiFormOptimalBmi").value= {{ .myOptimalBmi}};
+                document.getElementById("updatedBmiFormWeeklyActiveCalories").value= {{ .myActiveCalories}};
+                {{ end }}    
+            {{ else }}
+                {{ if (eq (.Get 0) "jan2024") }}
+                    {{ range .Site.Params.jan2024 }}
+                    document.getElementById("updatedBmiFormAge").value= {{ .myAge }};
+                    document.getElementById("updatedBmiFormHeight").value= {{ .myHeight}};
+                    document.getElementById("updatedBmiFormWeight").value= {{ .myWeight}};
+                    document.getElementById("updatedBmiFormOptimalBmi").value= {{ .myOptimalBmi}};
+                    document.getElementById("updatedBmiFormWeeklyActiveCalories").value= {{ .myActiveCalories}};
+                    {{ end }}    
+                {{ else }}
+                    {{ if (eq (.Get 0) "actual") }}
+                        {{ range .Site.Params.actual }}
+                        document.getElementById("updatedBmiFormAge").value= {{ .myAge }};
+                        document.getElementById("updatedBmiFormHeight").value= {{ .myHeight}};
+                        document.getElementById("updatedBmiFormWeight").value= {{ .myWeight}};
+                        document.getElementById("updatedBmiFormOptimalBmi").value= {{ .myOptimalBmi}};
+                        document.getElementById("updatedBmiFormWeeklyActiveCalories").value= {{ .myActiveCalories}};
+                        {{ end }}    
+                    {{ else }}
+                        document.getElementById("updatedBmiFormHeight").value= 0;
+                        document.getElementById("updatedBmiFormAge").value= 0;
+                        document.getElementById("updatedBmiFormWeight").value= 0;
+                        document.getElementById("updatedBmiFormOptimalBmi").value= 0;
+                        document.getElementById("updatedBmiFormWeeklyActiveCalories").value= 0;
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+        {{ else }}
+            document.getElementById("updatedBmiFormHeight").value= 0;
+            document.getElementById("updatedBmiFormAge").value= 0;
+            document.getElementById("updatedBmiFormWeight").value= 0;
+            document.getElementById("updatedBmiFormOptimalBmi").value= 0;
+            document.getElementById("updatedBmiFormWeeklyActiveCalories").value= 0;
+        {{ end }}
+    }
+    function updatedBmiCalculator() {
+        var age=parseInt(document.getElementById("updatedBmiFormAge").value) || 0;
+        var height=parseFloat(document.getElementById("updatedBmiFormHeight").value) || 0;
+        var weight=parseFloat(document.getElementById("updatedBmiFormWeight").value) || 0;
+        var optimalBmi=parseFloat(document.getElementById("updatedBmiFormOptimalBmi").value) || 0;
+        var weeklyActiveCalories=parseInt(document.getElementById("updatedBmiFormWeeklyActiveCalories").value) || 0;
+        if (height > 0) {
+            var actualBmi=(weight/((height/100)*(height/100))).toFixed(2) || 0;
+        } else {
+            var actualBmi=0;
+        }
+        var targetWeight=(optimalBmi*(height/100)*(height/100)).toFixed(2) || 0;
+        var rmrFemale=parseInt(((7.38*targetWeight)+(607*(height/100))-(2.31*age)+43).toFixed(0)) || 0;
+        var rmrMale=parseInt(((9.65*targetWeight)+(573*(height/100))-(5.08*age)+260).toFixed(0)) || 0;
+        var dailyActiveCalories=parseInt((weeklyActiveCalories/7).toFixed(0)) || 0;
+        var dailyMaxTotalCaloriesFemale=rmrFemale+dailyActiveCalories;
+        var dailyPropTotalCaloriesFemale=(dailyMaxTotalCaloriesFemale*0.85).toFixed(0);
+        var dailyMinTotalCaloriesFemale=(dailyMaxTotalCaloriesFemale*0.78).toFixed(0);
+        document.getElementById("updatedFemaleAlertDiv").style.display = 'none';
+        document.getElementById("updatedFemaleAlert").textContent="";
+        if (dailyMaxTotalCaloriesFemale<1000) {
+            dailyMaxTotalCaloriesFemale=1000;
+            document.getElementById("updatedFemaleAlertDiv").style.display = 'block';
+            document.getElementById("updatedFemaleAlert").textContent="{{ i18n "dailyTotalCaloriesAlert" }}";
+        }
+        if (dailyPropTotalCaloriesFemale<1000) {
+            dailyPropTotalCaloriesFemale=1000;
+            document.getElementById("updatedFemaleAlertDiv").style.display = 'block';
+            document.getElementById("updatedFemaleAlert").textContent="{{ i18n "dailyTotalCaloriesAlert" }}";
+        }
+        if (dailyMinTotalCaloriesFemale<1000) {
+            dailyMinTotalCaloriesFemale=1000;
+            document.getElementById("updatedFemaleAlertDiv").style.display = 'block';
+            document.getElementById("updatedFemaleAlert").textContent="{{ i18n "dailyTotalCaloriesAlert" }}";
+        }
+        var dailyMaxTotalCaloriesMale=rmrMale+dailyActiveCalories;
+        var dailyPropTotalCaloriesMale=(dailyMaxTotalCaloriesMale*0.85).toFixed(0);
+        var dailyMinTotalCaloriesMale=(dailyMaxTotalCaloriesMale*0.78).toFixed(0);
+        document.getElementById("updatedMaleAlertDiv").style.display = 'none';
+        document.getElementById("updatedMaleAlert").textContent="";
+        if (dailyMaxTotalCaloriesMale<1000) {
+            dailyMaxTotalCaloriesMale=1000;
+            document.getElementById("updatedMaleAlertDiv").style.display = 'block';
+            document.getElementById("updatedMaleAlert").textContent="{{ i18n "dailyTotalCaloriesAlert" }}";
+        }
+        if (dailyPropTotalCaloriesMale<1000) {
+            dailyPropTotalCaloriesMale=1000;
+            document.getElementById("updatedMaleAlertDiv").style.display = 'block';
+            document.getElementById("updatedMaleAlert").textContent="{{ i18n "dailyTotalCaloriesAlert" }}";
+        }
+        if (dailyMinTotalCaloriesMale<1000) {
+            dailyMinTotalCaloriesMale=1000;
+            document.getElementById("updatedMaleAlertDiv").style.display = 'block';
+            document.getElementById("updatedMaleAlert").textContent="{{ i18n "dailyTotalCaloriesAlert" }}";
+        }
+        document.getElementById("updatedBmiFormActualBmi").value=actualBmi;
+        document.getElementById("updatedBmiFormTargetWeight").value=targetWeight;
+        document.getElementById("updatedBmiFormDailyRmrFemale").value=rmrFemale;
+        document.getElementById("updatedBmiFormDailyRmrMale").value=rmrMale;
+        document.getElementById("updatedBmiFormDailyActiveCaloriesFemale").value=dailyActiveCalories;
+        document.getElementById("updatedBmiFormDailyActiveCaloriesMale").value=dailyActiveCalories;
+        document.getElementById("updatedBmiFormDailyMaxTotalCaloriesFemale").value=dailyMaxTotalCaloriesFemale;
+        document.getElementById("updatedBmiFormDailyPropTotalCaloriesFemale").value=dailyPropTotalCaloriesFemale;
+        document.getElementById("updatedBmiFormDailyMinTotalCaloriesFemale").value=dailyMinTotalCaloriesFemale;
+        document.getElementById("updatedFemaleTakeAway").textContent='{{ i18n "dailyPropFemale" }}'.replace('XXMAXXX', dailyMaxTotalCaloriesFemale).replace('XXPROPXX', dailyPropTotalCaloriesFemale).replace('XXMINXX', dailyMinTotalCaloriesFemale);
+        document.getElementById("updatedBmiFormDailyMaxTotalCaloriesMale").value=dailyMaxTotalCaloriesMale;
+        document.getElementById("updatedBmiFormDailyPropTotalCaloriesMale").value=dailyPropTotalCaloriesMale;
+        document.getElementById("updatedBmiFormDailyMinTotalCaloriesMale").value=dailyMinTotalCaloriesMale;
+        document.getElementById("updatedMaleTakeAway").textContent='{{ i18n "dailyPropMale" }}'.replace('XXMAXXX', dailyMaxTotalCaloriesMale).replace('XXPROPXX', dailyPropTotalCaloriesMale).replace('XXMINXX', dailyMinTotalCaloriesMale)
+    }
+    /*
+    RMR females: (7.38 * weight in kg) + (607 * height in m) - (2.31 * age in years) + 43
+    RMR males: (9.65 * weight in kg) + (573 * height in m) - (5.08 * age in years) + 260;
+    */
+    window.addEventListener('load', function () {
+        updatedBmiInit();
+        updatedBmiCalculator();
+    });
+</script>
+
+<strong>{{ i18n "updatedBmiCalculator" }}</strong>
+
+<form class="pa4 black-80 f6" accept-charset="UTF-8" action="#" method="POST">
+  <div class="measure cf">
+    <label for="updatedBmiFormAge" class="f6 b db mb2 fl w-70">{{ i18n "age" }}</label>
+    <small id="updatedBmiFormAgeHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "ageHelp" }}</small>
+    <input id="updatedBmiFormAge" class="input-reset ba b--black-20 pa2 mb2 db fl w-30 tr" type="number" aria-describedby="updatedBmiFormAgeHelp" min="1" max="120" step="1" autocomplete =“off” onchange="updatedBmiCalculator();">
+  </div>
+  <div class="measure cf">
+    <label for="updatedBmiFormHeight" class="f6 b db mb2 fl w-70">{{ i18n "height" }}</label>
+    <small id="updatedBmiFormHeightHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "heightHelp" }}</small>
+    <input id="updatedBmiFormHeight" class="input-reset ba b--black-20 pa2 mb2 db fl w-30 tr" type="number" aria-describedby="updatedBmiFormHeightHelp" min="90" max="250" step=".1" autocomplete =“off” onchange="updatedBmiCalculator();">
+  </div>
+  <div class="measure cf">
+    <label for="updatedBmiFormWeight" class="f6 b db mb2 fl w-70">{{ i18n "weight" }}</label>
+    <small id="updatedBmiFormWeightHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "weightHelp" }}</small>
+    <input id="updatedBmiFormWeight" class="input-reset ba b--black-20 pa2 mb2 db fl w-30 tr" type="number" aria-describedby="updatedBmiFormWeightHelp" min="30.0" max="500.0" step=".1" autocomplete =“off” onchange="updatedBmiCalculator();">
+  </div>
+  <div class="measure cf">
+    <label for="updatedBmiFormOptimalBmi" class="f6 b db mb2 fl w-70">{{ i18n "optimalBmi" }}</label>
+    <small id="updatedBmiFormOptimalBmiHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "optimalBmiHelp" }}</small>
+    <input id="updatedBmiFormOptimalBmi" class="input-reset ba b--black-20 pa2 mb2 db fl w-30 tr" type="number" aria-describedby="updatedBmiFormOptimalBmi" min="10.0" max="100.0" step=".1" autocomplete =“off” onchange="updatedBmiCalculator();">
+  </div>
+  <div class="measure cf">
+    <label for="updatedBmiFormWeeklyActiveCalories" class="f6 b db mb2 fl w-70">{{ i18n "weeklyActiveCalories" }}</label>
+    <small id="updatedBmiFormWeeklyActiveCaloriesHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "weeklyActiveCaloriesHelp" }}</small>
+    <input id="updatedBmiFormWeeklyActiveCalories" class="input-reset ba b--black-20 pa2 mb2 db fl w-30 tr" type="number" aria-describedby="updatedBmiFormWeeklyActiveCalories" min="0" max="100000" step="1" autocomplete =“off” onchange="updatedBmiCalculator();">
+  </div>
+
+  <div class="measure">
+    <a class="link dim br1 ph3 pv2 mb2 dib white bg-gold w-100" onclick="updatedBmiCalculator();">{{ i18n "calculate" }}</a>
+  </div>
+  
+  <div class="measure cf">
+    <label for="updatedBmiFormActualBmi" class="f6 b db mb2 fl w-60">{{ i18n "actualBmi" }}</label>
+    <small id="updatedBmiFormActualBmiHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "actualBmiHelp" }}</small>
+    <input id="updatedBmiFormActualBmi" class="input-reset ba db br1 ph3 pv2 mb2 white bg-purple fl w-20 tr" aria-describedby="updatedBmiFormActualBmiHelp" readonly="readonly" autocomplete =“off”>
+  </div>
+  <div class="measure cf">
+    <label for="updatedBmiFormTargetWeight" class="f6 b db mb2 fl w-60">{{ i18n "targetWeight" }}</label>
+    <small id="updatedBmiFormTargetWeightHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "targetWeightHelp" }}</small>
+    <input id="updatedBmiFormTargetWeight" class="input-reset ba db br1 ph3 pv2 mb2 white bg-purple fl w-20 tr" aria-describedby="updatedBmiFormTargetWeightHelp" readonly="readonly" autocomplete =“off”>
+  </div>
+      
+  <div class="measure cf">
+    <strong class="fl w-100">{{ i18n "dailyRmrFemale" }}</strong>
+    <!--label for="updatedBmiFormDailyRmrFemale" class="f6 b db mb2">{{ i18n "dailyRmrFemale" }}</label-->
+    <small id="updatedBmiFormDailyRmrFemaleHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "dailyRmrFemaleHelp" }}</small>
+    <input id="updatedBmiFormDailyRmrFemale" class="input-reset ba db br1 ph3 pv2 mb2 white bg-hot-pink fl w-20 tr" aria-describedby="updatedBmiFormDailyRmrFemaleHelp" readonly="readonly" autocomplete =“off”>
+  </div>
+  
+  <div class="measure cf">
+    <small id="updatedBmiFormDailyActiveCaloriesFemaleHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "dailyActiveCaloriesFemaleHelp" }}</small>
+    <input id="updatedBmiFormDailyActiveCaloriesFemale" class="input-reset ba db br1 ph3 pv2 mb2 white bg-hot-pink fl w-20 tr" aria-describedby="updatedBmiFormDailyActiveCaloriesFemaleHelp" readonly="readonly" autocomplete =“off”>
+  </div>
+  
+  <div class="measure cf">
+    <small id="updatedBmiFormDailyMaxTotalCaloriesFemaleHelp" class="f6 black-60 db mb2 ph2 b fl w-60">{{ i18n "dailyMaxTotalCaloriesFemaleHelp" }}</small>
+    <input id="updatedBmiFormDailyMaxTotalCaloriesFemale" class="input-reset ba db br1 ph3 pv2 mb2 white bg-dark-red b fl w-20 tr" aria-describedby="updatedBmiFormDailyMaxTotalCaloriesFemale" readonly="readonly" autocomplete =“off”>
+  </div>
+  <div class="measure cf">
+    <small id="updatedBmiFormDailyTotalCaloriesFemaleHelp" class="f6 black-60 db mb2 ph2 b fl w-60">{{ i18n "dailyPropTotalCaloriesFemaleHelp" }}</small>
+    <input id="updatedBmiFormDailyPropTotalCaloriesFemale" class="input-reset ba db br1 ph3 pv2 mb2 white bg-dark-green b fl w-20 tr" aria-describedby="updatedBmiFormDailyPropTotalCaloriesFemale" readonly="readonly" autocomplete =“off”>
+  </div>
+  <div class="measure cf">
+    <small id="updatedBmiFormDailyMinTotalCaloriesFemaleHelp" class="f6 black-60 db mb2 ph2 b fl w-60">{{ i18n "dailyMinTotalCaloriesFemaleHelp" }}</small>
+    <input id="updatedBmiFormDailyMinTotalCaloriesFemale" class="input-reset ba db br1 ph3 pv2 mb2 white bg-orange b fl w-20 tr" aria-describedby="updatedBmiFormDailyMinTotalCaloriesFemale" readonly="readonly" autocomplete =“off”>
+  </div>
+  <div class="flex items-center justify-center pa4 bg-light-pink dark-pink b" id="updatedFemaleTakeAwayDiv">
+    <svg class="w3" data-icon="info" viewBox="0 0 32 32" style="fill:currentcolor">
+      <title>info icon</title>
+      <path d="M16 0 A16 16 0 0 1 16 32 A16 16 0 0 1 16 0 M19 15 L13 15 L13 26 L19 26 z M16 6 A3 3 0 0 0 16 12 A3 3 0 0 0 16 6"></path>
+    </svg>
+    <span class="lh-title ml3" id="updatedFemaleTakeAway"></span>
+  </div> 
+
+
+  <div class="flex items-center justify-center pa4 dark-red dn" id="updatedFemaleAlertDiv">
+    <svg class="w1" data-icon="info" viewBox="0 0 32 32" style="fill:currentcolor">
+      <title>info icon</title>
+      <path d="M16 0 A16 16 0 0 1 16 32 A16 16 0 0 1 16 0 M19 15 L13 15 L13 26 L19 26 z M16 6 A3 3 0 0 0 16 12 A3 3 0 0 0 16 6"></path>
+    </svg>
+    <span class="lh-title ml3" id="updatedFemaleAlert"></span>
+  </div> 
+
+
+
+  <div class="measure cf">
+    <strong class="fl w-100">{{ i18n "dailyRmrMale" }}</strong>
+    <!--label for="updatedBmiFormDailyRmrMale" class="f6 b db mb2">{{ i18n "dailyRmrMale" }}</label-->
+    <small id="updatedBmiFormDailyRmrMaleHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "dailyRmrMaleHelp" }}</small>
+    <input id="updatedBmiFormDailyRmrMale" class="input-reset ba db br1 ph3 pv2 mb2 white bg-blue fl w-20 tr" aria-describedby="updatedBmiFormDailyRmrMaleHelp" readonly="readonly" autocomplete =“off”>
+  </div>
+  <div class="measure cf">
+    <small id="updatedBmiFormDailyActiveCaloriesMaleHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "dailyActiveCaloriesMaleHelp" }}</small>
+    <input id="updatedBmiFormDailyActiveCaloriesMale" class="input-reset ba db br1 ph3 pv2 mb2 white bg-blue fl w-20 tr" aria-describedby="updatedBmiFormDailyActiveCaloriesMaleHelp" readonly="readonly" autocomplete =“off”>
+  </div>
+  <div class="measure cf">
+    <small id="updatedBmiFormDailyMaxTotalCaloriesMaleHelp" class="f6 black-60 db mb2 ph2 b fl w-60">{{ i18n "dailyMaxTotalCaloriesMaleHelp" }}</small>
+    <input id="updatedBmiFormDailyMaxTotalCaloriesMale" class="input-reset ba db br1 ph3 pv2 mb2 white bg-dark-red b fl w-20 tr" aria-describedby="updatedBmiFormDailyMaxTotalCaloriesMale" readonly="readonly" autocomplete =“off”>
+  </div>
+  <div class="measure cf">
+    <small id="updatedBmiFormDailyPropTotalCaloriesMaleHelp" class="f6 black-60 db mb2 ph2 b fl w-60">{{ i18n "dailyPropTotalCaloriesMaleHelp" }}</small>
+    <input id="updatedBmiFormDailyPropTotalCaloriesMale" class="input-reset ba db br1 ph3 pv2 mb2 white bg-dark-green b fl w-20 tr" aria-describedby="updatedBmiFormDailyPropTotalCaloriesMale" readonly="readonly" autocomplete =“off”>
+  </div>
+  <div class="measure cf">
+    <small id="updatedBmiFormDailyMinTotalCaloriesMaleHelp" class="f6 black-60 db mb2 ph2 b fl w-60">{{ i18n "dailyMinTotalCaloriesMaleHelp" }}</small>
+    <input id="updatedBmiFormDailyMinTotalCaloriesMale" class="input-reset ba db br1 ph3 pv2 mb2 white bg-orange b fl w-20 tr" aria-describedby="updatedBmiFormDailyMinTotalCaloriesMale" readonly="readonly" autocomplete =“off”>
+  </div>
+  <div class="flex items-center justify-center pa4 bg-light-blue b--navy b" id="updatedMaleTakeAwayDiv">
+    <svg class="w3" data-icon="info" viewBox="0 0 32 32" style="fill:currentcolor">
+      <title>info icon</title>
+      <path d="M16 0 A16 16 0 0 1 16 32 A16 16 0 0 1 16 0 M19 15 L13 15 L13 26 L19 26 z M16 6 A3 3 0 0 0 16 12 A3 3 0 0 0 16 6"></path>
+    </svg>
+    <span class="lh-title ml3" id="updatedMaleTakeAway"></span>
+  </div> 
+  <div class="flex items-center justify-center pa4 dark-red dn" id="updatedMaleAlertDiv">
+    <svg class="w1" data-icon="info" viewBox="0 0 32 32" style="fill:currentcolor">
+      <title>info icon</title>
+      <path d="M16 0 A16 16 0 0 1 16 32 A16 16 0 0 1 16 0 M19 15 L13 15 L13 26 L19 26 z M16 6 A3 3 0 0 0 16 12 A3 3 0 0 0 16 6"></path>
+    </svg>
+    <span class="lh-title ml3" id="updatedMaleAlert"></span>
+  </div> 
+</form>
+
+
+
+
+
