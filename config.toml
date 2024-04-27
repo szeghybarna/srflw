@@ -73,6 +73,15 @@ block = true
       myActiveCalories = 4700
       myWeeklyWeightLoss = 0.5
       myMaf180Option = "C"
+    [[params.apr2024]]
+      myAge = 49
+      myHeight = 170
+      myWeight = 68
+      myOptimalBmi = 20.5
+      myCalorieDeficit = 20
+      myActiveCalories = 4000
+      myWeeklyWeightLoss = 0
+      myMaf180Option = "B"
     [[params.actual]]
       myAge = 49
       myHeight = 170
