@@ -54,7 +54,7 @@ And then here's a little twist. Because I ran a personal best 5km at 180 cadence
 
 Lastly, I set the treadmill to the speed I was running on the track. I expected to burn more calories.
 
-| Where | Rode | Time | Distance | Calories | Calories/min | Average heart rate | Average pace (min/km) | Links |
+| Where | Cadence | Time | Distance | Calories | Calories/min | Average heart rate | Average pace (min/km) | Links |
 | --- | ---: | --: | --: | ------: | -----------: | -----------: | --------------------: | ------ |
 | Treadmill, 9.0 km/h (6:40 min/km) | 170 | 30:30 | 5.11 | 316 | 10.36 | 136 | 5:58 | [G](https://connect.garmin.com/modern/activity/15681993859), [S](https://www.strava.com/activities/11544823569)|
 | Treadmill, 9.0 km/h (6:40 min/km) | 180 | 33:55 | 6.10 | 358 | 10.56 | 139 | 5:33 | [G](https://connect.garmin.com/modern/activity/15698792727), [S](https://www.strava.com/activities/11552850002)|
