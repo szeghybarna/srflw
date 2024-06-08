@@ -58,6 +58,23 @@
 }
 
 
+#simpletable, #simpletable_render table, #simpletable th, #simpletable_render th, #simpletable td, #simpletable_render td {
+    border-style: solid;
+    border-width: 1px;
+    font-family: monospace;
+    font-size: .6rem;
+    white-space: nowrap;
+}
+
+#simpletable, #simpletable_render table {
+  border-collapse: collapse;
+}
+
+#simpletable td, #simpletable_render td {
+  padding: 0.125rem;
+}
+
+
 .dt-wrapper, .search-results {
     font-family: monospace;
     font-size: .6rem;
