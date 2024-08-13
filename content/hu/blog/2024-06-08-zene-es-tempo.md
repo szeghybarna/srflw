@@ -11,7 +11,7 @@ videos: []
 featured_image: '/images/feature-music-and-pace.webp'
 cover_image: '/images/cover-music-and-pace.webp'
 translationKey: music-and-pace
-slug: music-and-pace
+slug: zene-es-tempo
 language: hu
 mainsection: blog
 ---
