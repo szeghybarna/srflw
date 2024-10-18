@@ -53,3 +53,8 @@ def lambda_handler(event, context):
     urllib.request.urlopen(r)
     return
 ```
+# Useful links
+
+- [https://www.juliafmorgado.com/posts/build-a-website-with-hugo-on-aws-amplify/](https://www.juliafmorgado.com/posts/build-a-website-with-hugo-on-aws-amplify/)
+- [https://swsmith.cc/posts/hugo-amplify.html](https://swsmith.cc/posts/hugo-amplify.html)
+
