@@ -16,7 +16,7 @@ translationKey: spotify
 language: hu
 ---
 
-Utoljára módosítva: 2024-11-17, 1620 szám
+Utoljára módosítva: 2024-11-17, 1573 szám
 
 Az elmúlt időszakban sok időt töltöttem ütemes dolgokkal, mint a futás és a biciklizés. Egész jól át tudom közben venni a zene ütemét, így elkezdtem programozóként gondolkodva a [Spotify API](https://developer.spotify.com/documentation/web-api "Spotify API")-jával kísérletezni (minden kísérlet, mondanom sem kell). Találtam egy érdekes adatot a zenékhez, az [audio-features](https://developer.spotify.com/documentation/web-api/reference/get-audio-features "audio-features") keretében a `tempo` mezőt, ami lefordítva:
 
@@ -42,46 +42,47 @@ Kérdésed van? Zenét ajánlanál? Irány a [Facebook csoport](https://www.face
 
 |Playlist|Tracks|
 |--------|-----:|
-| [BPM 060](https://open.spotify.com/playlist/1T43UL50SguLP7XM0mKzh5 "BPM 060") | 175 |
-| [BPM 065](https://open.spotify.com/playlist/4ofrDkzlc3qOEoyf9UUeCu "BPM 065") | 276 |
-| [BPM 070](https://open.spotify.com/playlist/7z6RtuDQ1UGy4JJfQ2RkKO "BPM 070") | 245 |
-| [BPM 075](https://open.spotify.com/playlist/5pgBpLvXyDbpRCkK1D16BK "BPM 075") | 213 |
-| [BPM 080](https://open.spotify.com/playlist/4jUjllO0Pl9rjpjuveFrtN "BPM 080") | 141 |
-| [BPM 085](https://open.spotify.com/playlist/5lCiqajDyK3MtVkUQyZh3a "BPM 085") | 151 |
-| [BPM 090](https://open.spotify.com/playlist/47kkzkbSBdzU8pCsnrB6xB "BPM 090") | 104 |
-| [BPM 095](https://open.spotify.com/playlist/2gvhSjxWu24yr5AvLrjahS "BPM 095") | 103 |
-| [BPM 100](https://open.spotify.com/playlist/6Hx0NJUh15jVjNEJpmJdF3 "BPM 100") | 91 |
-| [BPM 105](https://open.spotify.com/playlist/7vYb0Pu0uQ8Gx0VOIZGH3R "BPM 105") | 58 |
-| [BPM 110](https://open.spotify.com/playlist/7Jk32WRYcSmmDfIuZifBBP "BPM 110") | 44 |
-| [BPM 115](https://open.spotify.com/playlist/7BCgwEzKfBSihD7uQJL9wD "BPM 115") | 40 |
-| [BPM 120](https://open.spotify.com/playlist/4KLCxo5gZbaNpeSh6YAnzY "BPM 120") | 77 |
-| [BPM 125](https://open.spotify.com/playlist/6snnLs0pI39yhq8vBPbwhc "BPM 125") | 155 |
-| [BPM 130](https://open.spotify.com/playlist/2WKJjj6iBSPuQ0S9hdzGco "BPM 130") | 154 |
-| [BPM 135](https://open.spotify.com/playlist/0PtLti4O74i3Gbk15jvUP9 "BPM 135") | 69 |
-| [BPM 140](https://open.spotify.com/playlist/4vqcLLn4OixNSCk8PXg9Oz "BPM 140") | 154 |
-| [BPM 145](https://open.spotify.com/playlist/4gKJpMAvH7ie8pjmRJWrOl "BPM 145") | 134 |
+| [BPM 060](https://open.spotify.com/playlist/1T43UL50SguLP7XM0mKzh5 "BPM 060") | 216 |
+| [BPM 065](https://open.spotify.com/playlist/4ofrDkzlc3qOEoyf9UUeCu "BPM 065") | 235 |
+| [BPM 070](https://open.spotify.com/playlist/7z6RtuDQ1UGy4JJfQ2RkKO "BPM 070") | 292 |
+| [BPM 075](https://open.spotify.com/playlist/5pgBpLvXyDbpRCkK1D16BK "BPM 075") | 166 |
+| [BPM 080](https://open.spotify.com/playlist/4jUjllO0Pl9rjpjuveFrtN "BPM 080") | 154 |
+| [BPM 085](https://open.spotify.com/playlist/5lCiqajDyK3MtVkUQyZh3a "BPM 085") | 138 |
+| [BPM 090](https://open.spotify.com/playlist/47kkzkbSBdzU8pCsnrB6xB "BPM 090") | 117 |
+| [BPM 095](https://open.spotify.com/playlist/2gvhSjxWu24yr5AvLrjahS "BPM 095") | 90 |
+| [BPM 100](https://open.spotify.com/playlist/6Hx0NJUh15jVjNEJpmJdF3 "BPM 100") | 94 |
+| [BPM 105](https://open.spotify.com/playlist/7vYb0Pu0uQ8Gx0VOIZGH3R "BPM 105") | 56 |
+| [BPM 110](https://open.spotify.com/playlist/7Jk32WRYcSmmDfIuZifBBP "BPM 110") | 47 |
+| [BPM 115](https://open.spotify.com/playlist/7BCgwEzKfBSihD7uQJL9wD "BPM 115") | 35 |
+| [BPM 120](https://open.spotify.com/playlist/4KLCxo5gZbaNpeSh6YAnzY "BPM 120") | 86 |
+| [BPM 125](https://open.spotify.com/playlist/6snnLs0pI39yhq8vBPbwhc "BPM 125") | 146 |
+| [BPM 130](https://open.spotify.com/playlist/2WKJjj6iBSPuQ0S9hdzGco "BPM 130") | 160 |
+| [BPM 135](https://open.spotify.com/playlist/0PtLti4O74i3Gbk15jvUP9 "BPM 135") | 63 |
+| [BPM 140](https://open.spotify.com/playlist/4vqcLLn4OixNSCk8PXg9Oz "BPM 140") | 163 |
+| [BPM 145](https://open.spotify.com/playlist/4gKJpMAvH7ie8pjmRJWrOl "BPM 145") | 125 |
 | [BPM 150](https://open.spotify.com/playlist/4Hit7eOBHxdsYuh5hpJHln "BPM 150") | 112 |
 | [BPM 155](https://open.spotify.com/playlist/7qxa2wFxlyc6y0M8sVEePJ "BPM 155") | 70 |
-| [BPM 160](https://open.spotify.com/playlist/1apsAlvqcu4d7kNODy2zOX "BPM 160") | 92 |
-| [BPM 165](https://open.spotify.com/playlist/30ElA12RWrqpfyKX3sclVO "BPM 165") | 40 |
-| [BPM 170](https://open.spotify.com/playlist/368njAKjf40Z7dBG0Fgqrj "BPM 170") | 92 |
-| [BPM 175](https://open.spotify.com/playlist/6JjTc2SL0xYF9SSPdCK6cC "BPM 175") | 60 |
-| [BPM 180](https://open.spotify.com/playlist/5gd4rCpdrzeiVcBmx57irH "BPM 180") | 55 |
-| [BPM 185](https://open.spotify.com/playlist/6TvIdLdnA9lQnvEdTIOYLy "BPM 185") | 45 |
+| [BPM 160](https://open.spotify.com/playlist/1apsAlvqcu4d7kNODy2zOX "BPM 160") | 93 |
+| [BPM 165](https://open.spotify.com/playlist/30ElA12RWrqpfyKX3sclVO "BPM 165") | 39 |
+| [BPM 170](https://open.spotify.com/playlist/368njAKjf40Z7dBG0Fgqrj "BPM 170") | 94 |
+| [BPM 175](https://open.spotify.com/playlist/6JjTc2SL0xYF9SSPdCK6cC "BPM 175") | 58 |
+| [BPM 180](https://open.spotify.com/playlist/5gd4rCpdrzeiVcBmx57irH "BPM 180") | 59 |
+| [BPM 185](https://open.spotify.com/playlist/6TvIdLdnA9lQnvEdTIOYLy "BPM 185") | 41 |
 | [BPM 190](https://open.spotify.com/playlist/5GNIYAIqsxJORL03Hk9j7I "BPM 190") | 57 |
 | [BPM 195](https://open.spotify.com/playlist/3QBs2Gn4hGla10iapoMqq6 "BPM 195") | 37 |
 | [BPM 200](https://open.spotify.com/playlist/1oqAyvigIRfNhdGfLXSET6 "BPM 200") | 66 |
 | [BPM 205](https://open.spotify.com/playlist/29f2o25j8KTuZyTxoOFZfJ "BPM 205") | 20 |
-| [BPM 210](https://open.spotify.com/playlist/14x12RqqKgHyyxxjvI5uWo "BPM 210") | 37 |
-| [BPM 215](https://open.spotify.com/playlist/0DhuxGat9zLAPzndrvFvn5 "BPM 215") | 23 |
-| [BPM 220](https://open.spotify.com/playlist/7aApgYgX27nSiw4zuzljzf "BPM 220") | 25 |
-| [BPM ALL](https://open.spotify.com/playlist/5kbzhdd4pUdRUi4N8juf30 "BPM ALL") | 1620 |
+| [BPM 210](https://open.spotify.com/playlist/14x12RqqKgHyyxxjvI5uWo "BPM 210") | 39 |
+| [BPM 215](https://open.spotify.com/playlist/0DhuxGat9zLAPzndrvFvn5 "BPM 215") | 22 |
+| [BPM 220](https://open.spotify.com/playlist/7aApgYgX27nSiw4zuzljzf "BPM 220") | 23 |
+| [BPM ALL](https://open.spotify.com/playlist/5kbzhdd4pUdRUi4N8juf30 "BPM ALL") | 1619 |
 { .w-50 .mw8 .center id="pltable"}
 
 **Zenék (utolsó 100):**
 
 |BPM|Added|Playlists|Track|
 |--:|-----|---------|:----|
+| 106.322 | 2024-11-17 | [105](https://open.spotify.com/playlist/7vYb0Pu0uQ8Gx0VOIZGH3R "BPM 105"), [210](https://open.spotify.com/playlist/14x12RqqKgHyyxxjvI5uWo "BPM 210")| [Astrix](https://open.spotify.com/artist/3dUltShd2gJQc98Kc7Syit "Astrix"), [Omiki](https://open.spotify.com/artist/7pHwBqsYULdAdHgSwf1q9f "Omiki"), [TERRA](https://open.spotify.com/artist/6EMXsJEdrX9vLI7DWSjG5l "TERRA"): [He.art Omiki & Terra Remix](https://open.spotify.com/track/0IQ2lKaun7QeB4ixCbJoIb "He.art Omiki & Terra Remix") |
 | 112.002 | 2024-11-14 | [110](https://open.spotify.com/playlist/7Jk32WRYcSmmDfIuZifBBP "BPM 110")| [Ouhana](https://open.spotify.com/artist/3tVHTq8WIDFyayynQFPKo1 "Ouhana"), [Flave](https://open.spotify.com/artist/2p7pxdEcN2gryjNKyluGgV "Flave"), [KataHaifisch](https://open.spotify.com/artist/5uxsA8TNcq5vK2cBBd0srM "KataHaifisch"): [Milkyways of Skin](https://open.spotify.com/track/44akcCfNKXXVKmEuKVC688 "Milkyways of Skin") |
 | 142.009 | 2024-11-14 | [140](https://open.spotify.com/playlist/4vqcLLn4OixNSCk8PXg9Oz "BPM 140"), [070](https://open.spotify.com/playlist/7z6RtuDQ1UGy4JJfQ2RkKO "BPM 070")| [Spirit Dancer](https://open.spotify.com/artist/7rWcDZobGIxwZ7Ie26CgPr "Spirit Dancer"): [Tuvan - Original Mix](https://open.spotify.com/track/1uk7YtXCk0JSJxAAnA1dsP "Tuvan - Original Mix") |
 | 140.056 | 2024-11-13 | [140](https://open.spotify.com/playlist/4vqcLLn4OixNSCk8PXg9Oz "BPM 140"), [070](https://open.spotify.com/playlist/7z6RtuDQ1UGy4JJfQ2RkKO "BPM 070")| [Projekt](https://open.spotify.com/artist/7EmXfTAA5Fc7mPVUgy3MtU "Projekt"): [Riders On The Storm](https://open.spotify.com/track/3TWeo4aa4Xapkq58zsIRoM "Riders On The Storm") |
@@ -126,19 +127,19 @@ Kérdésed van? Zenét ajánlanál? Irány a [Facebook csoport](https://www.face
 | 159.979 | 2024-10-28 | [160](https://open.spotify.com/playlist/1apsAlvqcu4d7kNODy2zOX "BPM 160"), [080](https://open.spotify.com/playlist/4jUjllO0Pl9rjpjuveFrtN "BPM 080")| [FIIKRA](https://open.spotify.com/artist/6qHlOOXp1rmjDbJFFPtJx4 "FIIKRA"): [Daijin Balad](https://open.spotify.com/track/3BKGBCtna1Vvm1IQgOGndy "Daijin Balad") |
 | 169.989 | 2024-10-28 | [170](https://open.spotify.com/playlist/368njAKjf40Z7dBG0Fgqrj "BPM 170"), [085](https://open.spotify.com/playlist/5lCiqajDyK3MtVkUQyZh3a "BPM 085")| [TurboKevin](https://open.spotify.com/artist/2nxyC1TQywKkvfkvuaiaW6 "TurboKevin"), [BLVCK CROWZ](https://open.spotify.com/artist/6uotnBX5ysB2Y2FIE6FbPg "BLVCK CROWZ"): [Tainted Love](https://open.spotify.com/track/4Qgcx3CfIfObK0aWuCk92A "Tainted Love") |
 | 139.962 | 2024-10-28 | [140](https://open.spotify.com/playlist/4vqcLLn4OixNSCk8PXg9Oz "BPM 140"), [070](https://open.spotify.com/playlist/7z6RtuDQ1UGy4JJfQ2RkKO "BPM 070")| [Waagal](https://open.spotify.com/artist/23qDh3JSqje66HMpzeLleq "Waagal"), [MEZERG](https://open.spotify.com/artist/7G9gz8bsP8VM5CMFTSBvNe "MEZERG"): [Music for 2 One Man Band](https://open.spotify.com/track/7tCPH4HHIPAH2FbTxYFZp4 "Music for 2 One Man Band") |
-| 145.028 | 2024-10-28 | [145](https://open.spotify.com/playlist/4gKJpMAvH7ie8pjmRJWrOl "BPM 145"), [075](https://open.spotify.com/playlist/5pgBpLvXyDbpRCkK1D16BK "BPM 075")| [Pokeyz](https://open.spotify.com/artist/2orq9ChRxP41i7nkFpSxUS "Pokeyz"), [Axelle Maga](https://open.spotify.com/artist/5JBRvXkHYdoW8fRrUVbgPt "Axelle Maga"): [Somebody To Love](https://open.spotify.com/track/2HafSIWFCa3KWhpNDj7JuH "Somebody To Love") |
+| 145.028 | 2024-10-28 | [145](https://open.spotify.com/playlist/4gKJpMAvH7ie8pjmRJWrOl "BPM 145"), [070](https://open.spotify.com/playlist/7z6RtuDQ1UGy4JJfQ2RkKO "BPM 070")| [Pokeyz](https://open.spotify.com/artist/2orq9ChRxP41i7nkFpSxUS "Pokeyz"), [Axelle Maga](https://open.spotify.com/artist/5JBRvXkHYdoW8fRrUVbgPt "Axelle Maga"): [Somebody To Love](https://open.spotify.com/track/2HafSIWFCa3KWhpNDj7JuH "Somebody To Love") |
 | 144.942 | 2024-10-28 | [145](https://open.spotify.com/playlist/4gKJpMAvH7ie8pjmRJWrOl "BPM 145"), [070](https://open.spotify.com/playlist/7z6RtuDQ1UGy4JJfQ2RkKO "BPM 070")| [U96](https://open.spotify.com/artist/0RhnKJThw36HFitqY6dYgd "U96"), [Sunlike Brothers](https://open.spotify.com/artist/6ag0HxAKmKQFDXVdt6FUVx "Sunlike Brothers"), [ToneNation](https://open.spotify.com/artist/6vOhTSLHpmIlGK8IeS2caU "ToneNation"): [Club Bizarre Club Mix](https://open.spotify.com/track/2BguCFLlnybjX8FouFTP4o "Club Bizarre Club Mix") |
-| 145.633 | 2024-10-28 | [145](https://open.spotify.com/playlist/4gKJpMAvH7ie8pjmRJWrOl "BPM 145"), [075](https://open.spotify.com/playlist/5pgBpLvXyDbpRCkK1D16BK "BPM 075")| [Coronita](https://open.spotify.com/artist/5BDaQGxM0wfS98jJbDJKqu "Coronita"), [Leo Van Melody](https://open.spotify.com/artist/3FZ1NhxbEDmEB0WM6eEJ9t "Leo Van Melody"): [Minions After - Techno Sped Up](https://open.spotify.com/track/25F4tHPcwLKJG3QPLiknJ4 "Minions After - Techno Sped Up") |
+| 145.633 | 2024-10-28 | [145](https://open.spotify.com/playlist/4gKJpMAvH7ie8pjmRJWrOl "BPM 145"), [070](https://open.spotify.com/playlist/7z6RtuDQ1UGy4JJfQ2RkKO "BPM 070")| [Coronita](https://open.spotify.com/artist/5BDaQGxM0wfS98jJbDJKqu "Coronita"), [Leo Van Melody](https://open.spotify.com/artist/3FZ1NhxbEDmEB0WM6eEJ9t "Leo Van Melody"): [Minions After - Techno Sped Up](https://open.spotify.com/track/25F4tHPcwLKJG3QPLiknJ4 "Minions After - Techno Sped Up") |
 | 146.973 | 2024-10-28 | [145](https://open.spotify.com/playlist/4gKJpMAvH7ie8pjmRJWrOl "BPM 145"), [075](https://open.spotify.com/playlist/5pgBpLvXyDbpRCkK1D16BK "BPM 075")| [Nass-T](https://open.spotify.com/artist/4dUEnkTweFQcfcJsWVK19W "Nass-T"): [0% Angel](https://open.spotify.com/track/1lgWviu8i5slTwGlZMDbTv "0% Angel") |
 | 174.971 | 2024-10-28 | [175](https://open.spotify.com/playlist/6JjTc2SL0xYF9SSPdCK6cC "BPM 175"), [085](https://open.spotify.com/playlist/5lCiqajDyK3MtVkUQyZh3a "BPM 085")| [D-Frek](https://open.spotify.com/artist/72qaltoVzJ2iwZThuIxACd "D-Frek"): [Viens je t'emmène](https://open.spotify.com/track/4nKtQohelkyxRL4YMXarlq "Viens je t'emmène") |
-| 145.054 | 2024-10-28 | [145](https://open.spotify.com/playlist/4gKJpMAvH7ie8pjmRJWrOl "BPM 145"), [075](https://open.spotify.com/playlist/5pgBpLvXyDbpRCkK1D16BK "BPM 075")| [Heavy Drop](https://open.spotify.com/artist/4CtCE0ay8Gc9jiOJ93Jmkv "Heavy Drop"): [Satisfaction](https://open.spotify.com/track/6FwC98nvTyiubvnDyx4maj "Satisfaction") |
+| 145.054 | 2024-10-28 | [145](https://open.spotify.com/playlist/4gKJpMAvH7ie8pjmRJWrOl "BPM 145"), [070](https://open.spotify.com/playlist/7z6RtuDQ1UGy4JJfQ2RkKO "BPM 070")| [Heavy Drop](https://open.spotify.com/artist/4CtCE0ay8Gc9jiOJ93Jmkv "Heavy Drop"): [Satisfaction](https://open.spotify.com/track/6FwC98nvTyiubvnDyx4maj "Satisfaction") |
 | 169.977 | 2024-10-28 | [170](https://open.spotify.com/playlist/368njAKjf40Z7dBG0Fgqrj "BPM 170"), [085](https://open.spotify.com/playlist/5lCiqajDyK3MtVkUQyZh3a "BPM 085")| [Sajanka](https://open.spotify.com/artist/2VkquxQ6H8d3eGK5ClilOf "Sajanka"), [Adiistation](https://open.spotify.com/artist/202xMxvJYgeJW8uqrRooV2 "Adiistation"): [Shiva Shambo](https://open.spotify.com/track/5PTg42cnuW3TCprpg461H2 "Shiva Shambo") |
-| 125.997 | 2024-10-28 | [125](https://open.spotify.com/playlist/6snnLs0pI39yhq8vBPbwhc "BPM 125"), [065](https://open.spotify.com/playlist/4ofrDkzlc3qOEoyf9UUeCu "BPM 065")| [Eli Brown](https://open.spotify.com/artist/5lVNSw2GPci8kebrAQpZqU "Eli Brown"), [Layton Giordani](https://open.spotify.com/artist/7mC3RkNNTV6p2j9w4F8Ip4 "Layton Giordani"), [OFFAIAH](https://open.spotify.com/artist/2E1NFr5AeEGUJkLUUsWCAO "OFFAIAH"): [When I Push Mixed](https://open.spotify.com/track/2KIyIW7u1ephELzy3y8Jvo "When I Push Mixed") |
+| 125.997 | 2024-10-28 | [125](https://open.spotify.com/playlist/6snnLs0pI39yhq8vBPbwhc "BPM 125"), [060](https://open.spotify.com/playlist/1T43UL50SguLP7XM0mKzh5 "BPM 060")| [Eli Brown](https://open.spotify.com/artist/5lVNSw2GPci8kebrAQpZqU "Eli Brown"), [Layton Giordani](https://open.spotify.com/artist/7mC3RkNNTV6p2j9w4F8Ip4 "Layton Giordani"), [OFFAIAH](https://open.spotify.com/artist/2E1NFr5AeEGUJkLUUsWCAO "OFFAIAH"): [When I Push Mixed](https://open.spotify.com/track/2KIyIW7u1ephELzy3y8Jvo "When I Push Mixed") |
 | 95.088 | 2024-10-28 | [095](https://open.spotify.com/playlist/2gvhSjxWu24yr5AvLrjahS "BPM 095"), [190](https://open.spotify.com/playlist/5GNIYAIqsxJORL03Hk9j7I "BPM 190")| [Tic-Tekk-Toe](https://open.spotify.com/artist/2kBvdGNQhnqtUfdeoEgtgu "Tic-Tekk-Toe"): [Just Can't Get Enough](https://open.spotify.com/track/2X7JifHwZzVTgtTNUlq93G "Just Can't Get Enough") |
 | 159.959 | 2024-10-28 | [160](https://open.spotify.com/playlist/1apsAlvqcu4d7kNODy2zOX "BPM 160"), [080](https://open.spotify.com/playlist/4jUjllO0Pl9rjpjuveFrtN "BPM 080")| [Sara Landry](https://open.spotify.com/artist/7eILArMiTFTQf8SEh5fFHK "Sara Landry"), [Shlømo](https://open.spotify.com/artist/0ZdNs1hU6aAiaZxvFbtDWF "Shlømo"): [Play With Me](https://open.spotify.com/track/6PrPWf02VxGUd2jJLs9z1M "Play With Me") |
 | 132.036 | 2024-10-28 | [130](https://open.spotify.com/playlist/2WKJjj6iBSPuQ0S9hdzGco "BPM 130"), [065](https://open.spotify.com/playlist/4ofrDkzlc3qOEoyf9UUeCu "BPM 065")| [Dillon Francis](https://open.spotify.com/artist/5R3Hr2cnCCjt220Jmt2xLf "Dillon Francis"), [Armin van Buuren](https://open.spotify.com/artist/0SfsnGyD8FpIN4U4WCkBZ5 "Armin van Buuren"), [DJ Snake](https://open.spotify.com/artist/540vIaP2JwjQb9dm3aArA4 "DJ Snake"): [Get Low feat. DJ Snake - Armin van Buuren Remix](https://open.spotify.com/track/0KrYXMpgfyjwXUJHex4Nj2 "Get Low feat. DJ Snake - Armin van Buuren Remix") |
 | 124.995 | 2024-10-27 | [125](https://open.spotify.com/playlist/6snnLs0pI39yhq8vBPbwhc "BPM 125"), [060](https://open.spotify.com/playlist/1T43UL50SguLP7XM0mKzh5 "BPM 060")| [Sam Paganini](https://open.spotify.com/artist/50ZyjIaVHOy5Xt7FLJ7RZl "Sam Paganini"), [Boris Brejcha](https://open.spotify.com/artist/6caPJFLv1wesmM7gwK1ACy "Boris Brejcha"): [Rave - Boris Brejcha Remix](https://open.spotify.com/track/3dKlUv9WhX0M12vQP25KO5 "Rave - Boris Brejcha Remix") |
-| 145.013 | 2024-10-27 | [145](https://open.spotify.com/playlist/4gKJpMAvH7ie8pjmRJWrOl "BPM 145"), [075](https://open.spotify.com/playlist/5pgBpLvXyDbpRCkK1D16BK "BPM 075")| [Mandragora](https://open.spotify.com/artist/2AasvmwafZPTgQANaoLoQY "Mandragora"), [Dudiish](https://open.spotify.com/artist/4w1x0xqhvGO85K7JrW30Cd "Dudiish"): [A.C.I.D - Dudiish Remix](https://open.spotify.com/track/19ukK0jLqFtsVJH1dsYW7R "A.C.I.D - Dudiish Remix") |
+| 145.013 | 2024-10-27 | [145](https://open.spotify.com/playlist/4gKJpMAvH7ie8pjmRJWrOl "BPM 145"), [070](https://open.spotify.com/playlist/7z6RtuDQ1UGy4JJfQ2RkKO "BPM 070")| [Mandragora](https://open.spotify.com/artist/2AasvmwafZPTgQANaoLoQY "Mandragora"), [Dudiish](https://open.spotify.com/artist/4w1x0xqhvGO85K7JrW30Cd "Dudiish"): [A.C.I.D - Dudiish Remix](https://open.spotify.com/track/19ukK0jLqFtsVJH1dsYW7R "A.C.I.D - Dudiish Remix") |
 | 144.978 | 2024-10-27 | [145](https://open.spotify.com/playlist/4gKJpMAvH7ie8pjmRJWrOl "BPM 145"), [070](https://open.spotify.com/playlist/7z6RtuDQ1UGy4JJfQ2RkKO "BPM 070")| [Alfred Heinrichs](https://open.spotify.com/artist/6kzCLJOC7MU8mAbhIJNpIo "Alfred Heinrichs"), [Haexxa](https://open.spotify.com/artist/0GY1LiRaEjFG0n8rP8wvrC "Haexxa"): [Fuck You Two](https://open.spotify.com/track/36FcCg7kIoqHoHph2nOlQ4 "Fuck You Two") |
 | 109.998 | 2024-10-27 | [110](https://open.spotify.com/playlist/7Jk32WRYcSmmDfIuZifBBP "BPM 110"), [220](https://open.spotify.com/playlist/7aApgYgX27nSiw4zuzljzf "BPM 220")| [Kveld](https://open.spotify.com/artist/3ji6JgdovyG79SpMrZaEnL "Kveld"): [Anropningsritualen](https://open.spotify.com/track/5XBHiqTNSthzNwoOnl1M4y "Anropningsritualen") |
 | 144.994 | 2024-10-27 | [145](https://open.spotify.com/playlist/4gKJpMAvH7ie8pjmRJWrOl "BPM 145"), [070](https://open.spotify.com/playlist/7z6RtuDQ1UGy4JJfQ2RkKO "BPM 070")| [Raz](https://open.spotify.com/artist/6AaKVN1QdU3HMRWH7tDva3 "Raz"): [Full On](https://open.spotify.com/track/0bzlWQzl2TjMgP9quxf3Tw "Full On") |
@@ -163,11 +164,11 @@ Kérdésed van? Zenét ajánlanál? Irány a [Facebook csoport](https://www.face
 | 159.999 | 2024-10-16 | [160](https://open.spotify.com/playlist/1apsAlvqcu4d7kNODy2zOX "BPM 160"), [080](https://open.spotify.com/playlist/4jUjllO0Pl9rjpjuveFrtN "BPM 080")| [Bass Température](https://open.spotify.com/artist/4YOCvln9rdEeD1p6zEQIBG "Bass Température"): [Tribe of the Bells](https://open.spotify.com/track/2eLb1OPuC08jWJ07vJtXMB "Tribe of the Bells") |
 | 108.035 | 2024-10-14 | [110](https://open.spotify.com/playlist/7Jk32WRYcSmmDfIuZifBBP "BPM 110"), [215](https://open.spotify.com/playlist/0DhuxGat9zLAPzndrvFvn5 "BPM 215")| [Sahalé](https://open.spotify.com/artist/4M7kyBSGHK0aYYjObYeRXZ "Sahalé"): [Les Fleurs du Mal](https://open.spotify.com/track/4GfcKYlHopWDRJ3ktq4w3j "Les Fleurs du Mal") |
 | 159.991 | 2024-10-14 | [160](https://open.spotify.com/playlist/1apsAlvqcu4d7kNODy2zOX "BPM 160"), [080](https://open.spotify.com/playlist/4jUjllO0Pl9rjpjuveFrtN "BPM 080")| [GRAViiTY](https://open.spotify.com/artist/1ycxas0HqhZQQc7zkhtUJY "GRAViiTY"), [Las Aves](https://open.spotify.com/artist/0bbL6moYLUu792U2ZdWgXU "Las Aves"): [N.E.M. - GRAViiTY Remix](https://open.spotify.com/track/23hLvnvxj7rAwzO04L35TW "N.E.M. - GRAViiTY Remix") |
-| 165.001 | 2024-10-14 | [165](https://open.spotify.com/playlist/30ElA12RWrqpfyKX3sclVO "BPM 165"), [085](https://open.spotify.com/playlist/5lCiqajDyK3MtVkUQyZh3a "BPM 085")| [Rikros](https://open.spotify.com/artist/0tbERoHCNUx6CvrG69YsPO "Rikros"): [Ça plane pour moi Rave Edit](https://open.spotify.com/track/3FT6VEAxDMAWOslbEiamcN "Ça plane pour moi Rave Edit") |
+| 165.001 | 2024-10-14 | [165](https://open.spotify.com/playlist/30ElA12RWrqpfyKX3sclVO "BPM 165"), [080](https://open.spotify.com/playlist/4jUjllO0Pl9rjpjuveFrtN "BPM 080")| [Rikros](https://open.spotify.com/artist/0tbERoHCNUx6CvrG69YsPO "Rikros"): [Ça plane pour moi Rave Edit](https://open.spotify.com/track/3FT6VEAxDMAWOslbEiamcN "Ça plane pour moi Rave Edit") |
 | 160.0 | 2024-10-13 | [160](https://open.spotify.com/playlist/1apsAlvqcu4d7kNODy2zOX "BPM 160"), [080](https://open.spotify.com/playlist/4jUjllO0Pl9rjpjuveFrtN "BPM 080")| [Cedrix](https://open.spotify.com/artist/0XY9QKkTnONBkjszYTfsZl "Cedrix"), [BeatItPunk](https://open.spotify.com/artist/4NihfBDoszDjMjIM64uJPT "BeatItPunk"): [They Don't Care About Us - Techno Remake](https://open.spotify.com/track/4mCVI5QHK3Dxcct0ok4yGu "They Don't Care About Us - Techno Remake") |
 | 141.01 | 2024-10-13 | [140](https://open.spotify.com/playlist/4vqcLLn4OixNSCk8PXg9Oz "BPM 140"), [070](https://open.spotify.com/playlist/7z6RtuDQ1UGy4JJfQ2RkKO "BPM 070")| [Paranormal Attack](https://open.spotify.com/artist/3XFXGwdeqcU5eBVSJd0pt3 "Paranormal Attack"): [Yidaki](https://open.spotify.com/track/56KiG6W1e1wHKJBdeZQ7bT "Yidaki") |
 | 156.007 | 2024-10-13 | [155](https://open.spotify.com/playlist/7qxa2wFxlyc6y0M8sVEePJ "BPM 155"), [080](https://open.spotify.com/playlist/4jUjllO0Pl9rjpjuveFrtN "BPM 080")| [Klangkuenstler](https://open.spotify.com/artist/6H77vD9YyhyxHBTkRpbMBk "Klangkuenstler"), [Sant](https://open.spotify.com/artist/0mgoNP0DrkKktInN298H4u "Sant"): [Toter Schmetterling](https://open.spotify.com/track/4LsYdWDeumtYjMndQVcA94 "Toter Schmetterling") |
-| 125.879 | 2024-10-13 | [125](https://open.spotify.com/playlist/6snnLs0pI39yhq8vBPbwhc "BPM 125"), [065](https://open.spotify.com/playlist/4ofrDkzlc3qOEoyf9UUeCu "BPM 065")| [Gustavo Bravetti](https://open.spotify.com/artist/3COgt6jQqmGpT8vM79C7R9 "Gustavo Bravetti"), [Keanu Silva](https://open.spotify.com/artist/1zLMhO4zzzxt5PMV4wMS3y "Keanu Silva"): [Babel - Keanu Silva Remix](https://open.spotify.com/track/7xFvoyvVsqhYO8eGlUDvmO "Babel - Keanu Silva Remix") |
+| 125.879 | 2024-10-13 | [125](https://open.spotify.com/playlist/6snnLs0pI39yhq8vBPbwhc "BPM 125"), [060](https://open.spotify.com/playlist/1T43UL50SguLP7XM0mKzh5 "BPM 060")| [Gustavo Bravetti](https://open.spotify.com/artist/3COgt6jQqmGpT8vM79C7R9 "Gustavo Bravetti"), [Keanu Silva](https://open.spotify.com/artist/1zLMhO4zzzxt5PMV4wMS3y "Keanu Silva"): [Babel - Keanu Silva Remix](https://open.spotify.com/track/7xFvoyvVsqhYO8eGlUDvmO "Babel - Keanu Silva Remix") |
 | 150.003 | 2024-10-13 | [150](https://open.spotify.com/playlist/4Hit7eOBHxdsYuh5hpJHln "BPM 150"), [075](https://open.spotify.com/playlist/5pgBpLvXyDbpRCkK1D16BK "BPM 075")| [LISTORIO](https://open.spotify.com/artist/0wdPNt2LsqiEG5A59t63t9 "LISTORIO"): [Uhn Tiss](https://open.spotify.com/track/5jr91HsxPxjui9q0bWGKXR "Uhn Tiss") |
 | 155.031 | 2024-10-13 | [155](https://open.spotify.com/playlist/7qxa2wFxlyc6y0M8sVEePJ "BPM 155"), [080](https://open.spotify.com/playlist/4jUjllO0Pl9rjpjuveFrtN "BPM 080")| [GRAViiTY](https://open.spotify.com/artist/1ycxas0HqhZQQc7zkhtUJY "GRAViiTY"): [UFO](https://open.spotify.com/track/7IKSqdVzqy6bjhcWLQAbqg "UFO") |
 | 141.952 | 2024-10-13 | [140](https://open.spotify.com/playlist/4vqcLLn4OixNSCk8PXg9Oz "BPM 140"), [070](https://open.spotify.com/playlist/7z6RtuDQ1UGy4JJfQ2RkKO "BPM 070")| [Ely Oaks](https://open.spotify.com/artist/2MdFJmUQf3ckA99IhFF9my "Ely Oaks"), [Luca-Dante Spadafora](https://open.spotify.com/artist/6k9e4mFFVtEAAhGdvJBtqB "Luca-Dante Spadafora"): [Ever Been Punched](https://open.spotify.com/track/5ImCWFZ4baU82mNbKyTxCQ "Ever Been Punched") |
@@ -181,7 +182,6 @@ Kérdésed van? Zenét ajánlanál? Irány a [Facebook csoport](https://www.face
 | 133.968 | 2024-10-11 | [135](https://open.spotify.com/playlist/0PtLti4O74i3Gbk15jvUP9 "BPM 135"), [065](https://open.spotify.com/playlist/4ofrDkzlc3qOEoyf9UUeCu "BPM 065")| [Studio Killers](https://open.spotify.com/artist/7avo0PmlW8O1YLEt9DnWQT "Studio Killers"), [Kim Petras](https://open.spotify.com/artist/3Xt3RrJMFv5SZkCfUE8C1J "Kim Petras"), [Garvicii](https://open.spotify.com/artist/4WluWeHM8nC1XSzwsd111V "Garvicii"): [Jenny I Wanna Ruin Our Friendship feat. Kim Petras & Garvicii](https://open.spotify.com/track/2IGwU58XVS0sSTpHubQG1x "Jenny I Wanna Ruin Our Friendship feat. Kim Petras & Garvicii") |
 | 130.041 | 2024-10-11 | [130](https://open.spotify.com/playlist/2WKJjj6iBSPuQ0S9hdzGco "BPM 130"), [065](https://open.spotify.com/playlist/4ofrDkzlc3qOEoyf9UUeCu "BPM 065")| [Little Big](https://open.spotify.com/artist/0pnd3MP2rxAzljR9AqXUJB "Little Big"): [Kurwa](https://open.spotify.com/track/6IPvFJGEOXyVQ38ly6PkC1 "Kurwa") |
 | 119.987 | 2024-10-10 | [120](https://open.spotify.com/playlist/4KLCxo5gZbaNpeSh6YAnzY "BPM 120"), [060](https://open.spotify.com/playlist/1T43UL50SguLP7XM0mKzh5 "BPM 060")| [ARTHEUS](https://open.spotify.com/artist/6z0W1FPE9iRydBFjGi5s8J "ARTHEUS"): [Free Your Mind](https://open.spotify.com/track/3AGwkib4FDRlr0ye4oFZFU "Free Your Mind") |
-| 124.013 | 2024-10-10 | [125](https://open.spotify.com/playlist/6snnLs0pI39yhq8vBPbwhc "BPM 125"), [060](https://open.spotify.com/playlist/1T43UL50SguLP7XM0mKzh5 "BPM 060")| [Zafrir](https://open.spotify.com/artist/3DJVDo0kd19fZXpTabasOX "Zafrir"): [Amormio](https://open.spotify.com/track/4rMMf8jAYNVygUxyCSF8DG "Amormio") |
 { .w-100 .mw8 .center id="spotify" data-toggle="table" data-search="true" }
 
 
