@@ -4,49 +4,65 @@
             {{ if (eq (.Get 0) "year2019") }}
                 {{ range .Site.Params.year2019 }}
                 document.getElementById("fatBurningZoneFormAge").value= {{ .myAge }};
+                document.getElementById("fatBurningZoneFormRestingHeartRate").value= {{ .myRestingHeartRate }};
                 {{ end }}    
             {{ else }}
                 {{ if (eq (.Get 0) "jan2024") }}
                     {{ range .Site.Params.jan2024 }}
                     document.getElementById("fatBurningZoneFormAge").value= {{ .myAge }};
+                    document.getElementById("fatBurningZoneFormRestingHeartRate").value= {{ .myRestingHeartRate }};
                     {{ end }}    
                 {{ else }}
                     {{ if (eq (.Get 0) "actual") }}
                         {{ range .Site.Params.actual }}
                         document.getElementById("fatBurningZoneFormAge").value= {{ .myAge }};
+                        document.getElementById("fatBurningZoneFormRestingHeartRate").value= {{ .myRestingHeartRate }};
                         {{ end }}    
                     {{ else }}
                         document.getElementById("fatBurningZoneFormHeight").value= 0;
+                        document.getElementById("fatBurningZoneFormRestingHeartRate").value='';
                     {{ end }}
                 {{ end }}
             {{ end }}
         {{ else }}
             document.getElementById("fatBurningZoneFormHeight").value= 0;
+            document.getElementById("fatBurningZoneFormRestingHeartRate").value='';
         {{ end }}
     }
-    function fatBurningZoneCalculator() {
+    function fatBurningZoneCalculatorByAge() {
         var age=parseInt(document.getElementById("fatBurningZoneFormAge").value) || 0;
-        var zone65=parseInt(((220 - age)*0.65).toFixed(0));
-        var zone75=parseInt(((220 - age)*0.75).toFixed(0));
+        var restingHeartRate=parseInt(document.getElementById("fatBurningZoneFormRestingHeartRate").value) || 0;
+        if (restingHeartRate > 0) {
+            var zone65=parseInt((((220 - age - restingHeartRate)*0.65) + restingHeartRate).toFixed(0));
+            var zone75=parseInt((((220 - age - restingHeartRate)*0.75) + restingHeartRate).toFixed(0));
+        } else {
+            var zone65=parseInt(((220 - age)*0.65).toFixed(0));
+            var zone75=parseInt(((220 - age)*0.75).toFixed(0));
+        }
         document.getElementById("fatBurningZoneFormZoneMin").value=zone65;
         document.getElementById("fatBurningZoneFormZoneMax").value=zone75;
     }
     window.addEventListener('load', function () {
         fatBurningZoneInit();
-        fatBurningZoneCalculator();
+        fatBurningZoneCalculatorByAge();
     });
 </script>
 
 <strong>{{ i18n "fatBurningZoneCalculator" }}</strong>
-
+<p>{{ i18n "fatBurningZoneCalculatorDescription" }}</p>
 <form class="pa4 black-80 f6" accept-charset="UTF-8" action="#" method="POST">
   <div class="measure cf">
     <label for="fatBurningZoneFormAge" class="f6 b db mb2 fl w-70">{{ i18n "age" }}</label>
     <small id="fatBurningZoneFormAgeHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "ageHelp" }}</small>
-    <input id="fatBurningZoneFormAge" class="input-reset ba b--black-20 pa2 mb2 db fl w-30 tr" type="number" aria-describedby="fatBurningZoneFormAgeHelp" min="1" max="120" step="1" autocomplete =“off” onchange="fatBurningZoneCalculator();">
+    <input id="fatBurningZoneFormAge" class="input-reset ba b--black-20 pa2 mb2 db fl w-30 tr" type="number" aria-describedby="fatBurningZoneFormAgeHelp" min="1" max="120" step="1" autocomplete =“off” onchange="fatBurningZoneCalculatorByAge();">
+  </div>
+  <div class="measure cf">
+    <label for="fatBurningZoneFormRestingHeartRate" class="f6 b db mb2 fl w-70">{{ i18n "restingHeartRate" }}</label>
+    <small id="fatBurningZoneFormRestingHeartRateHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "restingHeartRateHelp" }}</small>
+    <input id="fatBurningZoneFormRestingHeartRate" class="input-reset ba b--black-20 pa2 mb2 db fl w-30 tr" type="number" aria-describedby="fatBurningZoneFormRestingHeartRateHelp" min="1" max="120" step="1" autocomplete =“off” onchange="fatBurningZoneCalculatorByAge();">
   </div>
   <div class="measure">
-    <a class="link dim br1 ph3 pv2 mb2 dib white bg-gold w-100" onclick="fatBurningZoneCalculator();">{{ i18n "calculate" }}</a>
+    <a class="link dim br1 ph3 pv2 mb2 dib white bg-gold w-100" onclick="fatBurningZoneCalculatorByAge();">{{ i18n "calculate" }}</a>
   </div>
   
   <div class="measure cf">

@@ -183,6 +183,16 @@ other = "I do not recommend cutting calories below 1000 kcal. If you think you n
 [fatBurningZoneCalculator]
 other = "Fat Burning Zone Calculator"
 
+[fatBurningZoneCalculatorDescription]
+other = "Most pages recommend Zone 3 fot fat burning (the zone between 70% and 80% of your maximum heart rate), but my own experience is that the slightly lower range of 65% to 75% is more ideal. The calculator calculates the 65%-75% range with Karvonen formula."
+
+[restingHeartRate]
+other = "Resting heart rate"
+
+[restingHeartRateHelp]
+other = "Pulse after waking up. Worn at night, a smartwatch will usually show it. If you do not know, leave blank."
+
+
 [zoneMin]
 other = "Minimum"
 

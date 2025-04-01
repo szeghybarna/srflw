@@ -36,7 +36,7 @@ For jogging and running, it's a bit more hassle because I start at a higher BPM,
 
 I've exported the playlist here, too; you can search it. I update it every week or so, always with the newest tracks.
 
-By the way, the MIX lists are there because, with a bit of attention, you can move to 60 BPM and 120 BPM in the same way; you just have to halve or double the beat - our brain does it for us, and we won't run at a different beat.
+These lists are mixed because, with a little attention, you can transition between 60 BPM and 120 BPM in the same manner; you simply need to halve or double the beat. Our brains automatically adjust to this, so we won't run at a different pace. Therefore, the 60 list includes the 120, and vice versa.
 
 Have a question? Would you recommend music? Head to [Facebook group](https://www.facebook.com/groups/1098348161611343 "Facebook group").
 

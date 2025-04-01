@@ -63,6 +63,7 @@ block = true
       myCalorieDeficit = 0
       myActiveCalories = 2000
       myWeeklyWeightLoss = 0.5
+      myRestingHeartRate = 80
       myMaf180Option = "B"
     [[params.jan2024]]
       myAge = 48
@@ -71,6 +72,7 @@ block = true
       myOptimalBmi = 20.5
       myCalorieDeficit = 0
       myActiveCalories = 4700
+      myRestingHeartRate = 55
       myWeeklyWeightLoss = 0.5
       myMaf180Option = "C"
     [[params.apr2024]]
@@ -80,17 +82,29 @@ block = true
       myOptimalBmi = 20.5
       myCalorieDeficit = 20
       myActiveCalories = 4000
+      myRestingHeartRate = 54
       myWeeklyWeightLoss = 0
-      myMaf180Option = "B"
-    [[params.actual]]
-      myAge = 49
+      myMaf180Option = "C"
+    [[params.apr2025]]
+      myAge = 50
       myHeight = 170
-      myWeight = 68
+      myWeight = 72
       myOptimalBmi = 20.5
       myCalorieDeficit = 20
-      myActiveCalories = 4000
+      myActiveCalories = 5500
+      myRestingHeartRate = 51
       myWeeklyWeightLoss = 0
-      myMaf180Option = "B"
+      myMaf180Option = "D"
+    [[params.actual]]
+      myAge = 50
+      myHeight = 170
+      myWeight = 72
+      myOptimalBmi = 20.5
+      myCalorieDeficit = 20
+      myActiveCalories = 5500
+      myRestingHeartRate = 51
+      myWeeklyWeightLoss = 0
+      myMaf180Option = "D"
 #  text_color = ""
 
 

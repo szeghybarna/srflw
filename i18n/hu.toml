@@ -172,6 +172,15 @@ other = "Nem javaslom a kalóriák 1000 kcal alá csökkentését. Ha úgy gondo
 [fatBurningZoneCalculator]
 other = "Zsírégető zóna kalkulátor"
 
+[fatBurningZoneCalculatorDescription]
+other = "A legtöbb helyen a Zóna 3-at javasolják zsírégetéshez (a maximum pulzusod 70% és 80% közé eső zóna), viszont az a saját tapasztalatom, hogy a kicsit alcsonyabb, 65% és 75% közötti tartomány az ideálisabb. A kalkulátor a 65%-75% tartományt számolja Karvonen képlettel."
+
+[restingHeartRate]
+other = "Nyugalmi pulzus"
+
+[restingHeartRateHelp]
+other = "Ébredés utáni pulzus. Éjszaka is hordott okosóra általában megmutatja. Ha nem tudod, hagy üresen."
+
 [zoneMin]
 other = "Minimum"
 
