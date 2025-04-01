@@ -55,6 +55,8 @@ Fontos, hogy a fehérjebevitellel **támogasd az izomzat megtartását**. Egy-eg
 
 {{< updated_bmi_calculator actual >}}
 
+Figyelem: nem vagyok táplálkozási szakértő. A saját fogyásom tapasztalatai formálják a véleményem.
+
 Vitatkoznál? Hozzászólnál? Csatlakozz kis közösségünkhöz:
 
 - [SRFLW Facebook csoport](https://www.facebook.com/groups/1098348161611343 "SRFLW Facebook csoport")

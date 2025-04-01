@@ -54,6 +54,8 @@ Supporting **muscle maintenance** is essential, and adequate protein intake play
 
 {{< updated_bmi_calculator actual >}}
 
+Please note: I am not a nutrition expert. My own weight loss experiences shape my opinions.
+
 Would you argue? Would you comment? Join our little community:
 
 - [SRFLW Facebook Group](https://www.facebook.com/groups/1098348161611343 "SRFLW Facebook Group")

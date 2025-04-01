@@ -16,7 +16,7 @@ translationKey: spotify
 language: en
 ---
 
-Last updated: 2025-03-11, 1846 tracks
+Last updated: 2025-04-01, 1863 tracks
 
 Lately, I've been spending a lot of time doing fast-paced things like running and cycling. I'm pretty good at picking up the beat of music while I'm doing it. Hence, as I am a programmer, I started experimenting with the [Spotify API](https://developer.spotify.com/documentation/web-api "Spotify API"). I found an interesting piece of data for music, the `tempo` field in the [audio-features](https://developer.spotify.com/documentation/web-api/reference/get-audio-features "audio-features"):
 
@@ -34,7 +34,7 @@ For jogging and running, it's a bit more hassle because I start at a higher BPM,
 
 I've exported the playlist here, too; you can search it. I update it every week or so, always with the newest tracks.
 
-By the way, the MIX lists are there because, with a bit of attention, you can move to 60 BPM and 120 BPM in the same way; you just have to halve or double the beat - our brain does it for us, and we won't run at a different beat.
+These lists are mixed because, with a little attention, you can transition between 60 BPM and 120 BPM in the same manner; you simply need to halve or double the beat. Our brains automatically adjust to this, so we won't run at a different pace. Therefore, the 60 list includes the 120, and vice versa.
 
 Have a question? Would you recommend music? Head to [Facebook group](https://www.facebook.com/groups/1098348161611343 "Facebook group").
 
@@ -42,46 +42,64 @@ Have a question? Would you recommend music? Head to [Facebook group](https://www
 
 |Playlist|Tracks|
 |--------|-----:|
-| [BPM 060](https://open.spotify.com/playlist/1T43UL50SguLP7XM0mKzh5 "BPM 060") | 274 |
-| [BPM 065](https://open.spotify.com/playlist/4ofrDkzlc3qOEoyf9UUeCu "BPM 065") | 290 |
-| [BPM 070](https://open.spotify.com/playlist/7z6RtuDQ1UGy4JJfQ2RkKO "BPM 070") | 348 |
-| [BPM 075](https://open.spotify.com/playlist/5pgBpLvXyDbpRCkK1D16BK "BPM 075") | 194 |
+| [BPM 060](https://open.spotify.com/playlist/1T43UL50SguLP7XM0mKzh5 "BPM 060") | 278 |
+| [BPM 065](https://open.spotify.com/playlist/4ofrDkzlc3qOEoyf9UUeCu "BPM 065") | 291 |
+| [BPM 070](https://open.spotify.com/playlist/7z6RtuDQ1UGy4JJfQ2RkKO "BPM 070") | 351 |
+| [BPM 075](https://open.spotify.com/playlist/5pgBpLvXyDbpRCkK1D16BK "BPM 075") | 198 |
 | [BPM 080](https://open.spotify.com/playlist/4jUjllO0Pl9rjpjuveFrtN "BPM 080") | 172 |
 | [BPM 085](https://open.spotify.com/playlist/5lCiqajDyK3MtVkUQyZh3a "BPM 085") | 147 |
 | [BPM 090](https://open.spotify.com/playlist/47kkzkbSBdzU8pCsnrB6xB "BPM 090") | 122 |
-| [BPM 095](https://open.spotify.com/playlist/2gvhSjxWu24yr5AvLrjahS "BPM 095") | 100 |
-| [BPM 100](https://open.spotify.com/playlist/6Hx0NJUh15jVjNEJpmJdF3 "BPM 100") | 110 |
+| [BPM 095](https://open.spotify.com/playlist/2gvhSjxWu24yr5AvLrjahS "BPM 095") | 103 |
+| [BPM 100](https://open.spotify.com/playlist/6Hx0NJUh15jVjNEJpmJdF3 "BPM 100") | 109 |
 | [BPM 105](https://open.spotify.com/playlist/7vYb0Pu0uQ8Gx0VOIZGH3R "BPM 105") | 66 |
-| [BPM 110](https://open.spotify.com/playlist/7Jk32WRYcSmmDfIuZifBBP "BPM 110") | 53 |
-| [BPM 115](https://open.spotify.com/playlist/7BCgwEzKfBSihD7uQJL9wD "BPM 115") | 42 |
-| [BPM 120](https://open.spotify.com/playlist/4KLCxo5gZbaNpeSh6YAnzY "BPM 120") | 110 |
-| [BPM 125](https://open.spotify.com/playlist/6snnLs0pI39yhq8vBPbwhc "BPM 125") | 189 |
-| [BPM 130](https://open.spotify.com/playlist/2WKJjj6iBSPuQ0S9hdzGco "BPM 130") | 196 |
+| [BPM 110](https://open.spotify.com/playlist/7Jk32WRYcSmmDfIuZifBBP "BPM 110") | 54 |
+| [BPM 115](https://open.spotify.com/playlist/7BCgwEzKfBSihD7uQJL9wD "BPM 115") | 44 |
+| [BPM 120](https://open.spotify.com/playlist/4KLCxo5gZbaNpeSh6YAnzY "BPM 120") | 111 |
+| [BPM 125](https://open.spotify.com/playlist/6snnLs0pI39yhq8vBPbwhc "BPM 125") | 191 |
+| [BPM 130](https://open.spotify.com/playlist/2WKJjj6iBSPuQ0S9hdzGco "BPM 130") | 197 |
 | [BPM 135](https://open.spotify.com/playlist/0PtLti4O74i3Gbk15jvUP9 "BPM 135") | 72 |
-| [BPM 140](https://open.spotify.com/playlist/4vqcLLn4OixNSCk8PXg9Oz "BPM 140") | 198 |
-| [BPM 145](https://open.spotify.com/playlist/4gKJpMAvH7ie8pjmRJWrOl "BPM 145") | 143 |
-| [BPM 150](https://open.spotify.com/playlist/4Hit7eOBHxdsYuh5hpJHln "BPM 150") | 132 |
+| [BPM 140](https://open.spotify.com/playlist/4vqcLLn4OixNSCk8PXg9Oz "BPM 140") | 200 |
+| [BPM 145](https://open.spotify.com/playlist/4gKJpMAvH7ie8pjmRJWrOl "BPM 145") | 146 |
+| [BPM 150](https://open.spotify.com/playlist/4Hit7eOBHxdsYuh5hpJHln "BPM 150") | 134 |
 | [BPM 155](https://open.spotify.com/playlist/7qxa2wFxlyc6y0M8sVEePJ "BPM 155") | 78 |
 | [BPM 160](https://open.spotify.com/playlist/1apsAlvqcu4d7kNODy2zOX "BPM 160") | 105 |
 | [BPM 165](https://open.spotify.com/playlist/30ElA12RWrqpfyKX3sclVO "BPM 165") | 43 |
 | [BPM 170](https://open.spotify.com/playlist/368njAKjf40Z7dBG0Fgqrj "BPM 170") | 100 |
 | [BPM 175](https://open.spotify.com/playlist/6JjTc2SL0xYF9SSPdCK6cC "BPM 175") | 64 |
 | [BPM 180](https://open.spotify.com/playlist/5gd4rCpdrzeiVcBmx57irH "BPM 180") | 59 |
-| [BPM 185](https://open.spotify.com/playlist/6TvIdLdnA9lQnvEdTIOYLy "BPM 185") | 44 |
-| [BPM 190](https://open.spotify.com/playlist/5GNIYAIqsxJORL03Hk9j7I "BPM 190") | 64 |
+| [BPM 185](https://open.spotify.com/playlist/6TvIdLdnA9lQnvEdTIOYLy "BPM 185") | 46 |
+| [BPM 190](https://open.spotify.com/playlist/5GNIYAIqsxJORL03Hk9j7I "BPM 190") | 65 |
 | [BPM 195](https://open.spotify.com/playlist/3QBs2Gn4hGla10iapoMqq6 "BPM 195") | 40 |
-| [BPM 200](https://open.spotify.com/playlist/1oqAyvigIRfNhdGfLXSET6 "BPM 200") | 78 |
+| [BPM 200](https://open.spotify.com/playlist/1oqAyvigIRfNhdGfLXSET6 "BPM 200") | 77 |
 | [BPM 205](https://open.spotify.com/playlist/29f2o25j8KTuZyTxoOFZfJ "BPM 205") | 27 |
 | [BPM 210](https://open.spotify.com/playlist/14x12RqqKgHyyxxjvI5uWo "BPM 210") | 43 |
-| [BPM 215](https://open.spotify.com/playlist/0DhuxGat9zLAPzndrvFvn5 "BPM 215") | 24 |
+| [BPM 215](https://open.spotify.com/playlist/0DhuxGat9zLAPzndrvFvn5 "BPM 215") | 25 |
 | [BPM 220](https://open.spotify.com/playlist/7aApgYgX27nSiw4zuzljzf "BPM 220") | 25 |
-| [BPM ALL](https://open.spotify.com/playlist/5kbzhdd4pUdRUi4N8juf30 "BPM ALL") | 1891 |
+| [BPM ALL](https://open.spotify.com/playlist/5kbzhdd4pUdRUi4N8juf30 "BPM ALL") | 1907 |
 { .w-50 .mw8 .center id="pltable"}
 
 **Tracks (last 100):**
 
 |BPM|Added|Playlists|Track|
 |--:|-----|---------|:----|
+| 114.97 | 2025-03-31 | [115](https://open.spotify.com/playlist/7BCgwEzKfBSihD7uQJL9wD "BPM 115")| [Yung Lean](https://open.spotify.com/artist/67lytN32YpUxiSeWlKfHJ3 "Yung Lean"): [Ginseng Strip 2002](https://open.spotify.com/track/7v3rmoy5jcn4h5UqwQyCM3 "Ginseng Strip 2002") |
+| 94.987 | 2025-03-31 | [095](https://open.spotify.com/playlist/2gvhSjxWu24yr5AvLrjahS "BPM 095"), [190](https://open.spotify.com/playlist/5GNIYAIqsxJORL03Hk9j7I "BPM 190")| [Leoni Torres](https://open.spotify.com/artist/1XXUv8GRyRqOXVuDwB5QaS "Leoni Torres"): [La Vida Es Así](https://open.spotify.com/track/5tkfa7dfMxEsOp9Xajyz0X "La Vida Es Así") |
+| 125.014 | 2025-03-30 | [125](https://open.spotify.com/playlist/6snnLs0pI39yhq8vBPbwhc "BPM 125"), [060](https://open.spotify.com/playlist/1T43UL50SguLP7XM0mKzh5 "BPM 060")| [babyspoon](https://open.spotify.com/artist/2az2WY6yVvN5tGd8zIjFdU "babyspoon"), [Melo Nada](https://open.spotify.com/artist/7axOBN2EOcKsN9mRnvTKmI "Melo Nada"): [bambam](https://open.spotify.com/track/7dOd3rGQosCkUHptUv9kn0 "bambam") |
+| 150.006 | 2025-03-30 | [150](https://open.spotify.com/playlist/4Hit7eOBHxdsYuh5hpJHln "BPM 150"), [075](https://open.spotify.com/playlist/5pgBpLvXyDbpRCkK1D16BK "BPM 075")| [El Columpio Asesino](https://open.spotify.com/artist/7oXqKY12gSK5Q37dWZYWT0 "El Columpio Asesino"), [I Hate Models](https://open.spotify.com/artist/0KqSULB80ft2H3aFg6kJmN "I Hate Models"), [Andre VII](https://open.spotify.com/artist/6ydoTVyJn4VEKeRUeTtjFq "Andre VII"): [Toro - I Hate Models Speed Up Revival Edit of Andre VII RMX](https://open.spotify.com/track/7KnVy00zIJyFcsAIV1KWBT "Toro - I Hate Models Speed Up Revival Edit of Andre VII RMX") |
+| 146.005 | 2025-03-30 | [145](https://open.spotify.com/playlist/4gKJpMAvH7ie8pjmRJWrOl "BPM 145"), [075](https://open.spotify.com/playlist/5pgBpLvXyDbpRCkK1D16BK "BPM 075")| [John Modál](https://open.spotify.com/artist/2YIVDo27MKwzCmX6CjaffL "John Modál"): [Unholy Ensemble - Radio Edit](https://open.spotify.com/track/3QtkpXt4NAKcLYMf95MEia "Unholy Ensemble - Radio Edit") |
+| 138.025 | 2025-03-24 | [140](https://open.spotify.com/playlist/4vqcLLn4OixNSCk8PXg9Oz "BPM 140"), [070](https://open.spotify.com/playlist/7z6RtuDQ1UGy4JJfQ2RkKO "BPM 070")| [4Motion](https://open.spotify.com/artist/0XJTjBSXGUz4rlvxQET8HE "4Motion"): [Don't Ya Know](https://open.spotify.com/track/6qVQFgGZbajsfSJfLaJWQt "Don't Ya Know") |
+| 93.002 | 2025-03-24 | [095](https://open.spotify.com/playlist/2gvhSjxWu24yr5AvLrjahS "BPM 095"), [185](https://open.spotify.com/playlist/6TvIdLdnA9lQnvEdTIOYLy "BPM 185")| [islandman](https://open.spotify.com/artist/3So3vlAfrEh2FbpvG7sxO4 "islandman"): [Sumeru](https://open.spotify.com/track/2gL3yeSrVcdgYUgebT6TKN "Sumeru") |
+| 116.014 | 2025-03-23 | [115](https://open.spotify.com/playlist/7BCgwEzKfBSihD7uQJL9wD "BPM 115"), [060](https://open.spotify.com/playlist/1T43UL50SguLP7XM0mKzh5 "BPM 060")| [Acado](https://open.spotify.com/artist/1z6fgjuCMlbaHSM0xqApwM "Acado"), [Vincent Marlice](https://open.spotify.com/artist/61yRe9dnniWdRmZZiuL1bf "Vincent Marlice"): [El Aguante](https://open.spotify.com/track/7iBDzIdjku2fVyxtnhAS4p "El Aguante") |
+| 127.994 | 2025-03-20 | [130](https://open.spotify.com/playlist/2WKJjj6iBSPuQ0S9hdzGco "BPM 130"), [065](https://open.spotify.com/playlist/4ofrDkzlc3qOEoyf9UUeCu "BPM 065")| [Chimbala](https://open.spotify.com/artist/4VVEpEhC8NcR7AqNEds42U "Chimbala"): [El Boom](https://open.spotify.com/track/4hir6efnLrA73d06HuLbZo "El Boom") |
+| 145.013 | 2025-03-16 | [145](https://open.spotify.com/playlist/4gKJpMAvH7ie8pjmRJWrOl "BPM 145"), [070](https://open.spotify.com/playlist/7z6RtuDQ1UGy4JJfQ2RkKO "BPM 070")| [Skazi](https://open.spotify.com/artist/0YAmYesPdjvMPgnLKcDHR3 "Skazi"): [I Wish - Brutal Remix By Skazi](https://open.spotify.com/track/2GFJDl7kEuDgckSfExlHOa "I Wish - Brutal Remix By Skazi") |
+| 119.009 | 2025-03-16 | [120](https://open.spotify.com/playlist/4KLCxo5gZbaNpeSh6YAnzY "BPM 120"), [060](https://open.spotify.com/playlist/1T43UL50SguLP7XM0mKzh5 "BPM 060")| [KOMPROMAT](https://open.spotify.com/artist/1QYA7hFYKc0EuhE2MGpjH7 "KOMPROMAT"), [Vitalic](https://open.spotify.com/artist/4M84umUNRbZy1mJleyyRM9 "Vitalic"), [Rebeka Warrior](https://open.spotify.com/artist/0VPogECnuuH2xbYP3Rmpd4 "Rebeka Warrior"): [Niemand](https://open.spotify.com/track/0CQ40kUFAc8nymO4ozODzd "Niemand") |
+| 146.997 | 2025-03-16 | [145](https://open.spotify.com/playlist/4gKJpMAvH7ie8pjmRJWrOl "BPM 145"), [075](https://open.spotify.com/playlist/5pgBpLvXyDbpRCkK1D16BK "BPM 075")| [Lilly Palmer](https://open.spotify.com/artist/4h8IEOdrg60WM5XGyNOCVU "Lilly Palmer"), [Ad-Apt](https://open.spotify.com/artist/4IjVi2fLGbBTpnxXfGoatD "Ad-Apt"): [Party Don’t Stop](https://open.spotify.com/track/0wHvrVW47PQORaLEwjsGup "Party Don’t Stop") |
+| 124.994 | 2025-03-16 | [125](https://open.spotify.com/playlist/6snnLs0pI39yhq8vBPbwhc "BPM 125"), [060](https://open.spotify.com/playlist/1T43UL50SguLP7XM0mKzh5 "BPM 060")| [Rnbstylerz](https://open.spotify.com/artist/3qkIL3op4KtFFUHj19LuLg "Rnbstylerz"): [Message - Radio Edit](https://open.spotify.com/track/2Hs2Q00qLBDZJNV9OauW2P "Message - Radio Edit") |
+| 148.018 | 2025-03-16 | [150](https://open.spotify.com/playlist/4Hit7eOBHxdsYuh5hpJHln "BPM 150"), [075](https://open.spotify.com/playlist/5pgBpLvXyDbpRCkK1D16BK "BPM 075")| [HIGHTKK](https://open.spotify.com/artist/6mhIOdvLrtQUlrACSqY3Yr "HIGHTKK"), [Greb Levah](https://open.spotify.com/artist/3PQFfU8P5ivZARktWmTFZC "Greb Levah"): [Obsessed](https://open.spotify.com/track/6KbEua6VSNk23ngmqSTD1c "Obsessed") |
+| 93.026 | 2025-03-16 | [095](https://open.spotify.com/playlist/2gvhSjxWu24yr5AvLrjahS "BPM 095"), [185](https://open.spotify.com/playlist/6TvIdLdnA9lQnvEdTIOYLy "BPM 185")| [Noga Erez](https://open.spotify.com/artist/5VwCIS8jdx9ZHjApLFNrTZ "Noga Erez"), [V1V1D](https://open.spotify.com/artist/1NP2R1VpIfFe7amzJxCDVh "V1V1D"): [DUMB Remix feat. V1V1D](https://open.spotify.com/track/7ao3Qdqb8paS1vLGKA0cRz "DUMB Remix feat. V1V1D") |
+| 140.012 | 2025-03-16 | [140](https://open.spotify.com/playlist/4vqcLLn4OixNSCk8PXg9Oz "BPM 140"), [070](https://open.spotify.com/playlist/7z6RtuDQ1UGy4JJfQ2RkKO "BPM 070")| [Meis](https://open.spotify.com/artist/43dikiYuiEdqTQdPdky6s8 "Meis"), [Raz](https://open.spotify.com/artist/6AaKVN1QdU3HMRWH7tDva3 "Raz"): [Conspiracy](https://open.spotify.com/track/0d6cqtCXisAekxIDZEjA73 "Conspiracy") |
+| 108.005 | 2025-03-14 | [110](https://open.spotify.com/playlist/7Jk32WRYcSmmDfIuZifBBP "BPM 110"), [215](https://open.spotify.com/playlist/0DhuxGat9zLAPzndrvFvn5 "BPM 215")| [PAAX Tulum](https://open.spotify.com/artist/44f1ZKVW8Zh13oCOGGTiFd "PAAX Tulum"): [Sera El Sol Mixed](https://open.spotify.com/track/0DuArLlUDXWVai9lzOlXJQ "Sera El Sol Mixed") |
+| 120.014 | 2025-03-14 | [120](https://open.spotify.com/playlist/4KLCxo5gZbaNpeSh6YAnzY "BPM 120"), [060](https://open.spotify.com/playlist/1T43UL50SguLP7XM0mKzh5 "BPM 060")| [Andy Korg](https://open.spotify.com/artist/4YeYacKnOKJlmdnIHiHy10 "Andy Korg"), [Dani Cargo](https://open.spotify.com/artist/32WyxL3PUf2SlyZKA8aWIY "Dani Cargo"), [Parov Stelar](https://open.spotify.com/artist/65EXuYHVoehCKqp0kOS6px "Parov Stelar"): [I Want You - Parov Stelar Remix](https://open.spotify.com/track/3s3pkQtO9FOe7M31X8YrQy "I Want You - Parov Stelar Remix") |
 | 105.041 | 2025-03-11 | [105](https://open.spotify.com/playlist/7vYb0Pu0uQ8Gx0VOIZGH3R "BPM 105"), [210](https://open.spotify.com/playlist/14x12RqqKgHyyxxjvI5uWo "BPM 210")| [Mawell](https://open.spotify.com/artist/6UO7zshgw0fLVF6DVKg9PN "Mawell"): [La Triple M](https://open.spotify.com/track/4nePI9JSkEf43FlKST8Imr "La Triple M") |
 | 125.018 | 2025-03-11 | [125](https://open.spotify.com/playlist/6snnLs0pI39yhq8vBPbwhc "BPM 125"), [060](https://open.spotify.com/playlist/1T43UL50SguLP7XM0mKzh5 "BPM 060")| [Marie Davidson](https://open.spotify.com/artist/7xJVICbAWizNBKBD3mRWjF "Marie Davidson"), [Soulwax](https://open.spotify.com/artist/43mWhBXSflupNLuNjM5vff "Soulwax"): [Work It - Soulwax Remix](https://open.spotify.com/track/6WfL1pwMyFf3IvFWLnre4P "Work It - Soulwax Remix") |
 | 126.983 | 2025-03-11 | [125](https://open.spotify.com/playlist/6snnLs0pI39yhq8vBPbwhc "BPM 125"), [065](https://open.spotify.com/playlist/4ofrDkzlc3qOEoyf9UUeCu "BPM 065")| [Beiba](https://open.spotify.com/artist/33EFbK7vGM1RuAelDbLG6t "Beiba"): [Questo Swing](https://open.spotify.com/track/1SA11NfRw161AoOQLvqdQ9 "Questo Swing") |
@@ -164,24 +182,6 @@ Have a question? Would you recommend music? Head to [Facebook group](https://www
 | 93.98 | 2025-02-24 | [095](https://open.spotify.com/playlist/2gvhSjxWu24yr5AvLrjahS "BPM 095"), [190](https://open.spotify.com/playlist/5GNIYAIqsxJORL03Hk9j7I "BPM 190")| [ÜNAM](https://open.spotify.com/artist/4BHKv1X2ldBdklzqRfLDFj "ÜNAM"): [Silent Wisdom - Mixed](https://open.spotify.com/track/1S8mBVgW1FFXf1lWGGYhkp "Silent Wisdom - Mixed") |
 | 75.001 | 2025-02-24 | [075](https://open.spotify.com/playlist/5pgBpLvXyDbpRCkK1D16BK "BPM 075"), [150](https://open.spotify.com/playlist/4Hit7eOBHxdsYuh5hpJHln "BPM 150")| [Reinier Zonneveld](https://open.spotify.com/artist/21A7bhIL1m6CNZn8y57PIZ "Reinier Zonneveld"), [Dea Magna](https://open.spotify.com/artist/2CV829PespIwQonuSPIClv "Dea Magna"): [Tokyo](https://open.spotify.com/track/5GOKWH2coW8Q0vbQubJYl3 "Tokyo") |
 | 164.976 | 2025-02-24 | [165](https://open.spotify.com/playlist/30ElA12RWrqpfyKX3sclVO "BPM 165"), [080](https://open.spotify.com/playlist/4jUjllO0Pl9rjpjuveFrtN "BPM 080")| [HIGHTKK](https://open.spotify.com/artist/6mhIOdvLrtQUlrACSqY3Yr "HIGHTKK"), [Ostlabor](https://open.spotify.com/artist/3iwkfWV12OZd1tvq2pjRux "Ostlabor"), [Lorenzo](https://open.spotify.com/artist/4tCAmEGYsFnofEsPLLYZ97 "Lorenzo"): [Damage](https://open.spotify.com/track/5sgg9wcgZ9belh3NCnd8se "Damage") |
-| 97.025 | 2025-02-24 | [095](https://open.spotify.com/playlist/2gvhSjxWu24yr5AvLrjahS "BPM 095"), [195](https://open.spotify.com/playlist/3QBs2Gn4hGla10iapoMqq6 "BPM 195")| [Owl Vision](https://open.spotify.com/artist/5bC2AQ49NEL0cWpev4dgnw "Owl Vision"): [WITCHKING](https://open.spotify.com/track/1HfVIDSt9a45QLRMVA4rBc "WITCHKING") |
-| 130.037 | 2025-02-22 | [130](https://open.spotify.com/playlist/2WKJjj6iBSPuQ0S9hdzGco "BPM 130"), [065](https://open.spotify.com/playlist/4ofrDkzlc3qOEoyf9UUeCu "BPM 065")| [Klangphonics](https://open.spotify.com/artist/0UoXOPQo2BAZ3pSfkt5XZA "Klangphonics"), [Anna Metko](https://open.spotify.com/artist/5tRkZWpev6swx7Nl5cRe2r "Anna Metko"): [Ghost Find Me Again](https://open.spotify.com/track/1JEOBzcJF3S95RInzWvs4P "Ghost Find Me Again") |
-| 94.005 | 2025-02-17 | [095](https://open.spotify.com/playlist/2gvhSjxWu24yr5AvLrjahS "BPM 095"), [190](https://open.spotify.com/playlist/5GNIYAIqsxJORL03Hk9j7I "BPM 190")| [Populous](https://open.spotify.com/artist/5Uy8Skuxzxf38jMDTndKIU "Populous"), [Barda](https://open.spotify.com/artist/7rs7LuOnKkLjxj3Lr8J90k "Barda"): [Banda](https://open.spotify.com/track/6YShNhG2emvYQeh5nSMpiX "Banda") |
-| 120.004 | 2025-02-17 | [120](https://open.spotify.com/playlist/4KLCxo5gZbaNpeSh6YAnzY "BPM 120"), [060](https://open.spotify.com/playlist/1T43UL50SguLP7XM0mKzh5 "BPM 060")| [Santi & Tuğçe](https://open.spotify.com/artist/437O1jQdyOOhIS1M41xQaC "Santi & Tuğçe"): [Ganymede's Ocean](https://open.spotify.com/track/0KHhimhWFH8HNS8CIE9m8v "Ganymede's Ocean") |
-| 112.016 | 2025-02-12 | [110](https://open.spotify.com/playlist/7Jk32WRYcSmmDfIuZifBBP "BPM 110")| [Kermesse](https://open.spotify.com/artist/6DPQIFnbvlnYf0QozkfiPw "Kermesse"): [Wawanko](https://open.spotify.com/track/5f8vHp9Q4Uh0nhwqUEbRoW "Wawanko") |
-| 130.231 | 2025-02-10 | [130](https://open.spotify.com/playlist/2WKJjj6iBSPuQ0S9hdzGco "BPM 130"), [065](https://open.spotify.com/playlist/4ofrDkzlc3qOEoyf9UUeCu "BPM 065")| [ATB](https://open.spotify.com/artist/7jZM5w05mGhw6wTB1okhD9 "ATB"): [9 Pm - Till I Come](https://open.spotify.com/track/5KwpWZxOUmXnpFddmQqxZG "9 Pm - Till I Come") |
-| 136.953 | 2025-02-10 | [135](https://open.spotify.com/playlist/0PtLti4O74i3Gbk15jvUP9 "BPM 135"), [070](https://open.spotify.com/playlist/7z6RtuDQ1UGy4JJfQ2RkKO "BPM 070")| [Alice Deejay](https://open.spotify.com/artist/2tbvDi9eXf9XXp06LupkED "Alice Deejay"): [Better Off Alone](https://open.spotify.com/track/0pMUR7Uvp6vxlbG0qBFvgM "Better Off Alone") |
-| 94.019 | 2025-02-10 | [095](https://open.spotify.com/playlist/2gvhSjxWu24yr5AvLrjahS "BPM 095"), [190](https://open.spotify.com/playlist/5GNIYAIqsxJORL03Hk9j7I "BPM 190")| [Sofi Tukker](https://open.spotify.com/artist/586uxXMyD5ObPuzjtrzO1Q "Sofi Tukker"): [Purple Hat](https://open.spotify.com/track/0bGH7ezs7WdDwpqnsvGf1z "Purple Hat") |
-| 99.972 | 2025-02-10 | [100](https://open.spotify.com/playlist/6Hx0NJUh15jVjNEJpmJdF3 "BPM 100"), [200](https://open.spotify.com/playlist/1oqAyvigIRfNhdGfLXSET6 "BPM 200")| [BIG SIS](https://open.spotify.com/artist/6BXcNAZ4A4vmgqskvbizeL "BIG SIS"), [Geordie Kieffer](https://open.spotify.com/artist/4jZfJWTKg0oea9gn2EER4C "Geordie Kieffer"): [Hit That](https://open.spotify.com/track/4RCrcaML29SupqkGlvOHJX "Hit That") |
-| 122.018 | 2025-02-10 | [120](https://open.spotify.com/playlist/4KLCxo5gZbaNpeSh6YAnzY "BPM 120"), [060](https://open.spotify.com/playlist/1T43UL50SguLP7XM0mKzh5 "BPM 060")| [Eugenio Taicuz](https://open.spotify.com/artist/1TQKjIVnqU8ZPoejxSHEeQ "Eugenio Taicuz"): [Tataki](https://open.spotify.com/track/0uPv40htUsFgdAmuHT5G4I "Tataki") |
-| 132.235 | 2025-02-10 | [130](https://open.spotify.com/playlist/2WKJjj6iBSPuQ0S9hdzGco "BPM 130"), [065](https://open.spotify.com/playlist/4ofrDkzlc3qOEoyf9UUeCu "BPM 065")| [BIG SIS](https://open.spotify.com/artist/6BXcNAZ4A4vmgqskvbizeL "BIG SIS"): [Yay Yomes I took the drugs and the drugs are working](https://open.spotify.com/track/3QYxHf66uzi0IXbA1rS2IW "Yay Yomes I took the drugs and the drugs are working") |
-| 145.001 | 2025-02-10 | [145](https://open.spotify.com/playlist/4gKJpMAvH7ie8pjmRJWrOl "BPM 145"), [070](https://open.spotify.com/playlist/7z6RtuDQ1UGy4JJfQ2RkKO "BPM 070")| [KAFKA](https://open.spotify.com/artist/4AgL2Mo9A8fAQcdsJc0UeU "KAFKA"): [mongolian nights](https://open.spotify.com/track/2duwBTARpub8BpZxtgCwaM "mongolian nights") |
-| 144.999 | 2025-02-10 | [145](https://open.spotify.com/playlist/4gKJpMAvH7ie8pjmRJWrOl "BPM 145"), [070](https://open.spotify.com/playlist/7z6RtuDQ1UGy4JJfQ2RkKO "BPM 070")| [Tropical Bleyage](https://open.spotify.com/artist/4tJOC6kCAkPfQs01GduRE4 "Tropical Bleyage"): [Mala - Original Mix](https://open.spotify.com/track/1Dls4kcgFCFXuymquHsYG8 "Mala - Original Mix") |
-| 110.005 | 2025-02-10 | [110](https://open.spotify.com/playlist/7Jk32WRYcSmmDfIuZifBBP "BPM 110"), [220](https://open.spotify.com/playlist/7aApgYgX27nSiw4zuzljzf "BPM 220")| [Shpongle](https://open.spotify.com/artist/0m5XJwKGYyUjd3VMfcINCQ "Shpongle"), [Astrix](https://open.spotify.com/artist/3dUltShd2gJQc98Kc7Syit "Astrix"): [Strange Planet](https://open.spotify.com/track/2U67EmIoFt4YGBuJHJ6lmE "Strange Planet") |
-| 138.015 | 2025-02-10 | [140](https://open.spotify.com/playlist/4vqcLLn4OixNSCk8PXg9Oz "BPM 140"), [070](https://open.spotify.com/playlist/7z6RtuDQ1UGy4JJfQ2RkKO "BPM 070")| [Kalki](https://open.spotify.com/artist/5WCWKVOVoAEY3l3AHAiDql "Kalki"): [Varanasi - Original Mix](https://open.spotify.com/track/7fAj8fY9FI4s3M81GwhwpM "Varanasi - Original Mix") |
-| 133.997 | 2025-02-10 | [135](https://open.spotify.com/playlist/0PtLti4O74i3Gbk15jvUP9 "BPM 135"), [065](https://open.spotify.com/playlist/4ofrDkzlc3qOEoyf9UUeCu "BPM 065")| [Mail_From_EM](https://open.spotify.com/artist/14Ys5S47WBB0P8Fwkcu64v "Mail_From_EM"): [The Dancing Master](https://open.spotify.com/track/1mLTbUReostVEXRJ1DccTV "The Dancing Master") |
-| 129.958 | 2025-02-10 | [130](https://open.spotify.com/playlist/2WKJjj6iBSPuQ0S9hdzGco "BPM 130"), [065](https://open.spotify.com/playlist/4ofrDkzlc3qOEoyf9UUeCu "BPM 065")| [Mike Candys](https://open.spotify.com/artist/24Sxfn1uAoJmuR9N72drt9 "Mike Candys"): [Everyone](https://open.spotify.com/track/1IWVosafBsUiRwTXH9fYty "Everyone") |
-| 121.99 | 2025-02-10 | [120](https://open.spotify.com/playlist/4KLCxo5gZbaNpeSh6YAnzY "BPM 120"), [060](https://open.spotify.com/playlist/1T43UL50SguLP7XM0mKzh5 "BPM 060")| [HIGHTKK](https://open.spotify.com/artist/6mhIOdvLrtQUlrACSqY3Yr "HIGHTKK"), [Avizon](https://open.spotify.com/artist/7d294pPS7qeIA1DtvqV9fF "Avizon"): [Indian Spirit](https://open.spotify.com/track/1yFJHP49fCiVRRXs1mtcUr "Indian Spirit") |
 { .w-100 .mw8 .center id="spotify" data-toggle="table" data-search="true" }
 
 Feel free to use it!
