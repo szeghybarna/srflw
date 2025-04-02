@@ -3,13 +3,13 @@ type: single
 audio: []
 date: '2025-04-02'
 description: Az igazi dilemma
-images: ['/images/feature-fat-or-carbs-thats-the-question.webp', '/images/cover-fat-or-carbs-thats-the-question.webp']
+images: ['/images/feature-fat-or-carbs-thats-the-questions.webp', '/images/cover-fat-or-carbs-thats-the-questions.webp']
 series: []
 tags: ['alacsony-szénhidrát', 'szénhidrát', 'zsír', 'fogyás', 'séta']
 title: Zsír vagy szénhidrát? Ez itt a kérdés!
 videos: []
-featured_image: '/images/feature-fat-or-carbs-thats-the-question.webp'
-cover_image: '/images/cover-fat-or-carbs-thats-the-question.webp'
+featured_image: '/images/feature-fat-or-carbs-thats-the-questions.webp'
+cover_image: '/images/cover-fat-or-carbs-thats-the-questions.webp'
 translationKey: fat-or-carbs-thats-the-question
 slug: zsir-vagy-szenhidrat-ez-itt-a-kerdes
 language: hu

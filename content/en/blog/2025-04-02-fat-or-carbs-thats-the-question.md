@@ -3,13 +3,13 @@ type: single
 audio: []
 date: '2025-04-02'
 description: The ultimate dilemma
-images: ['/images/feature-fat-or-carbs-thats-the-question.webp', '/images/cover-fat-or-carbs-thats-the-question.webp']
+images: ['/images/feature-fat-or-carbs-thats-the-questions.webp', '/images/cover-fat-or-carbs-thats-the-questions.webp']
 series: []
 tags: ['carbs', 'low-carb', 'fat', 'weight loss', 'walking']
 title: Fat or Carbs? That’s the Question!
 videos: []
-featured_image: '/images/feature-fat-or-carbs-thats-the-question.webp'
-cover_image: '/images/cover-fat-or-carbs-thats-the-question.webp'
+featured_image: '/images/feature-fat-or-carbs-thats-the-questions.webp'
+cover_image: '/images/cover-fat-or-carbs-thats-the-questions.webp'
 translationKey: fat-or-carbs-thats-the-question
 slug: fat-or-carbs-thats-the-question
 language: en
