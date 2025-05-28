@@ -34,24 +34,24 @@ Most calorie calculators start with your current weight and how many calories yo
 
 Instead, I started from the fact that I have a target BMI that I want to achieve. I calculated how many kilograms that is and counted calories for that weight. I was trying to kill two birds with one stone: get used to eating at a healthy level for me and lose weight simultaneously.
 
-My calculator starts from the [Revised Harris-Benedict equation](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9967803/ "Revised Harris-Benedict equation"), which calculates RMR:
+My calculator starts from the [Mifflin–St Jeor equation](https://en.wikipedia.org/wiki/Basal_metabolic_rate "Mifflin–St Jeor equation"), which calculates RMR:
 
->
->RMR females:
->   
-> (7.38 * weight in kg) + (607 * height in meters) - (2.31 * age in years) + 43
 > 
->RMR males:
->
-> (9.65 * weight in kg) + (573 * height in metres) - (5.08 * age in years) + 260;
->   
+> RMR females:
+> 
+> RMR (or BMR)=(10×weight in kg)+(6.25×height in cm)−(5×age in years)−161
+> 
+> RMR males:
+> 
+> RMR (or BMR)=(10×weight in kg)+(6.25×height in cm)−(5×age in years)+5
+> 
 
 RMR, Resting Metabolic Rate, is the amount of kcal the body consumes at rest. This includes basic daily physical activity such as toileting or light movements. Think of it as sedentary work at home during Covid.
 
 
 You can enter a lot of data into this calculator; the only thing you don't have to enter is your weight, which is just included to see your current BMI. The data in the calculator is populated with my 2019 data.
 
-For optimal BMI, enter the BMI you want to achieve. For example, 23 is already very good; I decided to bring my BMI down to 20-21 in the last couple of months because it's ideal for long-distance running.
+For optimal BMI, enter the BMI you want to achieve. For example, 23 is already very good.
 
 I put the calorie deficit percentage deduction in the calculator to help you even if you're already at the weight you wanted to be. Looking at the [blue zones](https://www.healthline.com/nutrition/blue-zones#TOC_TITLE_HDR_4 "blue zones") - notable for having a much higher average life expectancy than other areas - people living there are in a constant calorie deficit. Blue zone residents eat about 20-30% less daily than the generally recommended daily calorie intake. Many other factors make people in blue zones live longer, but only this aspect counts in the calorie count.
 
@@ -61,7 +61,7 @@ You can also enter your weekly weight loss target; I recommend half a kilo at mo
 
 Enter the "calorie deficit" percentage or "weekly weight loss" in kilograms with a minus sign to gain weight.
 
-{{< updated_bmi_calculator year2019>}}
+{{< msj_bmi_calculator year2019>}}
 
 If you have filled in the values, the calculator will update the result independently, but if not, there is a "Calculate!" button to set your calorie goal. In the cell with the purple background, you will find your actual BMI and target weight; these are indicative values.
 

@@ -15,7 +15,7 @@ language: hu
 ---
 
 
-{{< updated_bmi_calculator actual >}}
+{{< msj_bmi_calculator actual >}}
 
 {{< fat_burning_zone_calculator actual >}}
 

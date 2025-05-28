@@ -32,7 +32,7 @@ Instead, start counting calories to see how many you're putting in. Start doing 
 
 From there, it's easy: calculate your ideal calorie intake. Shoot for a BMI of around 21-22, a good approximation for men and women. Add up the total active calories you accumulate per week. You'll get three values: don't exceed the maximum and minimum for daily meals; anything in between is considered good.
 
-{{< updated_bmi_calculator actual >}}
+{{< msj_bmi_calculator actual >}}
 
 I shot my BMI at 20.5, and my average weekly amount of exercise in the last few weeks has been 4000 active calories. So, for example, now, in April 2024, my recommended maximum intake is 2128 calories, and my minimum is 1660 calories.
 

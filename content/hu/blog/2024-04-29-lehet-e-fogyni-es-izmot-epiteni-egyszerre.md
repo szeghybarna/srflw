@@ -31,7 +31,7 @@ Ehelyett azt javaslom, hogy kezdj el kalóriát számolni, hogy lásd, mennyi ka
 
 Innen már pofonegyszerű: számold ki, hogy mennyi lenne az ideális kalóriamennyiséged. A BMI-d lődd be 21-22 körülre, ez egy jó közelítés férfiaknak és nőknek is. Add meg, hogy hetente mennyi aktív kalóriát gyűjtesz össze összesen. Megkapsz három értéket: a maximumot és minimumot ne lépd túl napi étkezésben, ami meg közötte van, az már jónak számít.
 
-{{< updated_bmi_calculator actual >}}
+{{< msj_bmi_calculator actual >}}
 
 A BMI-met én 20,5-re lőttem be, és az elmúlt hetekben a heti átlagos mozgásmennyiségem 4000 aktív kalóriát tett ki. Így például most, 2024. áprilisában nekem a javasolt maximum fogyasztásom 2128 kalória, a minimum meg 1660 kalória.
 

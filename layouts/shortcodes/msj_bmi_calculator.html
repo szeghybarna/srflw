@@ -1,0 +1,292 @@
+<script type="text/javascript">
+    function msjBmiInit() {
+        {{ if (.Get 0) }}
+            {{ if (eq (.Get 0) "year2019") }}
+                {{ range .Site.Params.year2019 }}
+                document.getElementById("msjBmiFormAge").value= {{ .myAge }};
+                document.getElementById("msjBmiFormHeight").value= {{ .myHeight}};
+                document.getElementById("msjBmiFormWeight").value= {{ .myWeight}};
+                document.getElementById("msjBmiFormOptimalBmi").value= {{ .myOptimalBmi}};
+                document.getElementById("msjBmiFormWeeklyActiveCalories").value= {{ .myActiveCalories}};
+                {{ end }}    
+            {{ else }}
+                {{ if (eq (.Get 0) "jan2024") }}
+                    {{ range .Site.Params.jan2024 }}
+                    document.getElementById("msjBmiFormAge").value= {{ .myAge }};
+                    document.getElementById("msjBmiFormHeight").value= {{ .myHeight}};
+                    document.getElementById("msjBmiFormWeight").value= {{ .myWeight}};
+                    document.getElementById("msjBmiFormOptimalBmi").value= {{ .myOptimalBmi}};
+                    document.getElementById("msjBmiFormWeeklyActiveCalories").value= {{ .myActiveCalories}};
+                    {{ end }}    
+                {{ else }}
+                    {{ if (eq (.Get 0) "actual") }}
+                        {{ range .Site.Params.actual }}
+                        document.getElementById("msjBmiFormAge").value= {{ .myAge }};
+                        document.getElementById("msjBmiFormHeight").value= {{ .myHeight}};
+                        document.getElementById("msjBmiFormWeight").value= {{ .myWeight}};
+                        document.getElementById("msjBmiFormOptimalBmi").value= {{ .myOptimalBmi}};
+                        document.getElementById("msjBmiFormWeeklyActiveCalories").value= {{ .myActiveCalories}};
+                        {{ end }}    
+                    {{ else }}
+                        document.getElementById("msjBmiFormHeight").value= 0;
+                        document.getElementById("msjBmiFormAge").value= 0;
+                        document.getElementById("msjBmiFormWeight").value= 0;
+                        document.getElementById("msjBmiFormOptimalBmi").value= 0;
+                        document.getElementById("msjBmiFormWeeklyActiveCalories").value= 0;
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+        {{ else }}
+            document.getElementById("msjBmiFormHeight").value= 0;
+            document.getElementById("msjBmiFormAge").value= 0;
+            document.getElementById("msjBmiFormWeight").value= 0;
+            document.getElementById("msjBmiFormOptimalBmi").value= 0;
+            document.getElementById("msjBmiFormWeeklyActiveCalories").value= 0;
+        {{ end }}
+    }
+    function msjBmiCalculator() {
+        var age=parseInt(document.getElementById("msjBmiFormAge").value) || 0;
+        var height=parseFloat(document.getElementById("msjBmiFormHeight").value) || 0;
+        var weight=parseFloat(document.getElementById("msjBmiFormWeight").value) || 0;
+        var optimalBmi=parseFloat(document.getElementById("msjBmiFormOptimalBmi").value) || 0;
+        var weeklyActiveCalories=parseInt(document.getElementById("msjBmiFormWeeklyActiveCalories").value) || 0;
+
+        var activityRadios = document.getElementsByName('msjBmiFormWeeklyActiveCaloriesSelect');
+        var weeklyActiveCaloriesSelect = 1;
+        for(var i = 0; i < activityRadios.length; i++){
+            if(activityRadios[i].checked){
+                weeklyActiveCaloriesSelect = activityRadios[i].value;
+            }
+        }
+
+        if (height > 0) {
+            var actualBmi=(weight/((height/100)*(height/100))).toFixed(2) || 0;
+        } else {
+            var actualBmi=0;
+        }
+        var targetWeight=(optimalBmi*(height/100)*(height/100)).toFixed(2) || 0;
+/*
+woman
+RMR (or BMR)=(10×weight in kg)+(6.25×height in cm)−(5×age in years)−161
+man
+RMR (or BMR)=(10×weight in kg)+(6.25×height in cm)−(5×age in years)+5
+*/
+        var rmrFemale=parseInt(((10*targetWeight)+(6.25*height)-(5*age)-161).toFixed(0)) || 0;
+        var rmrMale=parseInt(((10*targetWeight)+(6.25*height)-(5*age)+5).toFixed(0)) || 0;
+        
+
+        var dailyActiveCalories=parseInt((weeklyActiveCalories/7).toFixed(0)) || 0;
+        if (weeklyActiveCaloriesSelect > 1) {
+            document.getElementById("msjBmiFormWeeklyActiveCalories").value=0
+            dailyActiveCalories = parseInt((rmrFemale*(weeklyActiveCaloriesSelect-1)).toFixed(0));
+        }
+        document.getElementById("msjBmiFormDailyActiveCaloriesFemale").value=dailyActiveCalories;
+        var dailyMaxTotalCaloriesFemale=rmrFemale+dailyActiveCalories;
+        var dailyPropTotalCaloriesFemale=(dailyMaxTotalCaloriesFemale*0.85).toFixed(0);
+        var dailyMinTotalCaloriesFemale=(dailyMaxTotalCaloriesFemale*0.78).toFixed(0);
+        document.getElementById("msjFemaleAlertDiv").style.display = 'none';
+        document.getElementById("msjFemaleAlert").textContent="";
+        if (dailyMaxTotalCaloriesFemale<1000) {
+            dailyMaxTotalCaloriesFemale=1000;
+            document.getElementById("msjFemaleAlertDiv").style.display = 'block';
+            document.getElementById("msjFemaleAlert").textContent="{{ i18n "dailyTotalCaloriesAlert" }}";
+        }
+        if (dailyPropTotalCaloriesFemale<1000) {
+            dailyPropTotalCaloriesFemale=1000;
+            document.getElementById("msjFemaleAlertDiv").style.display = 'block';
+            document.getElementById("msjFemaleAlert").textContent="{{ i18n "dailyTotalCaloriesAlert" }}";
+        }
+        if (dailyMinTotalCaloriesFemale<1000) {
+            dailyMinTotalCaloriesFemale=1000;
+            document.getElementById("msjFemaleAlertDiv").style.display = 'block';
+            document.getElementById("msjFemaleAlert").textContent="{{ i18n "dailyTotalCaloriesAlert" }}";
+        }
+        if (weeklyActiveCaloriesSelect > 1) {
+            document.getElementById("msjBmiFormWeeklyActiveCalories").value=0
+            dailyActiveCalories = parseInt((rmrMale*(weeklyActiveCaloriesSelect-1)).toFixed(0));
+        }
+        document.getElementById("msjBmiFormDailyActiveCaloriesMale").value=dailyActiveCalories;
+        var dailyMaxTotalCaloriesMale=rmrMale+dailyActiveCalories;
+        var dailyPropTotalCaloriesMale=(dailyMaxTotalCaloriesMale*0.85).toFixed(0);
+        var dailyMinTotalCaloriesMale=(dailyMaxTotalCaloriesMale*0.78).toFixed(0);
+        document.getElementById("msjMaleAlertDiv").style.display = 'none';
+        document.getElementById("msjMaleAlert").textContent="";
+        if (dailyMaxTotalCaloriesMale<1000) {
+            dailyMaxTotalCaloriesMale=1000;
+            document.getElementById("msjMaleAlertDiv").style.display = 'block';
+            document.getElementById("msjMaleAlert").textContent="{{ i18n "dailyTotalCaloriesAlert" }}";
+        }
+        if (dailyPropTotalCaloriesMale<1000) {
+            dailyPropTotalCaloriesMale=1000;
+            document.getElementById("msjMaleAlertDiv").style.display = 'block';
+            document.getElementById("msjMaleAlert").textContent="{{ i18n "dailyTotalCaloriesAlert" }}";
+        }
+        if (dailyMinTotalCaloriesMale<1000) {
+            dailyMinTotalCaloriesMale=1000;
+            document.getElementById("msjMaleAlertDiv").style.display = 'block';
+            document.getElementById("msjMaleAlert").textContent="{{ i18n "dailyTotalCaloriesAlert" }}";
+        }
+        document.getElementById("msjBmiFormActualBmi").value=actualBmi;
+        document.getElementById("msjBmiFormTargetWeight").value=targetWeight;
+        document.getElementById("msjBmiFormDailyRmrFemale").value=rmrFemale;
+        document.getElementById("msjBmiFormDailyRmrMale").value=rmrMale;
+        document.getElementById("msjBmiFormDailyMaxTotalCaloriesFemale").value=dailyMaxTotalCaloriesFemale;
+        document.getElementById("msjBmiFormDailyPropTotalCaloriesFemale").value=dailyPropTotalCaloriesFemale;
+        document.getElementById("msjBmiFormDailyMinTotalCaloriesFemale").value=dailyMinTotalCaloriesFemale;
+        document.getElementById("msjFemaleTakeAway").textContent='{{ i18n "dailyPropFemale" }}'.replace('XXMAXXX', dailyMaxTotalCaloriesFemale).replace('XXPROPXX', dailyPropTotalCaloriesFemale).replace('XXMINXX', dailyMinTotalCaloriesFemale);
+        document.getElementById("msjBmiFormDailyMaxTotalCaloriesMale").value=dailyMaxTotalCaloriesMale;
+        document.getElementById("msjBmiFormDailyPropTotalCaloriesMale").value=dailyPropTotalCaloriesMale;
+        document.getElementById("msjBmiFormDailyMinTotalCaloriesMale").value=dailyMinTotalCaloriesMale;
+        document.getElementById("msjMaleTakeAway").textContent='{{ i18n "dailyPropMale" }}'.replace('XXMAXXX', dailyMaxTotalCaloriesMale).replace('XXPROPXX', dailyPropTotalCaloriesMale).replace('XXMINXX', dailyMinTotalCaloriesMale)
+    }
+    /*
+    RMR females: (7.38 * weight in kg) + (607 * height in m) - (2.31 * age in years) + 43
+    RMR males: (9.65 * weight in kg) + (573 * height in m) - (5.08 * age in years) + 260;
+    */
+    window.addEventListener('load', function () {
+        msjBmiInit();
+        msjBmiCalculator();
+    });
+</script>
+
+<strong>{{ i18n "msjBmiCalculator" }}</strong>
+<p>{{ i18n "msjBmiCalculatorDescription" }}</p>
+
+<form class="pa4 black-80 f6" accept-charset="UTF-8" action="#" method="POST">
+  <div class="measure cf">
+    <label for="msjBmiFormAge" class="f6 b db mb2 fl w-70">{{ i18n "age" }}</label>
+    <small id="msjBmiFormAgeHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "ageHelp" }}</small>
+    <input id="msjBmiFormAge" class="input-reset ba b--black-20 pa2 mb2 db fl w-30 tr" type="number" aria-describedby="msjBmiFormAgeHelp" min="1" max="120" step="1" autocomplete =“off” onchange="msjBmiCalculator();">
+  </div>
+  <div class="measure cf">
+    <label for="msjBmiFormHeight" class="f6 b db mb2 fl w-70">{{ i18n "height" }}</label>
+    <small id="msjBmiFormHeightHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "heightHelp" }}</small>
+    <input id="msjBmiFormHeight" class="input-reset ba b--black-20 pa2 mb2 db fl w-30 tr" type="number" aria-describedby="msjBmiFormHeightHelp" min="90" max="250" step=".1" autocomplete =“off” onchange="msjBmiCalculator();">
+  </div>
+  <div class="measure cf">
+    <label for="msjBmiFormWeight" class="f6 b db mb2 fl w-70">{{ i18n "weight" }}</label>
+    <small id="msjBmiFormWeightHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "weightHelp" }}</small>
+    <input id="msjBmiFormWeight" class="input-reset ba b--black-20 pa2 mb2 db fl w-30 tr" type="number" aria-describedby="msjBmiFormWeightHelp" min="30.0" max="500.0" step=".1" autocomplete =“off” onchange="msjBmiCalculator();">
+  </div>
+  <div class="measure cf">
+    <label for="msjBmiFormOptimalBmi" class="f6 b db mb2 fl w-70">{{ i18n "optimalBmi" }}</label>
+    <small id="msjBmiFormOptimalBmiHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "optimalBmiHelp" }}</small>
+    <input id="msjBmiFormOptimalBmi" class="input-reset ba b--black-20 pa2 mb2 db fl w-30 tr" type="number" aria-describedby="msjBmiFormOptimalBmi" min="10.0" max="100.0" step=".1" autocomplete =“off” onchange="msjBmiCalculator();">
+  </div>
+  <div class="measure cf">
+    <label for="msjBmiFormWeeklyActiveCalories" class="f6 b db mb2 fl w-70">{{ i18n "weeklyActiveCalories" }}</label>
+    <small id="msjBmiFormWeeklyActiveCaloriesHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "weeklyActiveCaloriesHelp" }}</small>
+    <input id="msjBmiFormWeeklyActiveCalories" class="input-reset ba b--black-20 pa2 mb2 db fl w-30 tr" type="number" aria-describedby="msjBmiFormWeeklyActiveCalories" min="0" max="100000" step="1" autocomplete =“off” onchange="msjBmiCalculator();">
+  </div>
+
+  <div class="measure cf">
+    <label for="msjBmiFormWeeklyActiveCaloriesSelect" class="f6 b db mb2 fl w-70">{{ i18n "weeklyActiveCaloriesSelect" }}</label>
+    <small id="msjBmiFormWeeklyActiveCaloriesSelectHelp" class="f6 black-60 db mb2 ph2 fl w-100">{{ i18n "weeklyActiveCaloriesSelectHelp" }}</small>
+    <label class="black-60 pa2 mb2 db fl w-100" ><input checked="checked" type="radio" class="" aria-describedby="msjBmiFormWeeklyActiveCaloriesSelect" onclick="msjBmiCalculator();" name="msjBmiFormWeeklyActiveCaloriesSelect" id="msjBmiFormWeeklyActiveCaloriesSelect" value="1">&nbsp;{{ i18n "activityLevelManual" }}: {{ i18n "activityLevelManualDescription" }}</label>
+    <label class="black-60 pa2 mb2 db fl w-100" ><input type="radio" class="" aria-describedby="msjBmiFormWeeklyActiveCaloriesSelect" onclick="msjBmiCalculator();" name="msjBmiFormWeeklyActiveCaloriesSelect" id="msjBmiFormWeeklyActiveCaloriesSelect" value="1.2">&nbsp;{{ i18n "activityLevelSedentary" }}: {{ i18n "activityLevelSedentaryDescription" }}</label>
+    <label class="black-60 pa2 mb2 db fl w-100" ><input type="radio" class="" aria-describedby="msjBmiFormWeeklyActiveCaloriesSelect" onclick="msjBmiCalculator();" name="msjBmiFormWeeklyActiveCaloriesSelect" id="msjBmiFormWeeklyActiveCaloriesSelect" value="1.375">&nbsp;{{ i18n "activityLevelLightlyActive" }}: {{ i18n "activityLevelLightlyActiveDescription" }}</label>
+    <label class="black-60 pa2 mb2 db fl w-100" ><input type="radio" class="" aria-describedby="msjBmiFormWeeklyActiveCaloriesSelect" onclick="msjBmiCalculator();" name="msjBmiFormWeeklyActiveCaloriesSelect" id="msjBmiFormWeeklyActiveCaloriesSelect" value="1.55">&nbsp;{{ i18n "activityLevelModeratelyActive" }}: {{ i18n "activityLevelModeratelyActiveDescription" }}</label>
+    <label class="black-60 pa2 mb2 db fl w-100" ><input type="radio" class="" aria-describedby="msjBmiFormWeeklyActiveCaloriesSelect" onclick="msjBmiCalculator();" name="msjBmiFormWeeklyActiveCaloriesSelect" id="msjBmiFormWeeklyActiveCaloriesSelect" value="1.725">&nbsp;{{ i18n "activityLevelVeryActive" }}: {{ i18n "activityLevelVeryActiveDescription" }}</label>
+    <label class="black-60 pa2 mb2 db fl w-100" ><input type="radio" class="" aria-describedby="msjBmiFormWeeklyActiveCaloriesSelect" onclick="msjBmiCalculator();" name="msjBmiFormWeeklyActiveCaloriesSelect" id="msjBmiFormWeeklyActiveCaloriesSelect" value="1.9">&nbsp;{{ i18n "activityLevelExtraActive" }}: {{ i18n "activityLevelExtraActiveDescription" }}</label>
+  </div>
+
+  <div class="measure">
+    <a class="link dim br1 ph3 pv2 mb2 dib white bg-gold w-100" onclick="msjBmiCalculator();">{{ i18n "calculate" }}</a>
+  </div>
+  
+  <div class="measure cf">
+    <label for="msjBmiFormActualBmi" class="f6 b db mb2 fl w-60">{{ i18n "actualBmi" }}</label>
+    <small id="msjBmiFormActualBmiHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "actualBmiHelp" }}</small>
+    <input id="msjBmiFormActualBmi" class="input-reset ba db br1 ph3 pv2 mb2 white bg-purple fl w-20 tr" aria-describedby="msjBmiFormActualBmiHelp" readonly="readonly" autocomplete =“off”>
+  </div>
+  <div class="measure cf">
+    <label for="msjBmiFormTargetWeight" class="f6 b db mb2 fl w-60">{{ i18n "targetWeight" }}</label>
+    <small id="msjBmiFormTargetWeightHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "targetWeightHelp" }}</small>
+    <input id="msjBmiFormTargetWeight" class="input-reset ba db br1 ph3 pv2 mb2 white bg-purple fl w-20 tr" aria-describedby="msjBmiFormTargetWeightHelp" readonly="readonly" autocomplete =“off”>
+  </div>
+      
+  <div class="measure cf">
+    <strong class="fl w-100">{{ i18n "dailyRmrFemale" }}</strong>
+    <!--label for="msjBmiFormDailyRmrFemale" class="f6 b db mb2">{{ i18n "dailyRmrFemale" }}</label-->
+    <small id="msjBmiFormDailyRmrFemaleHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "dailyRmrFemaleHelp" }}</small>
+    <input id="msjBmiFormDailyRmrFemale" class="input-reset ba db br1 ph3 pv2 mb2 white bg-hot-pink fl w-20 tr" aria-describedby="msjBmiFormDailyRmrFemaleHelp" readonly="readonly" autocomplete =“off”>
+  </div>
+  
+  <div class="measure cf">
+    <small id="msjBmiFormDailyActiveCaloriesFemaleHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "dailyActiveCaloriesFemaleHelp" }}</small>
+    <input id="msjBmiFormDailyActiveCaloriesFemale" class="input-reset ba db br1 ph3 pv2 mb2 white bg-hot-pink fl w-20 tr" aria-describedby="msjBmiFormDailyActiveCaloriesFemaleHelp" readonly="readonly" autocomplete =“off”>
+  </div>
+  
+  <div class="measure cf">
+    <small id="msjBmiFormDailyMaxTotalCaloriesFemaleHelp" class="f6 black-60 db mb2 ph2 b fl w-60">{{ i18n "dailyMaxTotalCaloriesFemaleHelp" }}</small>
+    <input id="msjBmiFormDailyMaxTotalCaloriesFemale" class="input-reset ba db br1 ph3 pv2 mb2 white bg-dark-red b fl w-20 tr" aria-describedby="msjBmiFormDailyMaxTotalCaloriesFemale" readonly="readonly" autocomplete =“off”>
+  </div>
+  <div class="measure cf">
+    <small id="msjBmiFormDailyTotalCaloriesFemaleHelp" class="f6 black-60 db mb2 ph2 b fl w-60">{{ i18n "dailyPropTotalCaloriesFemaleHelp" }}</small>
+    <input id="msjBmiFormDailyPropTotalCaloriesFemale" class="input-reset ba db br1 ph3 pv2 mb2 white bg-dark-green b fl w-20 tr" aria-describedby="msjBmiFormDailyPropTotalCaloriesFemale" readonly="readonly" autocomplete =“off”>
+  </div>
+  <div class="measure cf">
+    <small id="msjBmiFormDailyMinTotalCaloriesFemaleHelp" class="f6 black-60 db mb2 ph2 b fl w-60">{{ i18n "dailyMinTotalCaloriesFemaleHelp" }}</small>
+    <input id="msjBmiFormDailyMinTotalCaloriesFemale" class="input-reset ba db br1 ph3 pv2 mb2 white bg-orange b fl w-20 tr" aria-describedby="msjBmiFormDailyMinTotalCaloriesFemale" readonly="readonly" autocomplete =“off”>
+  </div>
+  <div class="flex items-center justify-center pa4 bg-light-pink dark-pink b" id="msjFemaleTakeAwayDiv">
+    <svg class="w3" data-icon="info" viewBox="0 0 32 32" style="fill:currentcolor">
+      <title>info icon</title>
+      <path d="M16 0 A16 16 0 0 1 16 32 A16 16 0 0 1 16 0 M19 15 L13 15 L13 26 L19 26 z M16 6 A3 3 0 0 0 16 12 A3 3 0 0 0 16 6"></path>
+    </svg>
+    <span class="lh-title ml3" id="msjFemaleTakeAway"></span>
+  </div> 
+
+
+  <div class="flex items-center justify-center pa4 dark-red dn" id="msjFemaleAlertDiv">
+    <svg class="w1" data-icon="info" viewBox="0 0 32 32" style="fill:currentcolor">
+      <title>info icon</title>
+      <path d="M16 0 A16 16 0 0 1 16 32 A16 16 0 0 1 16 0 M19 15 L13 15 L13 26 L19 26 z M16 6 A3 3 0 0 0 16 12 A3 3 0 0 0 16 6"></path>
+    </svg>
+    <span class="lh-title ml3" id="msjFemaleAlert"></span>
+  </div> 
+
+
+
+  <div class="measure cf">
+    <strong class="fl w-100">{{ i18n "dailyRmrMale" }}</strong>
+    <!--label for="msjBmiFormDailyRmrMale" class="f6 b db mb2">{{ i18n "dailyRmrMale" }}</label-->
+    <small id="msjBmiFormDailyRmrMaleHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "dailyRmrMaleHelp" }}</small>
+    <input id="msjBmiFormDailyRmrMale" class="input-reset ba db br1 ph3 pv2 mb2 white bg-blue fl w-20 tr" aria-describedby="msjBmiFormDailyRmrMaleHelp" readonly="readonly" autocomplete =“off”>
+  </div>
+  <div class="measure cf">
+    <small id="msjBmiFormDailyActiveCaloriesMaleHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "dailyActiveCaloriesMaleHelp" }}</small>
+    <input id="msjBmiFormDailyActiveCaloriesMale" class="input-reset ba db br1 ph3 pv2 mb2 white bg-blue fl w-20 tr" aria-describedby="msjBmiFormDailyActiveCaloriesMaleHelp" readonly="readonly" autocomplete =“off”>
+  </div>
+  <div class="measure cf">
+    <small id="msjBmiFormDailyMaxTotalCaloriesMaleHelp" class="f6 black-60 db mb2 ph2 b fl w-60">{{ i18n "dailyMaxTotalCaloriesMaleHelp" }}</small>
+    <input id="msjBmiFormDailyMaxTotalCaloriesMale" class="input-reset ba db br1 ph3 pv2 mb2 white bg-dark-red b fl w-20 tr" aria-describedby="msjBmiFormDailyMaxTotalCaloriesMale" readonly="readonly" autocomplete =“off”>
+  </div>
+  <div class="measure cf">
+    <small id="msjBmiFormDailyPropTotalCaloriesMaleHelp" class="f6 black-60 db mb2 ph2 b fl w-60">{{ i18n "dailyPropTotalCaloriesMaleHelp" }}</small>
+    <input id="msjBmiFormDailyPropTotalCaloriesMale" class="input-reset ba db br1 ph3 pv2 mb2 white bg-dark-green b fl w-20 tr" aria-describedby="msjBmiFormDailyPropTotalCaloriesMale" readonly="readonly" autocomplete =“off”>
+  </div>
+  <div class="measure cf">
+    <small id="msjBmiFormDailyMinTotalCaloriesMaleHelp" class="f6 black-60 db mb2 ph2 b fl w-60">{{ i18n "dailyMinTotalCaloriesMaleHelp" }}</small>
+    <input id="msjBmiFormDailyMinTotalCaloriesMale" class="input-reset ba db br1 ph3 pv2 mb2 white bg-orange b fl w-20 tr" aria-describedby="msjBmiFormDailyMinTotalCaloriesMale" readonly="readonly" autocomplete =“off”>
+  </div>
+  <div class="flex items-center justify-center pa4 bg-light-blue b--navy b" id="msjMaleTakeAwayDiv">
+    <svg class="w3" data-icon="info" viewBox="0 0 32 32" style="fill:currentcolor">
+      <title>info icon</title>
+      <path d="M16 0 A16 16 0 0 1 16 32 A16 16 0 0 1 16 0 M19 15 L13 15 L13 26 L19 26 z M16 6 A3 3 0 0 0 16 12 A3 3 0 0 0 16 6"></path>
+    </svg>
+    <span class="lh-title ml3" id="msjMaleTakeAway"></span>
+  </div> 
+  <div class="flex items-center justify-center pa4 dark-red dn" id="msjMaleAlertDiv">
+    <svg class="w1" data-icon="info" viewBox="0 0 32 32" style="fill:currentcolor">
+      <title>info icon</title>
+      <path d="M16 0 A16 16 0 0 1 16 32 A16 16 0 0 1 16 0 M19 15 L13 15 L13 26 L19 26 z M16 6 A3 3 0 0 0 16 12 A3 3 0 0 0 16 6"></path>
+    </svg>
+    <span class="lh-title ml3" id="msjMaleAlert"></span>
+  </div> 
+</form>
+
+
+
+
+

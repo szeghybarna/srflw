@@ -53,7 +53,7 @@ Például, ha a cél testsúlyod 60 kg, akkor naponta legalább 150 g fehérjét
 
 Fontos, hogy a fehérjebevitellel **támogasd az izomzat megtartását**. Egy-egy zsírégető edzés előtt érdemes könnyen emészthető, fehérjében gazdag ételt fogyasztani, például egy natúr joghurtot vagy egy kis adag diófélét. Az edzés után pedig kombináld a fehérjét és az egészséges zsírokat, hogy elősegítsd a regenerációt és a zsírégetést.
 
-{{< updated_bmi_calculator actual >}}
+{{< msj_bmi_calculator actual >}}
 
 Figyelem: nem vagyok táplálkozási szakértő. A saját fogyásom tapasztalatai formálják a véleményem.
 

@@ -35,24 +35,27 @@ A kalória kalkulátorok nagy része abból indul ki, hogy mennyi az aktuális s
 
 Én ehelyett abból indultam ki, hogy van egy cél BMI, amit szeretnék elérni. Kiszámoltam, hogy az hány kilogramm, és arra a súlyra számoltam kalóriát. Próbáltam két legyet ütni egy csapásra: hozzászoktatni magam a számomra egészséges mértékű étel fogyasztáshoz és egyben fogyni is.
 
-A kalkulátorom a [Revised Harris–Benedict egyenletből](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9967803/ "Revised Harris–Benedict egyenlet") indul ki, ami az RMR-t számolja ki:
+A kalkulátorom a [Mifflin–St Jeor képletből](https://en.wikipedia.org/wiki/Basal_metabolic_rate "RMifflin–St Jeor képlet") indul ki, ami az RMR-t számolja ki:
 
->
->RMR females:
->   
->   (7.38 * súly kg-ban) + (607 * magasság méterben) - (2.31 * életkor években) + 43
+
 > 
->RMR males:
->
->   (9.65  * súly kg-ban) + (573 * magasság méterben) - (5.08 * életkor években) + 260;
->   
+> RMR nőknek:
+> 
+> RMR (or BMR)=(10×súly kg-ban)+(6.25×magasság cm-ben)−(5×életkor években)−161
+> 
+> RMR férfiaknak:
+> 
+> RMR (or BMR)=(10×súly kg-ban)+(6.25×magasság cm-ben)−(5×életkor években)+5
+> 
+
+ 
 
 Az RMR, a Resting Metabolic Rate azt a kcal mennyiséget jelenti, amit a szervezet nyugalmi állapotban elfogyaszt. Ebben benne van a napi alap mozgás is, mint mosdó használat, vagy az enyhe mozgások. Fogjuk fel úgy, mintha ez a Covid alatti otthoni ülő munkavégzést jelentené.
 
 
 Jó sok adatot lehet ebbe a kalkulátorba beírni, egyedül a súlyod megadása nem kötelező, az csak ezért van benne, hogy lásd, hogy mennyi az aktuális BMI-d. A kalkulátorban az adatok az én 2019-es adataimmal vannak feltöltve.
 
-Az optimális BMI-hez írd azt a BMI-t, amit el szeretnél érni. A 23 például már nagyon jó, én is csak az utóbbi pár hónapban döntöttem el, hogy leviszem a BMI-m 20-21-re, mert az a hosszútávfutáshoz ideálisabb.
+Az optimális BMI-hez írd azt a BMI-t, amit el szeretnél érni. A 23 például már nagyon jó.
 
 A kalória deficit százalékos levonását azért tettem bele a kalkulátorba, hogy akkor is segítsen, ha már azon a súlyon vagy, amit szerettél volna elérni. Kitekintve a [kék zónákra](https://www.healthline.com/nutrition/blue-zones#TOC_TITLE_HDR_4 "kék zónák") – amik arról nevezetesek, hogy az emberek átlagéletkora sokkal magasabb, mint másutt – az ott élők folyamatos kalória deficitben élnek. A kék zónák lakói körülbelül 20-30%-al kevesebbet esznek meg naponta, mint az általánosságban ajánlott napi kalóriamennyiség. Sok más tényező is van, ami miatt a kék zónák lakói tovább élnek, de kalóriaszámításba csak ez az egy számít bele.
 
@@ -62,7 +65,7 @@ A heti fogyás célod is megadhatod, én fél kilogrammnál többet nem javasolo
 
 Ha hízni szeretnél, akkor mínusz előjellel írd be "kalória deficit" százalékot vagy a "heti fogyást" kilogrammban.
 
-{{< updated_bmi_calculator year2019>}}
+{{< msj_bmi_calculator year2019>}}
 
 Ha kitöltötted az értékeket, elméletileg a kalkulátor magától frissíti az eredményt, de ha mégsem, ott a "Számolj!" gomb, hogy meghatározd kalória célod. A bíbor hátterű cellában találod a valós BMI-d és a cél súlyod, ezek tájékoztató jellegű adatok.
 

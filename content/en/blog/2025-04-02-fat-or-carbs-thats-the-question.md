@@ -52,7 +52,7 @@ For instance, if your target weight is 60 kg, you should consume at least 150 gr
 
 Supporting **muscle maintenance** is essential, and adequate protein intake plays a key role in this process. Before a fat-burning workout, it's advisable to consume a light, protein-rich meal that is easy to digest, such as natural yogurt or a small handful of nuts. After your workout, aim to combine protein with healthy fats to enhance recovery and promote fat loss.
 
-{{< updated_bmi_calculator actual >}}
+{{< msj_bmi_calculator actual >}}
 
 Please note: I am not a nutrition expert. My own weight loss experiences shape my opinions.
 
