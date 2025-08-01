@@ -115,7 +115,7 @@ other = "This is your daily RMR in kcal if you are a male."
 other = "Weekly active calories"
 
 [weeklyActiveCaloriesHelp]
-other = "How many active calories your app counts in a week."
+other = "How many calories do you burn in total during your workouts in a week (based on your fitness tracker)."
 
 [weeklyWeightLoss]
 other = "Weekly weight loss"
@@ -275,7 +275,7 @@ other = "Very intense exercise 2× per day or physically demanding job (e.g., pr
 other = "Activity select"
 
 [weeklyActiveCaloriesSelectHelp]
-other = "If you don't know exactly how active you are, you can use these options as estimates."
+other = "Indicate how active you are when you are not exercising."
 
 [msjBmiCalculator]
 other = "BMI and Daily Calorie Consumption Calculator"

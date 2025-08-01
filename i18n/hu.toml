@@ -104,7 +104,7 @@ other = "Ez a napi a napi RMR-ed kcal-ban, ha férfi vagy."
 other = "Heti aktív kalória"
 
 [weeklyActiveCaloriesHelp]
-other = "Egy hét alatt mennyi aktív kalóriát számol az alkalmazásod."
+other = "Egy hét alatt összesen hány kalóriát égetsz el az edzéseken (a sportórád alapján)."
 
 [weeklyWeightLoss]
 other = "Heti fogyás"
@@ -263,7 +263,7 @@ other = "Profi sportolók, napi kétszeri edzés, vagy nehéz fizikai munka (pl.
 other = "Életmód beállítás"
 
 [weeklyActiveCaloriesSelectHelp]
-other = "Ha nem tudod pontosan, hogy mekkora az aktivitásod, használhatod ezeket az opciókat becslésnek."
+other = "Add meg, hogy az edzéseken kívüli időszakban mennyire vagy aktív."
 
 [msjBmiCalculator]
 other = "BMI és napi kalória fogyasztás kalkulátor"
