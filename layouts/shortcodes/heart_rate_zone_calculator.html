@@ -1,0 +1,140 @@
+<script type="text/javascript">
+    function heartRateZoneInit() {
+        {{ if (.Get 0) }}
+            {{ if (eq (.Get 0) "year2019") }}
+                {{ range .Site.Params.year2019 }}
+                document.getElementById("heartRateZoneFormAge").value= {{ .myAge }};
+                document.getElementById("heartRateZoneFormRestingHeartRate").value= {{ .myRestingHeartRate }};
+                {{ end }}    
+            {{ else }}
+                {{ if (eq (.Get 0) "jan2024") }}
+                    {{ range .Site.Params.jan2024 }}
+                    document.getElementById("heartRateZoneFormAge").value= {{ .myAge }};
+                    document.getElementById("heartRateZoneFormRestingHeartRate").value= {{ .myRestingHeartRate }};
+                    {{ end }}    
+                {{ else }}
+                    {{ if (eq (.Get 0) "actual") }}
+                        {{ range .Site.Params.actual }}
+                        document.getElementById("heartRateZoneFormAge").value= {{ .myAge }};
+                        document.getElementById("heartRateZoneFormRestingHeartRate").value= {{ .myRestingHeartRate }};
+                        {{ end }}    
+                    {{ else }}
+                        document.getElementById("heartRateZoneFormHeight").value= 0;
+                        document.getElementById("heartRateZoneFormRestingHeartRate").value='';
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+        {{ else }}
+            document.getElementById("heartRateZoneFormHeight").value= 0;
+            document.getElementById("heartRateZoneFormRestingHeartRate").value='';
+        {{ end }}
+    }
+    function heartRateZoneCalculator() {
+        var age=parseInt(document.getElementById("heartRateZoneFormAge").value) || 0;
+        var restingHeartRate=parseInt(document.getElementById("heartRateZoneFormRestingHeartRate").value) || 0;
+        var maxHeartRate=parseInt(document.getElementById("heartRateZoneFormMaxHeartRate").value) || 0;
+        if (age > 0) {
+            hrMax=220-age;
+        }
+        if (maxHeartRate > 0) {
+            hrMax=maxHeartRate;
+        }
+        if (restingHeartRate > 0) {
+            var zone50=parseInt((((hrMax - restingHeartRate)*0.50) + restingHeartRate).toFixed(0));
+            var zone60=parseInt((((hrMax - restingHeartRate)*0.60) + restingHeartRate).toFixed(0));
+            var zone70=parseInt((((hrMax - restingHeartRate)*0.70) + restingHeartRate).toFixed(0));
+            var zone80=parseInt((((hrMax - restingHeartRate)*0.80) + restingHeartRate).toFixed(0));
+            var zone90=parseInt((((hrMax - restingHeartRate)*0.90) + restingHeartRate).toFixed(0));
+            var zone100=parseInt((((hrMax - restingHeartRate)*1.0) + restingHeartRate).toFixed(0));
+        } else {
+            var zone50=parseInt(((hrMax)*0.50).toFixed(0));
+            var zone60=parseInt(((hrMax)*0.60).toFixed(0));
+            var zone70=parseInt(((hrMax)*0.70).toFixed(0));
+            var zone80=parseInt(((hrMax)*0.80).toFixed(0));
+            var zone90=parseInt(((hrMax)*0.90).toFixed(0));
+            var zone100=parseInt(((hrMax)*1.0).toFixed(0));
+        }
+        document.getElementById("heartRateZoneFormZone0Max").innerHTML=zone50-1;
+        document.getElementById("heartRateZoneFormZone1Min").innerHTML=zone50;
+        document.getElementById("heartRateZoneFormZone1Max").innerHTML=zone60-1;
+        document.getElementById("heartRateZoneFormZone2Min").innerHTML=zone60;
+        document.getElementById("heartRateZoneFormZone2Max").innerHTML=zone70-1;
+        document.getElementById("heartRateZoneFormZone3Min").innerHTML=zone70;
+        document.getElementById("heartRateZoneFormZone3Max").innerHTML=zone80-1;
+        document.getElementById("heartRateZoneFormZone4Min").innerHTML=zone80;
+        document.getElementById("heartRateZoneFormZone4Max").innerHTML=zone90-1;
+        document.getElementById("heartRateZoneFormZone5Min").innerHTML=zone90;
+        document.getElementById("heartRateZoneFormZone5Max").innerHTML=zone100;
+    }
+    window.addEventListener('load', function () {
+        heartRateZoneInit();
+        heartRateZoneCalculator();
+    });
+</script>
+
+<strong>{{ i18n "heartRateZoneCalculator" }}</strong>
+<p>{{ i18n "heartRateZoneCalculatorDescription" }}</p>
+<form class="pa4 black-80 f6" accept-charset="UTF-8" action="#" method="POST">
+  <div class="measure cf">
+    <label for="heartRateZoneFormAge" class="f6 b db mb2 fl w-70">{{ i18n "age" }}</label>
+    <small id="heartRateZoneFormAgeHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "ageHelp" }}</small>
+    <input id="heartRateZoneFormAge" class="input-reset ba b--black-20 pa2 mb2 db fl w-30 tr" type="number" aria-describedby="heartRateZoneFormAgeHelp" min="1" max="120" step="1" autocomplete =“off” onchange="heartRateZoneCalculator();">
+  </div>
+  <div class="measure cf">
+    <label for="heartRateZoneFormRestingHeartRate" class="f6 b db mb2 fl w-70">{{ i18n "restingHeartRate" }}</label>
+    <small id="heartRateZoneFormRestingHeartRateHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "restingHeartRateHelp" }}</small>
+        <input id="heartRateZoneFormRestingHeartRate" class="input-reset ba b--black-20 pa2 mb2 db fl w-30 tr" type="number" aria-describedby="heartRateZoneFormRestingHeartRateHelp" min="1" max="120" step="1" autocomplete =“off” onchange="heartRateZoneCalculator();">
+  </div>
+  <div class="measure cf">
+    <label for="heartRateZoneFormMaxHeartRate" class="f6 b db mb2 fl w-70">{{ i18n "maxHeartRate" }}</label>
+    <small id="heartRateZoneFormMaxHeartRateHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "maxHeartRateHelp" }}</small>
+        <input id="heartRateZoneFormMaxHeartRate" class="input-reset ba b--black-20 pa2 mb2 db fl w-30 tr" type="number" aria-describedby="heartRateZoneFormMaxHeartRateHelp" min="1" max="220" step="1" autocomplete =“off” onchange="heartRateZoneCalculator();">
+  </div>
+  <div class="measure">
+    <a class="link dim br1 ph3 pv2 mb2 dib white bg-gold w-100" onclick="heartRateZoneCalculator();">{{ i18n "calculate" }}</a>
+  </div>
+  
+        
+</form>
+<div class="ph4 pb4">
+<table class="w-70">
+  <tr>
+    <th class="tl v-mid pa2">{{ i18n "zoneTableName" }}</th>
+    <th class="tr v-mid pa2">{{ i18n "zoneTableMin" }}</th>
+    <th class="tr v-mid pa2">{{ i18n "zoneTableMax" }}</th>
+  </tr>
+  <tr>
+    <td class="tl v-mid pa2">{{ i18n "zoneTableZone0Name" }}</td>
+    <td class="tr v-mid pa2" id=""></td>
+    <td class="tr v-mid pa2" id="heartRateZoneFormZone0Max"></td>
+  </tr>
+  <tr>
+    <td class="tl v-mid pa2">{{ i18n "zoneTableZone1Name" }}</td>
+    <td class="tr v-mid pa2" id="heartRateZoneFormZone1Min"></td>
+    <td class="tr v-mid pa2" id="heartRateZoneFormZone1Max"></td>
+  </tr>
+  <tr>
+    <td class="tl v-mid pa2">{{ i18n "zoneTableZone2Name" }}</td>
+    <td class="tr v-mid pa2" id="heartRateZoneFormZone2Min"></td>
+    <td class="tr v-mid pa2" id="heartRateZoneFormZone2Max"></td>
+  </tr>
+  <tr>
+    <td class="tl v-mid pa2">{{ i18n "zoneTableZone3Name" }}</td>
+    <td class="tr v-mid pa2" id="heartRateZoneFormZone3Min"></td>
+    <td class="tr v-mid pa2" id="heartRateZoneFormZone3Max"></td>
+  </tr>
+  <tr>
+    <td class="tl v-mid pa2">{{ i18n "zoneTableZone4Name" }}</td>
+    <td class="tr v-mid pa2" id="heartRateZoneFormZone4Min"></td>
+    <td class="tr v-mid pa2" id="heartRateZoneFormZone4Max"></td>
+  </tr>
+  <tr>
+    <td class="tl v-mid pa2">{{ i18n "zoneTableZone5Name" }}</td>
+    <td class="tr v-mid pa2" id="heartRateZoneFormZone5Min"></td>
+    <td class="tr v-mid pa2" id="heartRateZoneFormZone5Max"></td>
+  </tr>
+</table>
+</div>
+
+
+

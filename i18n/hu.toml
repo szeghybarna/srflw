@@ -179,7 +179,7 @@ other = "A legtöbb helyen a Zóna 3-at javasolják zsírégetéshez (a maximum 
 other = "Nyugalmi pulzus"
 
 [restingHeartRateHelp]
-other = "Ébredés utáni pulzus. Éjszaka is hordott okosóra általában megmutatja. Ha nem tudod, hagy üresen."
+other = "Ébredés utáni pulzus. Éjszaka is hordott okosóra általában megmutatja. Ha nem tudod, hagyd üresen."
 
 [zoneMin]
 other = "Minimum"
@@ -271,4 +271,41 @@ other = "BMI és napi kalória fogyasztás kalkulátor"
 [msjBmiCalculatorDescription]
 other = "Ez a kalkulátor kiszámolja a BMI-d, és az általad optimálisnak tartott testsúlyhoz javasol napi kalóriafogyasztási értéket a Mifflin–St Jeor képlet alapján."
 
+[heartRateZoneCalculator]
+other = "Pulzus zóna kalkulátor"
 
+[heartRateZoneCalculatorDescription]
+other = "A különböző edzésekhez különböző pulzus zónák tartozhatnak. Ezzel a kalkulátorral kiszámolhatod, hogy mi a Neked ajánlott zónánkénti minimum és maximum pulzus érték. Ezek nem kőbe vésett értékek, nem kell hozzájuk foggal-körömmel ragaszkodni."
+
+[maxHeartRate]
+other = "Maximum pulzus"
+
+[maxHeartRateHelp]
+other = "Csak akkor töltsd ki, ha az elmúlt három hónapban volt olyan edzésed, amiben célod volt a maxmum pulzus elérése. Ha nem tudod, hagyd üresen."
+
+[zoneTableMax]
+other = "Max"
+
+[zoneTableMin]
+other = "Min"
+
+[zoneTableName]
+other = "Zónák"
+
+[zoneTableZone0Name]
+other = "Bemelegítő zóna"
+
+[zoneTableZone1Name]
+other = "Zóna 1."
+
+[zoneTableZone2Name]
+other = "Zóna 2."
+
+[zoneTableZone3Name]
+other = "Zóna 3."
+
+[zoneTableZone4Name]
+other = "Zóna 4."
+
+[zoneTableZone5Name]
+other = "Zóna 5."

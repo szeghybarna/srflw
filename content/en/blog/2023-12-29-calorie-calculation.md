@@ -39,11 +39,11 @@ My calculator starts from the [Mifflin–St Jeor equation](https://en.wikipedia.
 > 
 > RMR females:
 > 
-> RMR (or BMR)=(10×weight in kg)+(6.25×height in cm)−(5×age in years)−161
+> RMR = (10×weight in kg)+(6.25×height in cm)−(5×age in years)−161
 > 
 > RMR males:
 > 
-> RMR (or BMR)=(10×weight in kg)+(6.25×height in cm)−(5×age in years)+5
+> RMR = (10×weight in kg)+(6.25×height in cm)−(5×age in years)+5
 > 
 
 RMR, Resting Metabolic Rate, is the amount of kcal the body consumes at rest. This includes basic daily physical activity such as toileting or light movements. Think of it as sedentary work at home during Covid.

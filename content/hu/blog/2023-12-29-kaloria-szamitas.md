@@ -41,11 +41,11 @@ A kalkulátorom a [Mifflin–St Jeor képletből](https://en.wikipedia.org/wiki/
 > 
 > RMR nőknek:
 > 
-> RMR (or BMR)=(10×súly kg-ban)+(6.25×magasság cm-ben)−(5×életkor években)−161
+> RMR = (10×súly kg-ban)+(6.25×magasság cm-ben)−(5×életkor években)−161
 > 
 > RMR férfiaknak:
 > 
-> RMR (or BMR)=(10×súly kg-ban)+(6.25×magasság cm-ben)−(5×életkor években)+5
+> RMR = (10×súly kg-ban)+(6.25×magasság cm-ben)−(5×életkor években)+5
 > 
 
  

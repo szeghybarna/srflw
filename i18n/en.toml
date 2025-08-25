@@ -283,3 +283,41 @@ other = "BMI and Daily Calorie Consumption Calculator"
 [msjBmiCalculatorDescription]
 other = "This calculator calculates your BMI and recommends a daily calorie intake based on the Mifflin–St Jeor formula for your ideal body weight."
 
+[heartRateZoneCalculator]
+other = "Heart Rate Zone Calculator"
+
+[heartRateZoneCalculatorDescription]
+other = "Different workouts may require different heart rate zones. With this calculator, you can calculate the recommended minimum and maximum heart rate values for each zone. These are not set in stone values, you don't need to stick to them rigidly."
+
+[maxHeartRate]
+other = "Maximum pulzus"
+
+[maxHeartRateHelp]
+other = "Only fill this out if you've had a workout in the past three months where your goal was to reach maximum heart rate. If you don't know, leave it empty."
+
+[zoneTableMax]
+other = "Max"
+
+[zoneTableMin]
+other = "Min"
+
+[zoneTableName]
+other = "Zones"
+
+[zoneTableZone0Name]
+other = "Warm-up zone"
+
+[zoneTableZone1Name]
+other = "Zone 1"
+
+[zoneTableZone2Name]
+other = "Zone 2"
+
+[zoneTableZone3Name]
+other = "Zone 3"
+
+[zoneTableZone4Name]
+other = "Zone 4"
+
+[zoneTableZone5Name]
+other = "Zone 5"

@@ -19,4 +19,6 @@ language: hu
 
 {{< fat_burning_zone_calculator actual >}}
 
+{{< heart_rate_zone_calculator actual >}}
+
 {{< maf_180_calculator actual >}}
