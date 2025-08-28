@@ -4,29 +4,28 @@
             {{ if (eq (.Get 0) "year2019") }}
                 {{ range .Site.Params.year2019 }}
                 document.getElementById("heartRateZoneFormAge").value= {{ .myAge }};
-                document.getElementById("heartRateZoneFormRestingHeartRate").value= {{ .myRestingHeartRate }};
                 {{ end }}    
             {{ else }}
                 {{ if (eq (.Get 0) "jan2024") }}
                     {{ range .Site.Params.jan2024 }}
                     document.getElementById("heartRateZoneFormAge").value= {{ .myAge }};
-                    document.getElementById("heartRateZoneFormRestingHeartRate").value= {{ .myRestingHeartRate }};
                     {{ end }}    
                 {{ else }}
                     {{ if (eq (.Get 0) "actual") }}
                         {{ range .Site.Params.actual }}
                         document.getElementById("heartRateZoneFormAge").value= {{ .myAge }};
-                        document.getElementById("heartRateZoneFormRestingHeartRate").value= {{ .myRestingHeartRate }};
                         {{ end }}    
                     {{ else }}
-                        document.getElementById("heartRateZoneFormHeight").value= 0;
-                        document.getElementById("heartRateZoneFormRestingHeartRate").value='';
+                        document.getElementById("heartRateZoneFormAge").value= 0;
                     {{ end }}
                 {{ end }}
             {{ end }}
-        {{ else }}
-            document.getElementById("heartRateZoneFormHeight").value= 0;
             document.getElementById("heartRateZoneFormRestingHeartRate").value='';
+            document.getElementById("heartRateZoneFormMaxHeartRate").value='';
+        {{ else }}
+            document.getElementById("heartRateZoneFormAge").value= 0;
+            document.getElementById("heartRateZoneFormRestingHeartRate").value='';
+            document.getElementById("heartRateZoneFormMaxHeartRate").value='';
         {{ end }}
     }
     function heartRateZoneCalculator() {
