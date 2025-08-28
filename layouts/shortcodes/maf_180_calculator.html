@@ -4,26 +4,23 @@
             {{ if (eq (.Get 0) "year2019") }}
                 {{ range .Site.Params.year2019 }}
                 document.getElementById("maf180ZoneFormAge").value= {{ .myAge }};
-                document.getElementById("maf180ZoneFormOptions{{ .myMaf180Option }}").checked=true;
                 {{ end }}    
             {{ else }}
                 {{ if (eq (.Get 0) "jan2024") }}
                     {{ range .Site.Params.jan2024 }}
                     document.getElementById("maf180ZoneFormAge").value= {{ .myAge }};
-                    document.getElementById("maf180ZoneFormOptions{{ .myMaf180Option }}").checked=true;
                     {{ end }}    
                 {{ else }}
                     {{ if (eq (.Get 0) "actual") }}
                         {{ range .Site.Params.actual }}
                         document.getElementById("maf180ZoneFormAge").value= {{ .myAge }};
-                        document.getElementById("maf180ZoneFormOptions{{ .myMaf180Option }}").checked=true;
                         {{ end }}    
                     {{ else }}
                         document.getElementById("maf180ZoneFormAge").value=0;
-                        document.getElementById("maf180ZoneFormOptionsB").checked=true;
                     {{ end }}
                 {{ end }}
             {{ end }}
+            document.getElementById("maf180ZoneFormOptionsB").checked=true;
         {{ else }}
             document.getElementById("maf180ZoneFormAge").value=0;
             document.getElementById("maf180ZoneFormOptionsB").checked=true;
