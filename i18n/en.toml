@@ -296,7 +296,7 @@ other = "Heart Rate Zone Calculator"
 other = "Different workouts may have different heart rate zones. With this calculator, you can calculate the minimum and maximum heart rate values recommended for each zone. Based on the Karvonen formula, the maximum heart rate is determined first, and then the calculator calculates the individual zones based on percentages. These are not set in stone, so you don't have to stick to them rigidly."
 
 [maxHeartRate]
-other = "Maximum pulzus"
+other = "Max heart rate"
 
 [maxHeartRateHelp]
 other = "Only fill this out if you've had a workout in the past three months where your goal was to reach maximum heart rate. If you don't know, leave it empty."
