@@ -315,3 +315,16 @@ other = "Zóna 4. 80%-90%"
 
 [zoneTableZone5Name]
 other = "Zóna 5. 90%-100%"
+
+[sexSelect]
+other = "Nem:"
+
+[sexSelectHelp]
+other = "A számításhoz szükség van a biológiai nemedre."
+
+[sexFemale]
+other = "Nő"
+
+[sexMale]
+other = "Férfi"
+

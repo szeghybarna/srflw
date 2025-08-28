@@ -327,3 +327,17 @@ other = "Zone 4 80%-90%"
 
 [zoneTableZone5Name]
 other = "Zone 5 90%-100%"
+
+[sexSelect]
+other = "Sex:"
+
+[sexSelectHelp]
+other = "Your biological sex is required for the calculation."
+
+[sexFemale]
+other = "Female"
+
+[sexMale]
+other = "Male"
+
+

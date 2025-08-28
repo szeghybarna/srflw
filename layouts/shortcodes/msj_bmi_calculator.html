@@ -43,8 +43,24 @@
             document.getElementById("msjBmiFormOptimalBmi").value= 0;
             document.getElementById("msjBmiFormWeeklyActiveCalories").value= 0;
         {{ end }}
+        document.getElementById("msjFemaleDiv").style.display = 'none';
+        document.getElementById("msjMaleDiv").style.display = 'none';
     }
     function msjBmiCalculator() {
+        document.getElementById("msjFemaleDiv").style.display = 'none';
+        document.getElementById("msjMaleDiv").style.display = 'none';
+        var sexRadios = document.getElementsByName('msjBmiFormSexSelect');
+        var sex = "female";
+        for(var i = 0; i < sexRadios.length; i++){
+            if(sexRadios[i].checked){
+                sex = sexRadios[i].value;
+            }
+        }
+        if (sex == "female") {
+            document.getElementById("msjFemaleDiv").style.display = 'block';
+        } else {
+            document.getElementById("msjMaleDiv").style.display = 'block';
+        }
         var age=parseInt(document.getElementById("msjBmiFormAge").value) || 0;
         var height=parseFloat(document.getElementById("msjBmiFormHeight").value) || 0;
         var weight=parseFloat(document.getElementById("msjBmiFormWeight").value) || 0;
@@ -168,6 +184,16 @@ RMR (or BMR)=(10×weight in kg)+(6.25×height in cm)−(5×age in years)+5
     <small id="msjBmiFormWeightHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "weightHelp" }}</small>
     <input id="msjBmiFormWeight" class="input-reset ba b--black-20 pa2 mb2 db fl w-30 tr" type="number" aria-describedby="msjBmiFormWeightHelp" min="30.0" max="500.0" step=".1" autocomplete =“off” onchange="msjBmiCalculator();">
   </div>
+
+
+  <div class="measure cf">
+    <label for="msjBmiFormSexSelect" class="f6 b db mb2 fl w-70">{{ i18n "sexSelect" }}</label>
+    <small id="msjBmiFormSexSelectHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "sexSelectHelp" }}</small>
+    <label class="black-60 pa2 mb2 db fl w-30" ><input checked="checked" type="radio" class="" aria-describedby="msjBmiFormSexSelect" onclick="msjBmiCalculator();" name="msjBmiFormSexSelect" id="msjBmiFormSexSelect" value="female">&nbsp;{{ i18n "sexFemale" }}<br/><input type="radio" class="" aria-describedby="msjBmiFormSexSelect" onclick="msjBmiCalculator();" name="msjBmiFormSexSelect" id="msjBmiFormSexSelect" value="male">&nbsp;{{ i18n "sexMale" }}</label>
+  </div>
+
+
+
   <div class="measure cf">
     <label for="msjBmiFormOptimalBmi" class="f6 b db mb2 fl w-70">{{ i18n "optimalBmi" }}</label>
     <small id="msjBmiFormOptimalBmiHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "optimalBmiHelp" }}</small>
@@ -204,9 +230,11 @@ RMR (or BMR)=(10×weight in kg)+(6.25×height in cm)−(5×age in years)+5
     <small id="msjBmiFormTargetWeightHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "targetWeightHelp" }}</small>
     <input id="msjBmiFormTargetWeight" class="input-reset ba db br1 ph3 pv2 mb2 white bg-purple fl w-20 tr" aria-describedby="msjBmiFormTargetWeightHelp" readonly="readonly" autocomplete =“off”>
   </div>
-      
+  
+  <div id="msjFemaleDiv" style="display: none;" class="pv3">
+
   <div class="measure cf">
-    <strong class="fl w-100">{{ i18n "dailyRmrFemale" }}</strong>
+    <strong class="fl w-100 pb3">{{ i18n "dailyRmrFemale" }}</strong>
     <!--label for="msjBmiFormDailyRmrFemale" class="f6 b db mb2">{{ i18n "dailyRmrFemale" }}</label-->
     <small id="msjBmiFormDailyRmrFemaleHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "dailyRmrFemaleHelp" }}</small>
     <input id="msjBmiFormDailyRmrFemale" class="input-reset ba db br1 ph3 pv2 mb2 white bg-hot-pink fl w-20 tr" aria-describedby="msjBmiFormDailyRmrFemaleHelp" readonly="readonly" autocomplete =“off”>
@@ -229,7 +257,7 @@ RMR (or BMR)=(10×weight in kg)+(6.25×height in cm)−(5×age in years)+5
     <small id="msjBmiFormDailyMinTotalCaloriesFemaleHelp" class="f6 black-60 db mb2 ph2 b fl w-60">{{ i18n "dailyMinTotalCaloriesFemaleHelp" }}</small>
     <input id="msjBmiFormDailyMinTotalCaloriesFemale" class="input-reset ba db br1 ph3 pv2 mb2 white bg-orange b fl w-20 tr" aria-describedby="msjBmiFormDailyMinTotalCaloriesFemale" readonly="readonly" autocomplete =“off”>
   </div>
-  <div class="flex items-center justify-center pa4 bg-light-pink dark-pink b" id="msjFemaleTakeAwayDiv">
+  <div class="flex items-center justify-center pa4 bg-light-pink dark-pink b w-70" id="msjFemaleTakeAwayDiv">
     <svg class="w3" data-icon="info" viewBox="0 0 32 32" style="fill:currentcolor">
       <title>info icon</title>
       <path d="M16 0 A16 16 0 0 1 16 32 A16 16 0 0 1 16 0 M19 15 L13 15 L13 26 L19 26 z M16 6 A3 3 0 0 0 16 12 A3 3 0 0 0 16 6"></path>
@@ -238,7 +266,7 @@ RMR (or BMR)=(10×weight in kg)+(6.25×height in cm)−(5×age in years)+5
   </div> 
 
 
-  <div class="flex items-center justify-center pa4 dark-red dn" id="msjFemaleAlertDiv">
+  <div class="flex items-center justify-center pa4 dark-red dn w-70" id="msjFemaleAlertDiv">
     <svg class="w1" data-icon="info" viewBox="0 0 32 32" style="fill:currentcolor">
       <title>info icon</title>
       <path d="M16 0 A16 16 0 0 1 16 32 A16 16 0 0 1 16 0 M19 15 L13 15 L13 26 L19 26 z M16 6 A3 3 0 0 0 16 12 A3 3 0 0 0 16 6"></path>
@@ -246,10 +274,11 @@ RMR (or BMR)=(10×weight in kg)+(6.25×height in cm)−(5×age in years)+5
     <span class="lh-title ml3" id="msjFemaleAlert"></span>
   </div> 
 
+</div>
 
-
+<div id="msjMaleDiv" style="display: none;" class="pv3">
   <div class="measure cf">
-    <strong class="fl w-100">{{ i18n "dailyRmrMale" }}</strong>
+    <strong class="fl w-100 pb3">{{ i18n "dailyRmrMale" }}</strong>
     <!--label for="msjBmiFormDailyRmrMale" class="f6 b db mb2">{{ i18n "dailyRmrMale" }}</label-->
     <small id="msjBmiFormDailyRmrMaleHelp" class="f6 black-60 db mb2 ph2 fl w-60">{{ i18n "dailyRmrMaleHelp" }}</small>
     <input id="msjBmiFormDailyRmrMale" class="input-reset ba db br1 ph3 pv2 mb2 white bg-blue fl w-20 tr" aria-describedby="msjBmiFormDailyRmrMaleHelp" readonly="readonly" autocomplete =“off”>
@@ -270,20 +299,21 @@ RMR (or BMR)=(10×weight in kg)+(6.25×height in cm)−(5×age in years)+5
     <small id="msjBmiFormDailyMinTotalCaloriesMaleHelp" class="f6 black-60 db mb2 ph2 b fl w-60">{{ i18n "dailyMinTotalCaloriesMaleHelp" }}</small>
     <input id="msjBmiFormDailyMinTotalCaloriesMale" class="input-reset ba db br1 ph3 pv2 mb2 white bg-orange b fl w-20 tr" aria-describedby="msjBmiFormDailyMinTotalCaloriesMale" readonly="readonly" autocomplete =“off”>
   </div>
-  <div class="flex items-center justify-center pa4 bg-light-blue b--navy b" id="msjMaleTakeAwayDiv">
+  <div class="flex items-center justify-center pa4 bg-light-blue b--navy b w-70" id="msjMaleTakeAwayDiv">
     <svg class="w3" data-icon="info" viewBox="0 0 32 32" style="fill:currentcolor">
       <title>info icon</title>
       <path d="M16 0 A16 16 0 0 1 16 32 A16 16 0 0 1 16 0 M19 15 L13 15 L13 26 L19 26 z M16 6 A3 3 0 0 0 16 12 A3 3 0 0 0 16 6"></path>
     </svg>
     <span class="lh-title ml3" id="msjMaleTakeAway"></span>
   </div> 
-  <div class="flex items-center justify-center pa4 dark-red dn" id="msjMaleAlertDiv">
+  <div class="flex items-center justify-center pa4 dark-red dn w-70" id="msjMaleAlertDiv">
     <svg class="w1" data-icon="info" viewBox="0 0 32 32" style="fill:currentcolor">
       <title>info icon</title>
       <path d="M16 0 A16 16 0 0 1 16 32 A16 16 0 0 1 16 0 M19 15 L13 15 L13 26 L19 26 z M16 6 A3 3 0 0 0 16 12 A3 3 0 0 0 16 6"></path>
     </svg>
     <span class="lh-title ml3" id="msjMaleAlert"></span>
   </div> 
+</div>
 </form>
 
 
