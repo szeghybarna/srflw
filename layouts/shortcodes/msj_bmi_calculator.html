@@ -7,7 +7,6 @@
                 document.getElementById("msjBmiFormHeight").value= {{ .myHeight}};
                 document.getElementById("msjBmiFormWeight").value= {{ .myWeight}};
                 document.getElementById("msjBmiFormOptimalBmi").value= {{ .myOptimalBmi}};
-                document.getElementById("msjBmiFormWeeklyActiveCalories").value= {{ .myActiveCalories}};
                 {{ end }}    
             {{ else }}
                 {{ if (eq (.Get 0) "jan2024") }}
@@ -16,7 +15,6 @@
                     document.getElementById("msjBmiFormHeight").value= {{ .myHeight}};
                     document.getElementById("msjBmiFormWeight").value= {{ .myWeight}};
                     document.getElementById("msjBmiFormOptimalBmi").value= {{ .myOptimalBmi}};
-                    document.getElementById("msjBmiFormWeeklyActiveCalories").value= {{ .myActiveCalories}};
                     {{ end }}    
                 {{ else }}
                     {{ if (eq (.Get 0) "actual") }}
@@ -25,23 +23,22 @@
                         document.getElementById("msjBmiFormHeight").value= {{ .myHeight}};
                         document.getElementById("msjBmiFormWeight").value= {{ .myWeight}};
                         document.getElementById("msjBmiFormOptimalBmi").value= {{ .myOptimalBmi}};
-                        document.getElementById("msjBmiFormWeeklyActiveCalories").value= {{ .myActiveCalories}};
                         {{ end }}    
                     {{ else }}
                         document.getElementById("msjBmiFormHeight").value= 0;
                         document.getElementById("msjBmiFormAge").value= 0;
                         document.getElementById("msjBmiFormWeight").value= 0;
                         document.getElementById("msjBmiFormOptimalBmi").value= 0;
-                        document.getElementById("msjBmiFormWeeklyActiveCalories").value= 0;
                     {{ end }}
                 {{ end }}
             {{ end }}
+            document.getElementById("msjBmiFormWeeklyActiveCalories").value= '';
         {{ else }}
             document.getElementById("msjBmiFormHeight").value= 0;
             document.getElementById("msjBmiFormAge").value= 0;
             document.getElementById("msjBmiFormWeight").value= 0;
             document.getElementById("msjBmiFormOptimalBmi").value= 0;
-            document.getElementById("msjBmiFormWeeklyActiveCalories").value= 0;
+            document.getElementById("msjBmiFormWeeklyActiveCalories").value= '';
         {{ end }}
         document.getElementById("msjFemaleDiv").style.display = 'none';
         document.getElementById("msjMaleDiv").style.display = 'none';
@@ -50,7 +47,7 @@
         document.getElementById("msjFemaleDiv").style.display = 'none';
         document.getElementById("msjMaleDiv").style.display = 'none';
         var sexRadios = document.getElementsByName('msjBmiFormSexSelect');
-        var sex = "female";
+        var sex = "";
         for(var i = 0; i < sexRadios.length; i++){
             if(sexRadios[i].checked){
                 sex = sexRadios[i].value;
@@ -58,8 +55,9 @@
         }
         if (sex == "female") {
             document.getElementById("msjFemaleDiv").style.display = 'block';
-        } else {
-            document.getElementById("msjMaleDiv").style.display = 'block';
+        }
+        if (sex == "male") {
+          document.getElementById("msjMaleDiv").style.display = 'block';
         }
         var age=parseInt(document.getElementById("msjBmiFormAge").value) || 0;
         var height=parseFloat(document.getElementById("msjBmiFormHeight").value) || 0;
