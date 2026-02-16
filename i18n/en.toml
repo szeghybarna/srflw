@@ -340,4 +340,14 @@ other = "Female"
 [sexMale]
 other = "Male"
 
+[paginationNext]
+other = "Next"
 
+[paginationPrevious]
+other = "Previous"
+
+[paginationFirst]
+other = "First"
+
+[paginationLast]
+other = "Last"

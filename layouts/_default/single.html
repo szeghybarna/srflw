@@ -2,7 +2,7 @@
 {{ define "main" }}
 {{ $featured_image := partial "func/GetFeaturedImage.html" . }}
   <div class="flex-l mt2 mw8 center">
-    <article class="center cf pv5 ph3 ph4-ns mw7">
+    <article class="center cf pv5 ph3 ph4-ns mw7" id="article">
       <header>
         <h1 class="f1">
           {{ .Title }}
@@ -54,7 +54,7 @@
 {{ end }}
 
 
-
+{{- partials.Include "nav-next-prev.html" . -}}
 
       </div>
     </article>

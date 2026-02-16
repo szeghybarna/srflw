@@ -16,7 +16,7 @@ language: hu
 mainsection: blog
 ---
 
-A [Facebook-csoportunkban](https://www.facebook.com/groups/1098348161611343 "Facebook csoport") minden hétfőn felteszek egy kérdést: „Mi történt a múlt héten? Mit terveztek erre a hétre?”
+A [Facebook-csoportunkban](https://www.facebook.com/groups/1098348161611343 "SRFLW Facebook csoport") minden hétfőn felteszek egy kérdést: „Mi történt a múlt héten? Mit terveztek erre a hétre?”
 
 A ma reggeli futásom közben (10 km, volt időm gondolkodni) azon töprengtem, ha 5 évvel ezelőtt tettem volna fel magamnak a szokásos heti kérdést, mit válaszoltam volna rá.
 

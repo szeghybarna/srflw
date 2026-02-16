@@ -328,3 +328,15 @@ other = "Nő"
 [sexMale]
 other = "Férfi"
 
+[paginationNext]
+other = "Következő"
+
+[paginationPrevious]
+other = "Előző"
+
+[paginationFirst]
+other = "Első"
+
+[paginationLast]
+other = "Utolsó"
+

@@ -1,0 +1,27 @@
+<br/>  
+<hr>  
+<table class="nav-table" style="width:100%">
+  <tr>
+    <td style="text-align:left"><b>{{ with .NextInSection }}{{ i18n "paginationNext" }}{{ else }}{{ i18n "paginationLast" }}{{ end }}</b></td>
+    <td style="text-align:right"><b>{{ with .PrevInSection }}{{ i18n "paginationPrevious" }}{{ else }}{{ i18n "paginationFirst" }}{{ end }}</b></td>
+  </tr>
+  <tr>
+    <td style="text-align:left">
+      {{ with .NextInSection }}
+        <a style="text-decoration: none" href="{{ .RelPermalink }}#article">{{ .Title }}</a>
+      {{ else }}
+        {{ $firstInSection := index (first 1 .CurrentSection.Pages.ByPublishDate) 0 }}
+        <a style="text-decoration: none" href="{{ $firstInSection.RelPermalink }}#article">{{ $firstInSection.Title }}</a>
+      {{ end }}
+    </td>
+    <td style="text-align:right">
+      {{ with .PrevInSection }}
+        <a style="text-decoration: none" href="{{ .RelPermalink }}#article">{{ .Title }}</a>
+      {{ else }}
+        {{ $lastInSection := index (last 1 .CurrentSection.Pages.ByPublishDate) 0 }}
+        <a style="text-decoration: none" href="{{ $lastInSection.RelPermalink }}#article">{{ $lastInSection.Title }}</a>
+      {{ end }}
+    </td>
+  </tr>
+</table>      
+<hr>
