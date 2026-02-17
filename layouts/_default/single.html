@@ -18,6 +18,12 @@
 
         {{ .Content }}
 
+      {{ if not .Date.IsZero }}
+      <time class="f6 mv4 dib tracked" {{ printf `datetime="%s"` (.Date.Format "2006-01-02") | safeHTMLAttr }}>
+        {{- .Date | time.Format (default "January 2, 2006" .Site.Params.date_format) -}}
+      </time>
+      {{end}}
+
         {{- partial "tags.html" . -}}
         
 
@@ -39,6 +45,8 @@
 </ul>
 {{ end }}{{ end }}
 {{- end }}
+
+
 
 
 {{ if .IsTranslated }}
