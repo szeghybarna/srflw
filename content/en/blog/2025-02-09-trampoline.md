@@ -28,3 +28,8 @@ In true grown-up fashion, I spent a surprisingly long time choosing the right on
 
 So if I don’t pick up the phone or reply to messages, I’m probably on the trampoline. Not working out. Just bouncing. Fast. Up. Down. Slow. Grinning. In rhythm — or in a slightly “Pom Pom” way, like sitting on a long, lovely branch, up we go, down we go, gently rocked by the breeze...
 
+{{<  video
+  src="/images/trampoline.mp4"
+  width="300"
+>}}
+

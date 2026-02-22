@@ -28,3 +28,7 @@ Elkezdtem járni Majercsík Beátához Esztergomba jumpingra. Megtetszett, bár 
 
 Ha esetleg nem veszem fel a telefont, vagy nem válaszolok üzenetekre, akkor trambulinozom. Nem edzek. Csak pattogok. Gyorsan. Fel. Le. Lassan. Vigyorogva. Ütemesen, vagy csak olyan Pompomosan, ahogyan ő is ült az ágon, egy szép hosszú ágon, föl-he-he-he, le-he-he-he, mivel egy szellő hintáztatja az ágat...
 
+{{<  video
+  src="/images/trampoline.mp4"
+  width="300"
+>}}
