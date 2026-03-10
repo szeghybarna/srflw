@@ -20,7 +20,7 @@ Szerintem már tudjátok rólam, hogy szeretek zenére futni – elég csak a fu
 
 Itt a weblapon is külön oldalt szenteltem az [ütem alapú spotify lejátszási listáimnak]({{< ref "spotify" >}} "ütem alapú spotify lejátszási listák"). Ezek nagyon vegyes zenék: latintól a popon át egészen a gabber technóig mindent megtalálsz (és a technóból többet). Sőt, megtalálod a lányom [Duocorde klasszikus gitárduóját](https://ducorode.com "Duocorde klasszikus gitárduó") is a lejátszási listában.
 
-Ha a saját listád szeretnéd összerakni, van egy jó ingyenes spotify lejátszási lista kezelő, ami megmutatja a számokhoz tartozó BPM-et: [http://sortyourmusic.playlistmachinery.com](http://sortyourmusic.playlistmachinery.com).
+Ha a saját listád szeretnéd összerakni, van egy jó ingyenes spotify lejátszási lista kezelő, ami megmutatja a számokhoz tartozó BPM-et: ~~[http://sortyourmusic.playlistmachinery.com](http://sortyourmusic.playlistmachinery.com)~~ [https://www.sortlee.com/](https://www.sortlee.com/).
 
 Hogyan kell ütemre futni vagy biciklizni? Minden ütemre a bal vagy jobb lábaddal (mindig ugyanazzal) lépsz vagy tekersz. Hallgatod a zenét, és ütemesen haladsz. Elvetemültek használhatnak metronómot (az órámon van ilyen lehetőség), vagy spotify helyett hallgathatnak metronóm appot is.
 

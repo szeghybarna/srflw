@@ -5,7 +5,7 @@ date: '2025-12-20'
 description: 'Őrület!'
 images: ['/images/feature-midwinter-marathon.webp', '/images/cover-midwinter-marathon.webp']
 series: []
-tags: ['maraton']
+tags: ['maraton', 'Sport Walk', 'kihívás']
 title: 'Midwinter Marathon'
 videos: []
 featured_image: '/images/feature-midwinter-marathon.webp'

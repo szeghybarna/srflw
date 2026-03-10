@@ -20,7 +20,7 @@ You already know that I love running to music - just look at my running pictures
 
 I've also dedicated a page here on the website to [my beat-based Spotify playlists]({{< ref "spotify" >}} "beat-based Spotify playlists"). They're a mixed bag of music: you'll find everything from Latin to pop to gabby techno (and more techno). In fact, you'll find my daughter's [Duocorde classical guitar duo](https://ducorode.com "Duocorde classical guitar duo") in the playlist.
 
-If you want to put together your own list, there's an excellent free Spotify playlist manager that shows you the BPM for each track: [http://sortyourmusic.playlistmachinery.com](http://sortyourmusic.playlistmachinery.com).
+If you want to put together your own list, there's an excellent free Spotify playlist manager that shows you the BPM for each track: ~~[http://sortyourmusic.playlistmachinery.com](http://sortyourmusic.playlistmachinery.com)~~ [https://www.sortlee.com/](https://www.sortlee.com/).
 
 How do you run or cycle to the beat? For each beat, you step or pedal with your left or right foot (always the same one). You listen to the music and move in time. For hardcore athletes, you can use a metronome (my watch has this option) or listen to a metronome app instead of Spotify.
 

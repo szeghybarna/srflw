@@ -5,7 +5,7 @@ date: '2025-12-20'
 description: 'Madness!'
 images: ['/images/feature-midwinter-marathon.webp', '/images/cover-midwinter-marathon.webp']
 series: []
-tags: ['marathon']
+tags: ['marathon', 'challenge', 'Sport Walk']
 title: 'Midwinter Marathon'
 videos: []
 featured_image: '/images/feature-midwinter-marathon.webp'
