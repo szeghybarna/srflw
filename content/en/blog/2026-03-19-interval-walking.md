@@ -31,5 +31,7 @@ If you want to try it yourself, start simple:
 
 You do not need a heart-rate monitor. Just pay attention to the fast sections: you should clearly feel that you are working, but not struggling for air.
 
-I think one of the biggest strengths of Japanese interval walking is that it is sustainable. Slow and steady gets results. It does not try to turn you into a hero in a week; it just gently teaches you to move regularly. And that is where the results come from. If you do not already have something like this in your routine, it is worth trying. I really think it is worth it.
+I think one of the biggest strengths of Japanese interval walking is that it is sustainable. Slow and steady gets results. It does not try to turn you into a hero in a week; it just gently teaches you to move regularly. And that is where the results come from. If you do not already have something like this in your routine, it is worth trying.
+
+I really think it is worth it.
 

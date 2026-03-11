@@ -30,6 +30,8 @@ Ha te is kipróbálnád, kezdd egyszerűen:
 
 Nem kell pulzusmérő – csak figyelj arra, hogy a gyors szakaszban már érzed, hogy dolgozol, de nem fuldokolsz.
 
-Szerintem a japán intervallumos gyaloglás egyik nagy ereje az, hogy fenntartható. Lassú víz partot mos. Nem akar hőst faragni belőled egy hét alatt, csak szépen megtanít rendszeresen mozogni. Aztán ebből lesz az eredmény. Ha még nincs ilyen a rutinodban, érdemes kipróbálni. Szerintem megéri.
+Szerintem a japán intervallumos gyaloglás egyik nagy ereje az, hogy fenntartható. Lassú víz partot mos. Nem akar hőst faragni belőled egy hét alatt, csak szépen megtanít rendszeresen mozogni. Aztán ebből lesz az eredmény. Ha még nincs ilyen a rutinodban, érdemes kipróbálni.
+
+Szerintem megéri.
 
 
