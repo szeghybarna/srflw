@@ -40,6 +40,8 @@ A cél: gyűjtsünk össze 2.000 „szeszélyes kilométert” áprilisban!
 |Mikor|ActivityID|Sportoló|Eredeti KM|Módosító|Szeszélyes KM|
 |-----|----------|--------|---------------:|:------:|------------:|
 |2026-04-01 04:53|17933203449|Lak******************|5.42|3x|16.26 |
+|2026-04-01 05:17|17934002154|Pét********|14.18|1x|14.18 |
+|2026-04-01 07:50|17933726348|Len*********|0.48|2x|0.96 |
 { .w-100 .mw8 .center id="spotify" data-toggle="table"}
 
 
@@ -47,8 +49,10 @@ A cél: gyűjtsünk össze 2.000 „szeszélyes kilométert” áprilisban!
 
 |Sportoló|Távolság KM|
 |--------|-------:|
+|Pét********|14.18|
 |Lak******************|5.42|
-|Összesen|5.42|
+|Len*********|0.48|
+|Összesen|20.08|
 { .mw8 data-toggle="table"}
 
 
@@ -57,7 +61,9 @@ A cél: gyűjtsünk össze 2.000 „szeszélyes kilométert” áprilisban!
 |Sportoló|Távolság KM|
 |--------|-------:|
 |Lak******************|16.26|
-|Összesen|16.26|
+|Pét********|14.18|
+|Len*********|0.96|
+|Összesen|31.40|
 {.mw8 data-toggle="table"}
 
 
