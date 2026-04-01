@@ -45,6 +45,7 @@ The goal: collect 2,000 “fickle kilometres” during April.
 |2026-04-01 05:17|17934002154|Pét********|14.18|1x|14.18 |
 |2026-04-01 07:50|17933726348|Len*********|0.48|2x|0.96 |
 |2026-04-01 10:55|17935029530|Bru********|1.90|0x|0.00 |
+|2026-04-01 17:18|17939192685|Fru**********|7.02|2x|14.04 |
 { .w-100 .mw8 .center id="spotify" data-toggle="table"}
 
 
@@ -54,10 +55,11 @@ The goal: collect 2,000 “fickle kilometres” during April.
 |Athlete|Distance KM|
 |-------|-------:|
 |Pét********|14.18|
+|Fru**********|7.02|
 |Lak******************|5.42|
 |Bru********|1.90|
 |Len*********|0.48|
-|Total|21.98|
+|Total|29.00|
 { .mw8 data-toggle="table"}
 
 
@@ -67,9 +69,10 @@ The goal: collect 2,000 “fickle kilometres” during April.
 |-------|-------:|
 |Lak******************|16.26|
 |Pét********|14.18|
+|Fru**********|14.04|
 |Len*********|0.96|
 |Bru********|0.00|
-|Total|31.40|
+|Total|45.44|
 { .mw8 data-toggle="table"}
 
 
