@@ -42,7 +42,7 @@ A cél: gyűjtsünk össze 2.000 „szeszélyes kilométert” áprilisban!
 |Mikor|ActivityID|Sportoló|Eredeti KM|Módosító|Szeszélyes KM|
 |-----|----------|--------|---------------:|:------:|------------:|
 {% for item in activities %}|{{item.when_text}}|{{item.activity_id}}|{{item.athlete}}|{{item.distance_km}}|{{item.rule}}|{{item.ruledistance_km}} |
-{% endfor %}{ .w-100 .mw8 .center id="spotify" data-toggle="table"}
+{% endfor %}{.mw8 id="spotify" data-toggle="table"}
 
 
 **Itt van a „hagyományos” ranglista:**
@@ -50,7 +50,7 @@ A cél: gyűjtsünk össze 2.000 „szeszélyes kilométert” áprilisban!
 |Sportoló|Távolság KM|
 |--------|-------:|
 {% for item in traditional %}|{{item.athlete}}|{{item.distance_km}}|
-{% endfor %}{ .mw8 data-toggle="table"}
+{% endfor %}{ .mw8 data-toggle="table" id="spotify"}
 
 
 **Itt pedig a „szeszélyes” ranglista:**
@@ -58,7 +58,14 @@ A cél: gyűjtsünk össze 2.000 „szeszélyes kilométert” áprilisban!
 |Sportoló|Távolság KM|
 |--------|-------:|
 {% for item in fickle %}|{{item.athlete}}|{{item.ruledistance_km}}|
-{% endfor %}{.mw8 data-toggle="table"}
+{% endfor %}{.mw8 data-toggle="table" id="spotify"}
+
+**A végére pedig egy összefoglaló:**
+
+|Sportoló|Aktivitások|0x|1x|2x|3x|Eredeti KM|Szeszélyes KM|
+|--------|-------:|-------:|-------:|-------:|-------:|-------:|-------:|
+{% for item in summary %}|{{item.athlete}}|{{item.number_of_activities}}|{{item.count_0}}|{{item.count_1x}}|{{item.count_2x}}|{{item.count_3x}}|{{item.distance_km}}|{{item.rule_distance_km}}|
+{% endfor %}{ .mw8 id="spotify" data-toggle="table"}
 
 
 Csatlakozz kis közösségünkhöz:
