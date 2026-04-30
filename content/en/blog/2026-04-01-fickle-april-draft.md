@@ -41,7 +41,7 @@ The goal: collect 2,000 “fickle kilometres” during April.
 
 **You will be able to track the challenge here:**
 
-|When|ActivityID|Athlete|Original KM|Modifier|Fickle KM|
+|When|ActivityID|Athlete|Original km|Modifier|Fickle km|
 |----|----------|-------|----------------:|:---------------:|--------:|
 {% for item in activities %}|{{item.when_text}}|{{item.activity_id}}|{{item.athlete}}|{{item.distance_km}}|{{item.rule}}|{{item.ruledistance_km}} |
 {% endfor %}{ .mw8 id="spotify" data-toggle="table"}
@@ -50,7 +50,7 @@ The goal: collect 2,000 “fickle kilometres” during April.
 
 **Here is the “traditional” leaderboard:**
 
-|Athlete|Distance KM|
+|Athlete|Distance km|
 |-------|-------:|
 {% for item in traditional %}|{{item.athlete}}|{{item.distance_km}}|
 {% endfor %}{ .mw8 data-toggle="table" id="spotify"}
@@ -58,16 +58,16 @@ The goal: collect 2,000 “fickle kilometres” during April.
 
 **And here is the „fickle” leaderboard:**
 
-|Athlete|Distance KM|
+|Athlete|Distance km|
 |-------|-------:|
 {% for item in fickle %}|{{item.athlete}}|{{item.ruledistance_km}}|
 {% endfor %}{ .mw8 data-toggle="table" id="spotify"}
 
 **A summary:**
 
-|Athlete|Activities|0x|1x|2x|3x|Original KM|Fickle KM|
-|--------|-------:|-------:|-------:|-------:|-------:|-------:|-------:|
-{% for item in summary %}|{{item.athlete}}|{{item.number_of_activities}}|{{item.count_0}}|{{item.count_1x}}|{{item.count_2x}}|{{item.count_3x}}|{{item.distance_km}}|{{item.rule_distance_km}}|
+|Athlete|Activities|0x|0x km|1x|1x km|2x|2x km|3x|3x km|Original km|Fickle km|
+|--------|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|
+{% for item in summary %}|{{item.athlete}}|{{item.number_of_activities}}|{{item.count_0}}|{{item.km_0}}|{{item.count_1x}}|{{item.km_1x}}|{{item.count_2x}}|{{item.km_2x}}|{{item.count_3x}}|{{item.km_3x}}|{{item.distance_km}}|{{item.rule_distance_km}}|
 {% endfor %}{ .mw8 id="spotify" data-toggle="table"}
 
 

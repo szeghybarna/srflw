@@ -39,7 +39,7 @@ A cél: gyűjtsünk össze 2.000 „szeszélyes kilométert” áprilisban!
 
 **Itt lehet nyomon követni a kihívás állását:**
 
-|Mikor|ActivityID|Sportoló|Eredeti KM|Módosító|Szeszélyes KM|
+|Mikor|ActivityID|Sportoló|Eredeti km|Módosító|Szeszélyes km|
 |-----|----------|--------|---------------:|:------:|------------:|
 {% for item in activities %}|{{item.when_text}}|{{item.activity_id}}|{{item.athlete}}|{{item.distance_km}}|{{item.rule}}|{{item.ruledistance_km}} |
 {% endfor %}{.mw8 id="spotify" data-toggle="table"}
@@ -47,7 +47,7 @@ A cél: gyűjtsünk össze 2.000 „szeszélyes kilométert” áprilisban!
 
 **Itt van a „hagyományos” ranglista:**
 
-|Sportoló|Távolság KM|
+|Sportoló|Távolság km|
 |--------|-------:|
 {% for item in traditional %}|{{item.athlete}}|{{item.distance_km}}|
 {% endfor %}{ .mw8 data-toggle="table" id="spotify"}
@@ -55,16 +55,16 @@ A cél: gyűjtsünk össze 2.000 „szeszélyes kilométert” áprilisban!
 
 **Itt pedig a „szeszélyes” ranglista:**
 
-|Sportoló|Távolság KM|
+|Sportoló|Távolság km|
 |--------|-------:|
 {% for item in fickle %}|{{item.athlete}}|{{item.ruledistance_km}}|
 {% endfor %}{.mw8 data-toggle="table" id="spotify"}
 
 **A végére pedig egy összefoglaló:**
 
-|Sportoló|Aktivitások|0x|1x|2x|3x|Eredeti KM|Szeszélyes KM|
-|--------|-------:|-------:|-------:|-------:|-------:|-------:|-------:|
-{% for item in summary %}|{{item.athlete}}|{{item.number_of_activities}}|{{item.count_0}}|{{item.count_1x}}|{{item.count_2x}}|{{item.count_3x}}|{{item.distance_km}}|{{item.rule_distance_km}}|
+|Sportoló|Aktivitások|0x|0x km|1x|1x km|2x|2x km|3x|3x km|Eredeti km|Szeszélyes km|
+|--------|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|
+{% for item in summary %}|{{item.athlete}}|{{item.number_of_activities}}|{{item.count_0}}|{{item.km_0}}|{{item.count_1x}}|{{item.km_1x}}|{{item.count_2x}}|{{item.km_2x}}|{{item.count_3x}}|{{item.km_3x}}|{{item.distance_km}}|{{item.rule_distance_km}}|
 {% endfor %}{ .mw8 id="spotify" data-toggle="table"}
 
 
